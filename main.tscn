@@ -10,10 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
-size = Vector2(83.5, 78)
+size = Vector2(83.5, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
-size = Vector2(463.25, 266.75)
+size = Vector2(463.25, 349)
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -53,12 +53,14 @@ position = Vector2(-12, -32)
 position = Vector2(-12, -32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hook/Area2D" unique_id=132753506]
+position = Vector2(0, 22)
 shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="sharkattack" type="Area2D" parent="Hook" unique_id=1834796503 groups=["sharkattack"]]
 position = Vector2(-12, -32)
 
 [node name="sharkattackarea" type="CollisionShape2D" parent="Hook/sharkattack" unique_id=995401381]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_272bh")
 
 [node name="Node2D" type="Node2D" parent="Hook" unique_id=765972310]
