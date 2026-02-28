@@ -15,7 +15,7 @@ func rodup():
 		global.inflation = ceil(global.inflation)
 		print(global.inflation)
 		print(global.money)
-		global.lengthup += 1
+		global.longerup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
