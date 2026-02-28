@@ -78,7 +78,11 @@ func _process(_delta: float) -> void:
 			global_position.x += 2
 		else:
 			global_position.x -= 2
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 689735a03ab87364f96a5dfb3da5eed7924c57f6
 	else:
 		value = 0
 
