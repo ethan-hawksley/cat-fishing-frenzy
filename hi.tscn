@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://d0vg3t8sbt4es" path="res://rodbutton.gd" id="5_jwn4a"]
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="6_xbv1x"]
 [ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="7_tv5os"]
+[ext_resource type="Script" uid="uid://b4ixtxqa1whgc" path="res://spppppppppeeeeeeeeeeeeeddddddddddd.gd" id="9_ydbs0"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
@@ -49,3 +50,4 @@ offset_bottom = 43.0
 texture_normal = ExtResource("6_xbv1x")
 texture_pressed = ExtResource("7_tv5os")
 texture_hover = ExtResource("4_x73ow")
+script = ExtResource("9_ydbs0")
