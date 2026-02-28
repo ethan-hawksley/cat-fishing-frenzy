@@ -70,6 +70,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		return
 	global.caught_fish += 1
 	global.value_of_reeled_fish += value
+	global.latestfishvalue = value
 	if global.max_fish <= global.caught_fish:
 		global.mode = global.modes.ascending
 	caught = true
