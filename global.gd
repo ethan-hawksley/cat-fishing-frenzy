@@ -17,6 +17,12 @@ var time_left_until_spawn = 0
 var caught_fish = 0
 var max_fish = 2
 
+var fishup = 0
+var harpoonup = 0
+var catchup = 0
+var speedup = 0
+var longerup = 0
+
 enum modes {
 	descending,
 	ascending,

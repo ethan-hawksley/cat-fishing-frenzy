@@ -3,6 +3,11 @@
 [ext_resource type="Script" path="res://canvas_layer.gd" id="1_37rai"]
 [ext_resource type="Script" uid="uid://dvoegrdhvpakd" path="res://money_label.gd" id="1_v2lfg"]
 [ext_resource type="PackedScene" uid="uid://d4kput370i1u7" path="res://hi.tscn" id="2_tg4cr"]
+[ext_resource type="Script" uid="uid://cy3ye7xve3ngm" path="res://fishup.gd" id="4_0qrqu"]
+[ext_resource type="Script" uid="uid://brua8uli2814p" path="res://harpoonup.gd" id="5_n6wdb"]
+[ext_resource type="Script" uid="uid://decm25nttnuda" path="res://catchup.gd" id="6_g3huw"]
+[ext_resource type="Script" uid="uid://3hsrmjk8uqv8" path="res://speedup.gd" id="7_280g2"]
+[ext_resource type="Script" uid="uid://de8votjpo2igt" path="res://longerup.gd" id="8_5cw7b"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop")]
 script = ExtResource("1_37rai")
@@ -36,76 +41,82 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -622.0
-offset_top = -1.0
-offset_right = -522.0
-offset_bottom = 48.0
+offset_left = -634.0
+offset_top = 2.0
+offset_right = -534.0
+offset_bottom = 51.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "More Fish
 £0"
 horizontal_alignment = 1
+script = ExtResource("4_0qrqu")
 
-[node name="harpoon" type="Label" parent="." unique_id=2144153053]
+[node name="harpoonup" type="Label" parent="." unique_id=2144153053]
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -412.0
-offset_right = -312.0
-offset_bottom = 49.0
+offset_left = -357.0
+offset_top = -5.0
+offset_right = -257.0
+offset_bottom = 44.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "Harpoon
 £0"
 horizontal_alignment = 1
+script = ExtResource("5_n6wdb")
 
-[node name="catch" type="Label" parent="." unique_id=2057088780]
+[node name="catchup" type="Label" parent="." unique_id=2057088780]
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -640.0
-offset_top = 56.0
-offset_right = -540.0
-offset_bottom = 105.0
+offset_left = -614.0
+offset_top = 74.0
+offset_right = -514.0
+offset_bottom = 123.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "Catch More
 £0"
 horizontal_alignment = 1
+script = ExtResource("6_g3huw")
 
-[node name="speed" type="Label" parent="." unique_id=387310274]
+[node name="speedup" type="Label" parent="." unique_id=387310274]
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -521.0
-offset_top = 67.0
-offset_right = -421.0
-offset_bottom = 116.0
+offset_left = -487.0
+offset_top = 49.0
+offset_right = -387.0
+offset_bottom = 98.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "Faster Rod
 £0"
 horizontal_alignment = 1
+script = ExtResource("7_280g2")
 
-[node name="longer" type="Label" parent="." unique_id=733031641]
+[node name="longerup" type="Label" parent="." unique_id=733031641]
 texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -404.0
-offset_top = 60.0
-offset_right = -304.0
-offset_bottom = 109.0
+offset_left = -365.0
+offset_top = 65.0
+offset_right = -265.0
+offset_bottom = 114.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
 text = "Longer Line
 £0"
 horizontal_alignment = 1
+script = ExtResource("8_5cw7b")

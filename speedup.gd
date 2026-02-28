@@ -1,7 +1,7 @@
 extends Label
 
 func _process(_delta) -> void:
-	text="More Fish"+"\n"+"£"+str((global.inflation*100))+" Brought:"+str(global.fishup)
+	text="Faster Rod"+"\n"+"£"+str((global.inflation*100))+" Brought:"+str(global.speedup)
 
 	if global.mode != global.modes.shop:
 		text = ""
