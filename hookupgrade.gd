@@ -8,7 +8,7 @@ func _ready() -> void:
 func hookup():
 	if global.money >= global.inflation * 100:
 		global.money = global.money - global.inflation * 100
-		global.catches = global.catches + 1
+		global.max_fish = global.max_fish + 1
 		global.inflation = global.inflation * 1.1
 		global.money = floor(global.money)
 		global.inflation = ceil(global.inflation)

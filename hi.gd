@@ -1,8 +1,7 @@
 extends Control
 # ShopMenu.gd
 
-@export var my_label: Label
-var inches: float = 0.0
+
 
 
 
@@ -16,6 +15,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	inches += _delta * 5 
-	my_label.text = "%0.2f inches" % inches
+
 	pass

@@ -4,10 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="1_ttdft"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_l717l"]
 [ext_resource type="Script" uid="uid://dk8ee82rwov3i" path="res://hookupgrade.gd" id="3_tv5os"]
-[ext_resource type="Texture2D" uid="uid://walsr6carmfh" path="res://icon.svg" id="4_x73ow"]
 [ext_resource type="Script" uid="uid://d0vg3t8sbt4es" path="res://rodbutton.gd" id="5_jwn4a"]
-[ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="6_xbv1x"]
-[ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="7_tv5os"]
+[ext_resource type="Texture2D" uid="uid://bglxr64uief7s" path="res://assets/rodup.png" id="5_ydbs0"]
+[ext_resource type="Texture2D" uid="uid://c8mnelopp11xf" path="res://assets/speedup.png" id="7_0mtm5"]
 [ext_resource type="Script" uid="uid://b4ixtxqa1whgc" path="res://spppppppppeeeeeeeeeeeeeddddddddddd.gd" id="9_ydbs0"]
 [ext_resource type="Script" uid="uid://bdjp4qx1tkviq" path="res://display.gd" id="10_0mtm5"]
 
@@ -37,9 +36,9 @@ offset_top = -14.0
 offset_right = 172.0
 offset_bottom = 86.0
 texture_normal = ExtResource("1_ttdft")
-texture_pressed = ExtResource("1_ttdft")
-texture_hover = ExtResource("1_ttdft")
-texture_disabled = ExtResource("4_x73ow")
+texture_pressed = ExtResource("5_ydbs0")
+texture_hover = ExtResource("5_ydbs0")
+texture_disabled = ExtResource("5_ydbs0")
 script = ExtResource("5_jwn4a")
 
 [node name="TextureButton3" type="TextureButton" parent="." unique_id=1260819549]
@@ -48,9 +47,9 @@ offset_left = -50.0
 offset_top = -14.0
 offset_right = 50.0
 offset_bottom = 86.0
-texture_normal = ExtResource("6_xbv1x")
-texture_pressed = ExtResource("7_tv5os")
-texture_hover = ExtResource("4_x73ow")
+texture_normal = ExtResource("7_0mtm5")
+texture_pressed = ExtResource("7_0mtm5")
+texture_hover = ExtResource("7_0mtm5")
 script = ExtResource("9_ydbs0")
 
 [node name="CodeEdit" type="CodeEdit" parent="." unique_id=2134984578]
@@ -60,10 +59,3 @@ offset_top = -90.0
 offset_right = 158.0
 offset_bottom = -3.0
 script = ExtResource("10_0mtm5")
-
-[node name="Label" type="Label" parent="." unique_id=1558030009]
-layout_mode = 0
-offset_left = 220.0
-offset_top = -51.0
-offset_right = 260.0
-offset_bottom = -28.0
