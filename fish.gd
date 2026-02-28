@@ -35,6 +35,8 @@ func _ready() -> void:
 		path = images[6]
 	elif 350 < global.depth:
 		path = images[7]
+
+
 	
 	var loaded_texture = load(path)
 	
