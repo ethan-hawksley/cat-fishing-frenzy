@@ -28,7 +28,7 @@ region_rect = Rect2(0, 0, 1000, 5000)
 
 [node name="Sky&shallowBackground" type="Sprite2D" parent="." unique_id=1980699153]
 texture_repeat = 2
-position = Vector2(-7, -1)
+position = Vector2(93, -1)
 scale = Vector2(4, 4)
 texture = ExtResource("8_5vw27")
 region_enabled = true
