@@ -7,9 +7,9 @@ func _ready() -> void:
 	pass # Replace with function body.
 func harpoonkill():
 	if global.harptime != 0:
-		if global.money >= global.inflation * 100:
-			global.money = global.money - global.inflation * 100
-			global.harptime = global.harptime - 0.5
+		if global.money >= global.inflation * 75:
+			global.money = global.money - global.inflation * 75
+			global.harptime = global.harptime - 0.75
 			global.inflation = global.inflation * 1.1
 			global.money = floor(global.money)
 			global.inflation = ceil(global.inflation)
