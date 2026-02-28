@@ -8,7 +8,7 @@ func _ready() -> void:
 func morefish():
 	if global.money >= global.inflationmorefish * 50:
 		global.money = global.money - global.inflationmorefish * 50
-		global.time_per_spawn = global.time_per_spawn + 0.1
+		global.time_per_spawn = global.time_per_spawn * 0.85
 		global.inflationmorefish = global.inflationmorefish * 1.1
 		global.money = floor(global.money)
 		global.fishup += 1
