@@ -10,10 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
-size = Vector2(83.5, 78)
+size = Vector2(83.5, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
-size = Vector2(463.25, 266.75)
+size = Vector2(463.25, 349)
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -25,7 +25,6 @@ repeat_size = Vector2(100, 100)
 repeat_times = 5
 
 [node name="WaterSprite" type="Sprite2D" parent="WaterParallax" unique_id=502840760]
-position = Vector2(0, 1)
 texture = ExtResource("1_272bh")
 region_enabled = true
 region_rect = Rect2(0, 0, 1000, 5000)
@@ -43,35 +42,37 @@ position = Vector2(-14, -22)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(-64, -0.9999981)
-scale = Vector2(1, 0.98)
+position = Vector2(-52, 29)
 texture = ExtResource("2_0xm2m")
-offset = Vector2(12, 30)
 script = ExtResource("3_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
-position = Vector2(1, -1)
+position = Vector2(-12, -32)
 
 [node name="Area2D" type="Area2D" parent="Hook" unique_id=1775785438 groups=["hook"]]
+position = Vector2(-12, -32)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hook/Area2D" unique_id=132753506]
-position = Vector2(0, 23)
+position = Vector2(0, 22)
 shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="sharkattack" type="Area2D" parent="Hook" unique_id=1834796503]
-position = Vector2(0, -2.6530616)
+position = Vector2(-12, -32)
 
 [node name="sharkattackarea" type="CollisionShape2D" parent="Hook/sharkattack" unique_id=995401381]
-position = Vector2(0, -0.6122451)
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_272bh")
 
+[node name="Node2D" type="Node2D" parent="Hook" unique_id=765972310]
+position = Vector2(-12, -32)
+
 [node name="Line2D" type="Line2D" parent="." unique_id=1767988051 node_paths=PackedStringArray("node")]
-position = Vector2(27, 16)
-points = PackedVector2Array(-88, -55, -91, -18)
+position = Vector2(-61, -38)
+points = PackedVector2Array(0, 0, -3, 34)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 script = ExtResource("3_1bvp3")
-node = NodePath("../Hook/Camera2D")
+node = NodePath("../Hook/Node2D")
 
 [node name="Catttttt" type="Sprite2D" parent="." unique_id=1707320730]
 position = Vector2(-54, -31)
