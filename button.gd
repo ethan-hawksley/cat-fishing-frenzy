@@ -12,4 +12,5 @@ func _process(delta: float) -> void:
 
 func _on_pressed() -> void:
 	if global.mode == global.modes.shop: 
+		global.caught_fish = 0
 		global.mode = global.modes.descending
