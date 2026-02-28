@@ -6,14 +6,13 @@ func _ready() -> void:
 	pressed.connect(hookup)
 	pass # Replace with function body.
 func hookup():
-	if global.money >= global.inflation * 50:
-		global.money = global.money - global.inflation * 50
+	if global.money >= global.inflationcatchmore * 50:
+		global.money = global.money - global.inflationcatchmore * 50
 		global.max_fish = global.max_fish + 1
-		global.inflation = global.inflation * 1.1
+		global.inflationcatchmore = global.inflationcatchmore * 1.1
 		global.money = floor(global.money)
-		global.inflation = ceil(global.inflation)
-		print(global.inflation)
-		print(global.money)
+		global.inflationcatchmore = ceil(global.inflationcatchmore)
+
 		global.catchup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

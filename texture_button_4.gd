@@ -7,12 +7,11 @@ func _ready() -> void:
 	pass # Replace with function body.
 func harpoonkill():
 	if global.harptime != 0:
-		if global.money >= global.inflation * 75:
-			global.money = global.money - global.inflation * 75
+		if global.money >= global.inflationharpoon * 75:
+			global.money = global.money - global.inflationharpoon * 75
 			global.harptime = global.harptime - 0.75
-			global.inflation = global.inflation * 1.1
+			global.inflationharpoon = global.inflationharpoon * 1.1
 			global.money = floor(global.money)
-			global.inflation = ceil(global.inflation)
 			global.harpoonup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
