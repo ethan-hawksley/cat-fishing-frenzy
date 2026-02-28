@@ -8,9 +8,6 @@ func _process(delta: float) -> void:
 	if global.time_left_until_spawn <= 0:
 		global.time_left_until_spawn += global.time_per_spawn
 		spawn_entity()
-		
-	if delta > randf():
-		print("thing")
 
 func spawn_entity() -> void:
 	var fish = fish_scene.instantiate()
