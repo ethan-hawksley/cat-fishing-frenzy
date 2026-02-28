@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bjkoh2b2jk3oe"]
 
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_0xm2m"]
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -12,3 +13,9 @@ polygon = PackedVector2Array(-171, -125, 215, -128, 216, 16, -167, 16)
 [node name="Boat" type="Sprite2D" parent="." unique_id=1442094522]
 position = Vector2(-17, -31)
 texture = ExtResource("1_ig7tw")
+
+[node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
+position = Vector2(27, 33)
+texture = ExtResource("2_0xm2m")
+
+[node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
