@@ -19,6 +19,7 @@ var images = [
 	"res://assets/fish_5.png",
 	"res://assets/fish_6.png",
 	"res://assets/fish_7.png",
+	"res://assets/catfish.png",
 ]
 
 func _ready() -> void:
@@ -44,7 +45,6 @@ func _ready() -> void:
 		value = 700
 	elif 350 < global.depth:
 		path = images[7]
-
 		value = 800
 
 	
@@ -77,6 +77,8 @@ func _process(_delta: float) -> void:
 			global_position.x += 2
 		else:
 			global_position.x -= 2
+	else:
+		value = 0
 	
 	if caught:
 		global_position = caught_by.global_position
