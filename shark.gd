@@ -8,7 +8,6 @@ var harpoon_scene = preload("res://harpoon.tscn")
 var harpoon_spawned = false
 
 func _ready() -> void:
-	print("shark!")
 	if randf() < 0.5:
 		direction = directions.left
 		$Sprite2D.flip_h = true
@@ -28,6 +27,12 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		harpoon.global_position.y -= 200
 		harpoon.target = self
 		get_parent().add_child(harpoon)
+
+func area_2d_area_entered(area: Area2D) -> void:
+	if not area.is_in_group("hook"):
+		return
+	global.caught_fish += 1
+	global.value_of_reeled_fish -= global.latestfishvalue
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
