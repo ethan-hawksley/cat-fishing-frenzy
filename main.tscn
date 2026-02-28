@@ -28,17 +28,11 @@ region_rect = Rect2(0, 0, 1000, 5000)
 
 [node name="Sky&shallowBackground" type="Sprite2D" parent="." unique_id=1980699153]
 texture_repeat = 2
-position = Vector2(93, -1)
+position = Vector2(-307, 405)
 scale = Vector2(4, 4)
 texture = ExtResource("8_5vw27")
 region_enabled = true
-region_rect = Rect2(0, 0, 2000, 200)
-
-[node name="Sky" type="Polygon2D" parent="." unique_id=1336226160]
-position = Vector2(-23, -118)
-scale = Vector2(7.6812997, 7.1833434)
-color = Color(0.14901961, 0.72156864, 1, 1)
-polygon = PackedVector2Array(-171, -125, 215, -128, 216, 16, -167, 16)
+region_rect = Rect2(0, 0, 2000, 600)
 
 [node name="Boat" type="Sprite2D" parent="." unique_id=1442094522]
 position = Vector2(-14, -22)
