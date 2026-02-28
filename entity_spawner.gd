@@ -23,7 +23,7 @@ func spawn_rock() -> void:
 	var rock = rock_scene.instantiate()
 	rock.position = hook.position
 	rock.position.x += randf_range(-300, 300)
-	rock.position.y += randf_range(100, 400)
+	rock.position.y += randf_range(80, 250)
 	
 	add_child(rock)
 
