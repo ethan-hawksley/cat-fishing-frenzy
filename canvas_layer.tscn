@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c854mbq5w53dc"]
 
-[ext_resource type="Script" uid="uid://sx5uxmg77efw" path="res://canvas_layer.gd" id="1_37rai"]
+[ext_resource type="Script" path="res://canvas_layer.gd" id="1_37rai"]
 [ext_resource type="Script" uid="uid://dvoegrdhvpakd" path="res://money_label.gd" id="1_v2lfg"]
-[ext_resource type="PackedScene" path="res://hi.tscn" id="2_tg4cr"]
+[ext_resource type="PackedScene" uid="uid://d4kput370i1u7" path="res://hi.tscn" id="2_tg4cr"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop")]
 script = ExtResource("1_37rai")
@@ -30,3 +30,78 @@ offset_left = 172.0
 offset_top = 103.0
 offset_right = 172.0
 offset_bottom = 103.0
+
+[node name="fishup" type="Label" parent="." unique_id=1907358142]
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -624.0
+offset_top = 17.0
+offset_right = -524.0
+offset_bottom = 40.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "More Fish"
+horizontal_alignment = 1
+
+[node name="harpoon" type="Label" parent="." unique_id=2144153053]
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -414.0
+offset_top = 16.0
+offset_right = -314.0
+offset_bottom = 39.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Harpoon"
+horizontal_alignment = 1
+
+[node name="catch" type="Label" parent="." unique_id=2057088780]
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -642.0
+offset_top = 80.0
+offset_right = -542.0
+offset_bottom = 103.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Catch More"
+horizontal_alignment = 1
+
+[node name="speed" type="Label" parent="." unique_id=387310274]
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -519.0
+offset_top = 82.0
+offset_right = -419.0
+offset_bottom = 105.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Faster Rod"
+horizontal_alignment = 1
+
+[node name="longer" type="Label" parent="." unique_id=733031641]
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -404.0
+offset_top = 80.0
+offset_right = -304.0
+offset_bottom = 103.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "Longer Line"
+horizontal_alignment = 1
