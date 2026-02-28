@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dpxcpdgnyssb1" path="res://hi.gd" id="1_l717l"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="1_ttdft"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_l717l"]
+[ext_resource type="Script" uid="uid://dk8ee82rwov3i" path="res://hookupgrade.gd" id="3_tv5os"]
 [ext_resource type="Texture2D" uid="uid://walsr6carmfh" path="res://icon.svg" id="4_x73ow"]
 [ext_resource type="Script" uid="uid://d0vg3t8sbt4es" path="res://rodbutton.gd" id="5_jwn4a"]
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="6_xbv1x"]
@@ -25,6 +26,7 @@ offset_top = -38.0
 offset_right = -64.0
 offset_bottom = 62.0
 texture_normal = ExtResource("2_l717l")
+script = ExtResource("3_tv5os")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
 layout_mode = 0
@@ -40,10 +42,10 @@ script = ExtResource("5_jwn4a")
 
 [node name="TextureButton3" type="TextureButton" parent="." unique_id=1260819549]
 layout_mode = 0
-offset_left = -47.0
-offset_top = -58.0
-offset_right = 53.0
-offset_bottom = 42.0
+offset_left = -55.0
+offset_top = -57.0
+offset_right = 45.0
+offset_bottom = 43.0
 texture_normal = ExtResource("6_xbv1x")
 texture_pressed = ExtResource("7_tv5os")
 texture_hover = ExtResource("4_x73ow")
