@@ -14,6 +14,9 @@ func _ready() -> void:
 		$target.position.x += 35
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("hook"):
+		print("eating")
+		global.value_of_reeled_fish *= 0.75 
 	if area.is_in_group("sharkattack") and not harpoon_spawned:
 		harpoon_spawned = true
 		$target.visible = true
@@ -27,12 +30,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		harpoon.global_position.y -= 200
 		harpoon.target = self
 		get_parent().add_child(harpoon)
-
-func area_2d_area_entered(area: Area2D) -> void:
-	if area.is_in_group("hook"):
-		print("eating")
-		global.value_of_reeled_fish = global.value_of_reeled_fish - global.latestfishvalue
-		return
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
