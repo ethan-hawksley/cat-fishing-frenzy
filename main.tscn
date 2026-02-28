@@ -23,7 +23,7 @@ position = Vector2(-14, -22)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(-64, -3)
+position = Vector2(-64, 0)
 texture = ExtResource("2_0xm2m")
 offset = Vector2(12, 30)
 script = ExtResource("3_7mycd")
