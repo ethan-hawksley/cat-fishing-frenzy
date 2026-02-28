@@ -8,7 +8,8 @@
 [node name="Node" type="Node" unique_id=1277121764]
 
 [node name="Sky" type="Polygon2D" parent="." unique_id=1336226160]
-position = Vector2(-22, -16)
+position = Vector2(-23, -118)
+scale = Vector2(7.6812997, 7.1833434)
 color = Color(0.14901961, 0.72156864, 1, 1)
 polygon = PackedVector2Array(-171, -125, 215, -128, 216, 16, -167, 16)
 
