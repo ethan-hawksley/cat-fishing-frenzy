@@ -31,7 +31,7 @@ func _process(delta: float) -> void:
 			
 	if global.mode == global.modes.shop:
 		$Camera2D.enabled = true
-		position.x == -64
-		position.y == 0
+		position.x = -64
+		position.y = 0
 	if position.y >= global.length:
 		global.mode = global.modes.ascending
