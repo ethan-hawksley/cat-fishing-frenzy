@@ -22,14 +22,14 @@ func _process(delta: float) -> void:
 			position.x += (global.speed*20)
 		if position.x > -64:
 			position.x -= (global.speed*20)
-		if position.x == -64 and position.y == 0:
+		if position.x < -60 and position.x > -68 and position.y <= 0:
 			global.mode = global.modes.shop
 			
 			global.money += global.caught_fish * 100
 			global.caught_fish = 0
 			
 	if global.mode == global.modes.shop:
-		$Camera2D.enabled = false
+		$Camera2D.enabled = true
 		position.x == -64
 		position.y == 0
 	if position.y >= global.length:

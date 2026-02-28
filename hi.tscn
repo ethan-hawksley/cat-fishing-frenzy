@@ -21,10 +21,6 @@ anchors_preset = 0
 script = ExtResource("1_l717l")
 metadata/_edit_horizontal_guides_ = [-478.0]
 
-[node name="shop cam" type="Camera2D" parent="." unique_id=1036136736]
-position = Vector2(-2, -2)
-zoom = Vector2(2, 2)
-
 [node name="TextureButton2" type="TextureButton" parent="." unique_id=10106380]
 layout_mode = 0
 offset_left = -163.0
