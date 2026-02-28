@@ -16,24 +16,28 @@
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
 anchors_preset = 0
+offset_left = 68.0
+offset_top = -4.0
+offset_right = 68.0
+offset_bottom = -4.0
 script = ExtResource("1_l717l")
 metadata/_edit_horizontal_guides_ = [-478.0]
 
 [node name="TextureButton2" type="TextureButton" parent="." unique_id=10106380]
 layout_mode = 0
-offset_left = -57.0
-offset_top = -46.0
-offset_right = 43.0
-offset_bottom = 54.0
+offset_left = -40.0
+offset_top = -48.0
+offset_right = 60.0
+offset_bottom = 52.0
 texture_normal = ExtResource("2_l717l")
 script = ExtResource("3_tv5os")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
 layout_mode = 0
-offset_left = -58.0
-offset_top = 36.0
-offset_right = 42.0
-offset_bottom = 136.0
+offset_left = -41.0
+offset_top = 34.0
+offset_right = 59.0
+offset_bottom = 134.0
 texture_normal = ExtResource("5_ydbs0")
 texture_pressed = ExtResource("5_ydbs0")
 texture_hover = ExtResource("5_ydbs0")
@@ -42,10 +46,10 @@ script = ExtResource("5_jwn4a")
 
 [node name="TextureButton3" type="TextureButton" parent="." unique_id=1260819549]
 layout_mode = 0
-offset_left = -60.0
-offset_top = 125.0
-offset_right = 40.0
-offset_bottom = 225.0
+offset_left = -30.0
+offset_top = 114.0
+offset_right = 70.0
+offset_bottom = 214.0
 texture_normal = ExtResource("7_0mtm5")
 texture_pressed = ExtResource("7_0mtm5")
 texture_hover = ExtResource("7_0mtm5")
@@ -53,10 +57,10 @@ script = ExtResource("9_ydbs0")
 
 [node name="TextureButton4" type="TextureButton" parent="." unique_id=1883794768]
 layout_mode = 0
-offset_left = -64.0
-offset_top = 195.0
-offset_right = 36.0
-offset_bottom = 295.0
+offset_left = -47.0
+offset_top = 193.0
+offset_right = 53.0
+offset_bottom = 293.0
 texture_normal = ExtResource("8_xpgmr")
 texture_pressed = ExtResource("8_xpgmr")
 texture_hover = ExtResource("8_xpgmr")
@@ -64,10 +68,10 @@ script = ExtResource("9_uydfd")
 
 [node name="TextureButton5" type="TextureButton" parent="." unique_id=1485131872]
 layout_mode = 0
-offset_left = -62.0
-offset_top = -138.0
-offset_right = 38.0
-offset_bottom = -38.0
+offset_left = -47.0
+offset_top = -120.0
+offset_right = 53.0
+offset_bottom = -20.0
 texture_normal = ExtResource("10_bvbah")
 texture_pressed = ExtResource("10_bvbah")
 texture_hover = ExtResource("10_bvbah")
