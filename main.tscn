@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://dsnyrjrsvfcay" path="res://line.gd" id="3_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="5_lquwl"]
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -18,7 +19,7 @@ position = Vector2(-17, -31)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(-92, 47)
+position = Vector2(50, 136)
 texture = ExtResource("2_0xm2m")
 offset = Vector2(12, 30)
 
@@ -36,3 +37,19 @@ node = NodePath("../Hook")
 position = Vector2(-57, -40)
 texture = ExtResource("3_h2yge")
 flip_h = true
+
+[node name="Button" type="Button" parent="." unique_id=1203099866]
+anchors_preset = -1
+anchor_left = -0.35000002
+anchor_top = -0.19700001
+anchor_right = -0.16600001
+anchor_bottom = -0.039
+offset_left = 1.5258789e-05
+offset_top = -0.0799942
+offset_right = 0.2400055
+offset_bottom = 0.03999996
+theme_override_font_sizes/font_size = 13
+text = "CAST YOUR LINE!"
+script = ExtResource("5_lquwl")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
