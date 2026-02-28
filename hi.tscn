@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://d4kput370i1u7"]
+[gd_scene format=3 uid="uid://bysq6l58ea0j0"]
 
 [ext_resource type="Script" uid="uid://dpxcpdgnyssb1" path="res://hi.gd" id="1_l717l"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_l717l"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://drckiwxjgp03d" path="res://assets/fish_6.png" id="11_0onx4"]
 [ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="12_w0dc5"]
 [ext_resource type="Script" uid="uid://buj55kmlf40xu" path="res://texture_button_5.gd" id="13_rlv73"]
+[ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="14_uydfd"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
@@ -77,3 +78,20 @@ texture_normal = ExtResource("10_kr5e3")
 texture_pressed = ExtResource("11_0onx4")
 texture_hover = ExtResource("12_w0dc5")
 script = ExtResource("13_rlv73")
+
+[node name="Button" type="Button" parent="." unique_id=2031038236]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.35000002
+anchor_top = -0.19700001
+anchor_right = -0.16600001
+anchor_bottom = -0.039
+offset_left = 1.5258789e-05
+offset_top = -0.0799942
+offset_right = 0.2400055
+offset_bottom = 0.03999996
+theme_override_font_sizes/font_size = 13
+text = "CAST YOUR LINE!"
+script = ExtResource("14_uydfd")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

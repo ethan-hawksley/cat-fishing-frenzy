@@ -9,6 +9,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	global.depth = position.y
 	if global.mode == global.modes.descending:
+		$Camera2D.enabled = true
 		position.y += (global.speed*10)
 		if Input.is_action_pressed("ui_left"):
 			position.x -= (global.speed*20)
@@ -28,6 +29,7 @@ func _process(delta: float) -> void:
 			global.caught_fish = 0
 			
 	if global.mode == global.modes.shop:
+		$Camera2D.enabled = false
 		position.x == -64
 		position.y == 0
 	if position.y >= global.length:

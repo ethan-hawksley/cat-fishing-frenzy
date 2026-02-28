@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://dsnyrjrsvfcay" path="res://line.gd" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://dp5rul741yy8s" path="res://cast.gd" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
-[ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="5_lquwl"]
 [ext_resource type="Script" uid="uid://cm5cvn2jvbp61" path="res://entity_spawner.gd" id="7_272bh"]
 [ext_resource type="Script" uid="uid://cc6ushsnc8dvx" path="res://button_2.gd" id="8_5vw27"]
 
@@ -51,20 +50,6 @@ position = Vector2(-54, -31)
 texture = ExtResource("3_h2yge")
 flip_h = true
 
-[node name="Button" type="Button" parent="." unique_id=1203099866]
-anchors_preset = -1
-anchor_left = -0.35000002
-anchor_top = -0.19700001
-anchor_right = -0.16600001
-anchor_bottom = -0.039
-offset_left = 1.5258789e-05
-offset_top = -0.0799942
-offset_right = 0.2400055
-offset_bottom = 0.03999996
-theme_override_font_sizes/font_size = 13
-text = "CAST YOUR LINE!"
-script = ExtResource("5_lquwl")
-
 [node name="EntitySpawner" type="Node2D" parent="." unique_id=1202643375 node_paths=PackedStringArray("hook")]
 script = ExtResource("7_272bh")
 hook = NodePath("../Hook")
@@ -77,4 +62,4 @@ offset_bottom = -89.0
 text = "UPGRADES"
 script = ExtResource("8_5vw27")
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="Button2" to="Button2" method="_on_pressed"]
