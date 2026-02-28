@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dmr4dql0726mn"]
 
 [ext_resource type="Script" uid="uid://du0ycnm4p5k4a" path="res://rock.gd" id="1_o0qsl"]
+[ext_resource type="Texture2D" uid="uid://cs4g3am78rt1y" path="res://assets/rock.png" id="2_68h2w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgn23"]
 size = Vector2(3, 5)
@@ -9,6 +10,7 @@ size = Vector2(3, 5)
 script = ExtResource("1_o0qsl")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1407623966]
+texture = ExtResource("2_68h2w")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1898908593]
 
