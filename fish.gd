@@ -77,8 +77,6 @@ func _process(_delta: float) -> void:
 			global_position.x += 2
 		else:
 			global_position.x -= 2
-	else:
-		value = 0
 	
 	if caught:
 		global_position = caught_by.global_position
