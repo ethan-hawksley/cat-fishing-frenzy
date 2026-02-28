@@ -4,7 +4,10 @@ enum directions {
 	left,
 	right,
 }
-var direction = directions.left
+var direction = directions.right
+
+var caught = false
+var caught_by = null
 
 var images = [
 	"res://assets/fish_1.png",
@@ -20,23 +23,32 @@ func _ready() -> void:
 	$Sprite2D.texture = loaded_texture
 	
 	if randf() < 0.5:
-		direction = directions.right
+		direction = directions.left
 		$Sprite2D.flip_h = true
 
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
+	if not area.is_in_group("hook"):
+		return
 	print("touched")
 	global.caught_fish += 1
 	if global.max_fish <= global.caught_fish:
 		global.mode = global.modes.ascending
-	queue_free()
+	caught = true
+	caught_by = area
+	rotation_degrees = randf_range(0, 360)
 
 func _process(_delta: float) -> void:
-	if global.mode != global.modes.descending:
+	if global.mode == global.modes.shop:
 		queue_free()
 	
-	if direction == directions.left:
-		global_position.x += 2
-	else:
-		global_position.x -= 2
+	if global.mode == global.modes.descending:
+		if direction == directions.left:
+			global_position.x += 2
+		else:
+			global_position.x -= 2
+	
+	if caught:
+		global_position = caught_by.global_position
+		global_position.y += 40
 	
