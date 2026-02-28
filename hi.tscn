@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="6_xbv1x"]
 [ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="7_tv5os"]
 [ext_resource type="Script" uid="uid://b4ixtxqa1whgc" path="res://spppppppppeeeeeeeeeeeeeddddddddddd.gd" id="9_ydbs0"]
+[ext_resource type="Script" uid="uid://bdjp4qx1tkviq" path="res://display.gd" id="10_0mtm5"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
@@ -22,19 +23,19 @@ zoom = Vector2(2, 2)
 
 [node name="TextureButton2" type="TextureButton" parent="." unique_id=10106380]
 layout_mode = 0
-offset_left = -164.0
-offset_top = -38.0
-offset_right = -64.0
-offset_bottom = 62.0
+offset_left = -163.0
+offset_top = -12.0
+offset_right = -63.0
+offset_bottom = 88.0
 texture_normal = ExtResource("2_l717l")
 script = ExtResource("3_tv5os")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
 layout_mode = 0
-offset_left = 70.0
-offset_top = -60.0
-offset_right = 170.0
-offset_bottom = 40.0
+offset_left = 72.0
+offset_top = -14.0
+offset_right = 172.0
+offset_bottom = 86.0
 texture_normal = ExtResource("1_ttdft")
 texture_pressed = ExtResource("1_ttdft")
 texture_hover = ExtResource("1_ttdft")
@@ -43,11 +44,26 @@ script = ExtResource("5_jwn4a")
 
 [node name="TextureButton3" type="TextureButton" parent="." unique_id=1260819549]
 layout_mode = 0
-offset_left = -55.0
-offset_top = -57.0
-offset_right = 45.0
-offset_bottom = 43.0
+offset_left = -50.0
+offset_top = -14.0
+offset_right = 50.0
+offset_bottom = 86.0
 texture_normal = ExtResource("6_xbv1x")
 texture_pressed = ExtResource("7_tv5os")
 texture_hover = ExtResource("4_x73ow")
 script = ExtResource("9_ydbs0")
+
+[node name="CodeEdit" type="CodeEdit" parent="." unique_id=2134984578]
+layout_mode = 0
+offset_left = -162.0
+offset_top = -90.0
+offset_right = 158.0
+offset_bottom = -3.0
+script = ExtResource("10_0mtm5")
+
+[node name="Label" type="Label" parent="." unique_id=1558030009]
+layout_mode = 0
+offset_left = 220.0
+offset_top = -51.0
+offset_right = 260.0
+offset_bottom = -28.0
