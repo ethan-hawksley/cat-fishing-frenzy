@@ -14,6 +14,7 @@ func morefish():
 		global.inflation = ceil(global.inflation)
 		print(global.inflation)
 		print(global.money)
+		global.fishup
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
