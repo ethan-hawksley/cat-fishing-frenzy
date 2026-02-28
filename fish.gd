@@ -47,7 +47,8 @@ func _ready() -> void:
 		path = images[7]
 		value = 800
 
-	
+
+
 	var loaded_texture = load(path)
 	
 	$Sprite2D.texture = loaded_texture
@@ -77,7 +78,13 @@ func _process(_delta: float) -> void:
 			global_position.x += 2
 		else:
 			global_position.x -= 2
+<<<<<<< HEAD
 	
+=======
+	else:
+		value = 0
+
+>>>>>>> 4c6ecac9ea19f06144256ad9b494518d3f6fa34a
 	if caught:
 		global_position = caught_by.global_position
 		global_position.y += 40
