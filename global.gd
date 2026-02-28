@@ -6,7 +6,7 @@ var speed = 0.1
 var mode = modes.shop
 var inflation = 1
 
-var time_per_spawn = 1
+var time_per_spawn = 0.3
 var time_left_until_spawn = 0
 
 var caught_fish = 0
