@@ -55,7 +55,7 @@ position = Vector2(-12, -32)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hook/Area2D" unique_id=132753506]
 shape = SubResource("RectangleShape2D_7mycd")
 
-[node name="sharkattack" type="Area2D" parent="Hook" unique_id=1834796503]
+[node name="sharkattack" type="Area2D" parent="Hook" unique_id=1834796503 groups=["sharkattack"]]
 position = Vector2(-12, -32)
 
 [node name="sharkattackarea" type="CollisionShape2D" parent="Hook/sharkattack" unique_id=995401381]

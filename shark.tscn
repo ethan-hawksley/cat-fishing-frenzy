@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://orwabe4qylfb" path="res://shark.gd" id="1_rwmi6"]
 [ext_resource type="Texture2D" uid="uid://cosrg22j54qv1" path="res://assets/shark.png" id="2_d5pdq"]
+[ext_resource type="Texture2D" uid="uid://6h27rrs431i0" path="res://assets/target.png" id="3_k17ol"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgn23"]
 size = Vector2(3, 5)
@@ -10,6 +11,7 @@ size = Vector2(3, 5)
 script = ExtResource("1_rwmi6")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1407623966]
+position = Vector2(-1, 1)
 texture = ExtResource("2_d5pdq")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1898908593]
@@ -17,5 +19,11 @@ texture = ExtResource("2_d5pdq")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=127901419]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_hgn23")
+
+[node name="target" type="Sprite2D" parent="." unique_id=342733834]
+visible = false
+position = Vector2(-13, 5.999999)
+scale = Vector2(0.61, 0.6)
+texture = ExtResource("3_k17ol")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

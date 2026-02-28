@@ -4,22 +4,28 @@ enum directions {
 	left,
 	right,
 }
+var area = Area2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("shark!")
 	if randf() < 0.5:
 		direction = directions.left
 		$Sprite2D.flip_h = true
+		$target.flip_h = true
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if not area.is_in_group("hook"):
+	if area.is_in_group("sharkattack"):
+		$target.visible = true 
+		print("time")
+		await get_tree().create_timer(global.harptime).timeout
+		
+		print("3secs")
 		return
-	print("Entered")
 	
-func underattack(area: Area2D) -> void:
-	if not area.is_in_group("sharkattackarea"):
-		return
-	print("underattack")
+	
+
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
