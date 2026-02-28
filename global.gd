@@ -7,6 +7,7 @@ var speed = 0.1
 var mode = modes.shop
 var inflation = 1
 var depth = 0
+var value_of_reeled_fish = 0
 
 var time_per_spawn = 0.3
 var time_left_until_spawn = 0

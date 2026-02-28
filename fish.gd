@@ -9,6 +9,8 @@ var direction = directions.right
 var caught = false
 var caught_by = null
 
+var value = 0
+
 var images = [
 	"res://assets/fish_1.png",
 	"res://assets/fish_2.png",
@@ -21,20 +23,28 @@ var images = [
 
 func _ready() -> void:
 	var path = images[0]
+	value = 100
 	if 50 < global.depth and global.depth <= 100:
 		path = images[1]
+		value = 200
 	elif 100 < global.depth and global.depth <= 150:
 		path = images[2]
+		value = 300
 	elif 150 < global.depth and global.depth <= 200:
 		path = images[3]
+		value = 400
 	elif 200 < global.depth and global.depth <= 250:
 		path = images[4]
+		value = 500
 	elif 250 < global.depth and global.depth <= 300:
 		path = images[5]
+		value = 600
 	elif 300 < global.depth and global.depth <= 350:
 		path = images[6]
+		value = 700
 	elif 350 < global.depth:
 		path = images[7]
+		value = 800
 	
 	var loaded_texture = load(path)
 	
@@ -49,6 +59,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
 	global.caught_fish += 1
+	global.value_of_reeled_fish += value
 	if global.max_fish <= global.caught_fish:
 		global.mode = global.modes.ascending
 	caught = true
