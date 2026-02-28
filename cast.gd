@@ -1,5 +1,4 @@
-extends Node
-@export var node: Node2D
+extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -8,5 +7,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var sprite = $Hook
-	sprite.position.y += (500*global.length)
+	if global.mode == global.modes.descending:
+		position.y += (0.005*global.length)

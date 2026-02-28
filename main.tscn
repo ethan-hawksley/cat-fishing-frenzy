@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://dsnyrjrsvfcay" path="res://line.gd" id="3_1bvp3"]
+[ext_resource type="Script" uid="uid://dp5rul741yy8s" path="res://cast.gd" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="5_lquwl"]
 
@@ -22,6 +23,7 @@ texture = ExtResource("1_ig7tw")
 position = Vector2(50, 136)
 texture = ExtResource("2_0xm2m")
 offset = Vector2(12, 30)
+script = ExtResource("3_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
 position = Vector2(1, -1)
