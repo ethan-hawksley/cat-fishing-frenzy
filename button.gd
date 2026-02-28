@@ -1,5 +1,4 @@
-extends "res://cast.gd"
-
+extends Button
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -12,4 +11,5 @@ func _process(delta: float) -> void:
 
 
 func _on_pressed() -> void:
-	pass
+	if global.mode == global.modes.shop: 
+		global.mode = global.modes.descending
