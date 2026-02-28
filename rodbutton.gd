@@ -17,6 +17,6 @@ func rodup():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(_delta: float) -> void:
-	disabled = global.money < global.inflation * 115
+	disabled = global.money < global.inflationlongerline * 115
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
 	pass
