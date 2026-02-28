@@ -25,32 +25,32 @@ var images = [
 func _ready() -> void:
 	var path = images[0]
 	value = 100
-	if 50 < global.depth and global.depth <= 100:
-		if randf() < 0.75:
+	if 50 < global.depth:
+		if randf() < 0.5:
 			path = images[1]
 			value = 200
-	if 100 < global.depth and global.depth <= 150:
-		if randf() < 0.75:
+	if 100 < global.depth:
+		if randf() < 0.5:
 			path = images[2]
 			value = 300
-	if 150 < global.depth and global.depth <= 200:
-		if randf() < 0.75:
+	if 150 < global.depth:
+		if randf() < 0.5:
 			path = images[3]
 			value = 400
-	if 200 < global.depth and global.depth <= 250:
-		if randf() < 0.75:
+	if 200 < global.depth:
+		if randf() < 0.5:
 			path = images[4]
 			value = 500
-	if 250 < global.depth and global.depth <= 300:
-		if randf() < 0.75:
+	if 250 < global.depth:
+		if randf() < 0.5:
 			path = images[5]
 			value = 600
-	if 300 < global.depth and global.depth <= 350:
-		if randf() < 0.75:
+	if 300 < global.depth:
+		if randf() < 0.5:
 			path = images[6]
 			value = 700
 	if 350 < global.depth:
-		if randf() < 0.75:
+		if randf() < 0.5:
 			path = images[7]
 			value = 800
 
