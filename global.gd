@@ -1,5 +1,6 @@
 extends Node
 
+
 var length = 200
 var money = 1000
 var speed = 0.1

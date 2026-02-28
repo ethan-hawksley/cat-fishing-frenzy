@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c854mbq5w53dc"]
+
+[ext_resource type="Script" uid="uid://dvoegrdhvpakd" path="res://money_label.gd" id="1_v2lfg"]
+
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731]
+
+[node name="Label" type="Label" parent="." unique_id=857891663]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -118.0
+offset_top = 24.0
+offset_right = -31.0
+offset_bottom = 47.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = "MONEYYYY"
+horizontal_alignment = 2
+script = ExtResource("1_v2lfg")

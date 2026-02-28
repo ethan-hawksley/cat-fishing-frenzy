@@ -22,6 +22,10 @@ func _process(delta: float) -> void:
 			position.x -= (global.speed*20)
 		if position.x == -64 and position.y == 0:
 			global.mode = global.modes.shop
+			
+			global.money += global.caught_fish * 100
+			global.caught_fish = 0
+			
 	if global.mode == global.modes.shop:
 		position.x == -64
 		position.y == 0

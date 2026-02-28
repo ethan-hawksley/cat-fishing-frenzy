@@ -30,7 +30,6 @@ func _ready() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
-	print("touched")
 	global.caught_fish += 1
 	if global.max_fish <= global.caught_fish:
 		global.mode = global.modes.ascending
