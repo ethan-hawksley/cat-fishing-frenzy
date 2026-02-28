@@ -19,7 +19,7 @@ position = Vector2(-17, -31)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(50, 136)
+position = Vector2(-225, 147)
 texture = ExtResource("2_0xm2m")
 offset = Vector2(12, 30)
 
