@@ -4,7 +4,7 @@ enum directions {
 	left,
 	right,
 }
-var direction = directions.left
+var direction = directions.right
 
 var images = [
 	"res://assets/fish_1.png",
@@ -20,7 +20,7 @@ func _ready() -> void:
 	$Sprite2D.texture = loaded_texture
 	
 	if randf() < 0.5:
-		direction = directions.right
+		direction = directions.left
 		$Sprite2D.flip_h = true
 
 
