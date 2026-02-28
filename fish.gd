@@ -77,15 +77,15 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	caught_by = area
 	rotation_degrees = randf_range(0, 360)
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
 		queue_free()
 	
 	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
 		if direction == directions.left:
-			global_position.x += 2
+			global_position.x += 120 * delta
 		else:
-			global_position.x -= 2
+			global_position.x -= 120 * delta
 
 	else:
 		value = 0
