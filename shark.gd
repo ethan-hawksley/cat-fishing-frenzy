@@ -29,10 +29,10 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		get_parent().add_child(harpoon)
 
 func area_2d_area_entered(area: Area2D) -> void:
-	if not area.is_in_group("hook"):
+	if area.is_in_group("hook"):
+		print("eating")
+		global.value_of_reeled_fish = global.value_of_reeled_fish - global.latestfishvalue
 		return
-	global.caught_fish += 1
-	global.value_of_reeled_fish -= global.latestfishvalue
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
