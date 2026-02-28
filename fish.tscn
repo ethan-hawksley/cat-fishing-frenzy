@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://do7mblkf412cw" path="res://fish.gd" id="1_xu20i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgn23"]
+size = Vector2(3, 5)
 
 [node name="Fish" type="Node2D" unique_id=217224087]
 script = ExtResource("1_xu20i")
@@ -12,6 +13,7 @@ script = ExtResource("1_xu20i")
 [node name="Area2D" type="Area2D" parent="." unique_id=1898908593]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=127901419]
+position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_hgn23")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
