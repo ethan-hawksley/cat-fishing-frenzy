@@ -36,14 +36,15 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -624.0
-offset_top = 17.0
-offset_right = -524.0
-offset_bottom = 40.0
+offset_left = -622.0
+offset_top = -1.0
+offset_right = -522.0
+offset_bottom = 48.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "More Fish"
+text = "More Fish
+£0"
 horizontal_alignment = 1
 
 [node name="harpoon" type="Label" parent="." unique_id=2144153053]
@@ -51,14 +52,14 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -414.0
-offset_top = 16.0
-offset_right = -314.0
-offset_bottom = 39.0
+offset_left = -412.0
+offset_right = -312.0
+offset_bottom = 49.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "Harpoon"
+text = "Harpoon
+£0"
 horizontal_alignment = 1
 
 [node name="catch" type="Label" parent="." unique_id=2057088780]
@@ -66,14 +67,15 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -642.0
-offset_top = 80.0
-offset_right = -542.0
-offset_bottom = 103.0
+offset_left = -640.0
+offset_top = 56.0
+offset_right = -540.0
+offset_bottom = 105.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "Catch More"
+text = "Catch More
+£0"
 horizontal_alignment = 1
 
 [node name="speed" type="Label" parent="." unique_id=387310274]
@@ -81,14 +83,15 @@ texture_filter = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -519.0
-offset_top = 82.0
-offset_right = -419.0
-offset_bottom = 105.0
+offset_left = -521.0
+offset_top = 67.0
+offset_right = -421.0
+offset_bottom = 116.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "Faster Rod"
+text = "Faster Rod
+£0"
 horizontal_alignment = 1
 
 [node name="longer" type="Label" parent="." unique_id=733031641]
@@ -97,11 +100,12 @@ anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -404.0
-offset_top = 80.0
+offset_top = 60.0
 offset_right = -304.0
-offset_bottom = 103.0
+offset_bottom = 109.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "Longer Line"
+text = "Longer Line
+£0"
 horizontal_alignment = 1

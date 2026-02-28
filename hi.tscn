@@ -32,10 +32,10 @@ script = ExtResource("3_tv5os")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
 layout_mode = 0
-offset_left = 72.0
-offset_top = -14.0
-offset_right = 172.0
-offset_bottom = 86.0
+offset_left = 65.0
+offset_top = 1.0
+offset_right = 165.0
+offset_bottom = 101.0
 texture_normal = ExtResource("5_ydbs0")
 texture_pressed = ExtResource("5_ydbs0")
 texture_hover = ExtResource("5_ydbs0")
@@ -55,10 +55,10 @@ script = ExtResource("9_ydbs0")
 
 [node name="TextureButton4" type="TextureButton" parent="." unique_id=1883794768]
 layout_mode = 0
-offset_left = 55.0
-offset_top = -95.0
-offset_right = 155.0
-offset_bottom = 5.0
+offset_left = 56.0
+offset_top = -94.0
+offset_right = 156.0
+offset_bottom = 6.0
 texture_normal = ExtResource("8_xpgmr")
 texture_pressed = ExtResource("8_xpgmr")
 texture_hover = ExtResource("8_xpgmr")
@@ -83,9 +83,9 @@ anchor_top = -0.19700001
 anchor_right = -0.16600001
 anchor_bottom = -0.039
 offset_left = -57.0
-offset_top = -53.0
+offset_top = -74.0
 offset_right = 57.0
-offset_bottom = -27.0
+offset_bottom = -48.0
 theme_override_font_sizes/font_size = 13
 text = "CAST YOUR LINE!"
 script = ExtResource("14_uydfd")
