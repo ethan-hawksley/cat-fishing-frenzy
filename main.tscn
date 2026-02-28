@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://dsnyrjrsvfcay" path="res://line.gd" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -15,7 +17,21 @@ position = Vector2(-17, -31)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(27, 33)
+position = Vector2(-92, 47)
 texture = ExtResource("2_0xm2m")
+offset = Vector2(12, 30)
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
+position = Vector2(1, -1)
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1767988051 node_paths=PackedStringArray("node")]
+points = PackedVector2Array(-65, -47, -63, 18)
+width = 2.0
+default_color = Color(0, 0, 0, 1)
+script = ExtResource("3_1bvp3")
+node = NodePath("../Hook")
+
+[node name="Catttttt" type="Sprite2D" parent="." unique_id=1707320730]
+position = Vector2(-57, -40)
+texture = ExtResource("3_h2yge")
+flip_h = true
