@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="5_lquwl"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
+size = Vector2(83.5, 78)
+
 [node name="Node" type="Node" unique_id=1277121764]
 
 [node name="Sky" type="Polygon2D" parent="." unique_id=1336226160]
@@ -27,6 +30,12 @@ script = ExtResource("3_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
 position = Vector2(1, -1)
+
+[node name="Area2D" type="Area2D" parent="Hook" unique_id=1775785438]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hook/Area2D" unique_id=132753506]
+position = Vector2(0, 23)
+shape = SubResource("RectangleShape2D_7mycd")
 
 [node name="Line2D" type="Line2D" parent="." unique_id=1767988051 node_paths=PackedStringArray("node")]
 points = PackedVector2Array(-61, -38, -63, 18)
@@ -53,5 +62,7 @@ offset_bottom = 0.03999996
 theme_override_font_sizes/font_size = 13
 text = "CAST YOUR LINE!"
 script = ExtResource("5_lquwl")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1202643375]
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
