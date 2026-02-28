@@ -22,7 +22,11 @@ func _process(delta: float) -> void:
 		queue_free()
 	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
 		if direction == directions.left:
-			global_position.x += 2
+			global_position.x += 1
 		else:
-			global_position.x -= 2
+			global_position.x -= 1
+		if global.depth > global_position.y :
+				global_position.y += 1
+		if global.depth < global_position.y :
+				global_position.y += -1
 	pass
