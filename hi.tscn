@@ -1,24 +1,32 @@
 [gd_scene format=3 uid="uid://d4kput370i1u7"]
 
+[ext_resource type="Script" uid="uid://dpxcpdgnyssb1" path="res://hi.gd" id="1_l717l"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="1_ttdft"]
-[ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_l717l"]
-[ext_resource type="Script" uid="uid://d3yf7ujr3r1e3" path="res://shop.gd" id="3_x73ow"]
+[ext_resource type="Texture2D" uid="uid://walsr6carmfh" path="res://icon.svg" id="4_x73ow"]
+[ext_resource type="Script" uid="uid://d0vg3t8sbt4es" path="res://rodbutton.gd" id="5_jwn4a"]
+[ext_resource type="Texture2D" uid="uid://cosrg22j54qv1" path="res://assets/shark.png" id="5_x73ow"]
 
-[node name="hi" type="Node2D" unique_id=319635637]
-
-[node name="PopupMenu" type="PopupMenu" parent="." unique_id=1988946876]
-oversampling_override = 1.0
-mode = 3
-title = "SHOP"
-size = Vector2i(236, 216)
-visible = true
-item_count = 2
-item_0/text = "Rod upgrade"
-item_0/icon = ExtResource("1_ttdft")
-item_0/id = 0
-item_1/text = "hook upgrade "
-item_1/icon = ExtResource("2_l717l")
-item_1/id = 1
-script = ExtResource("3_x73ow")
+[node name="hi" type="Control" unique_id=37941279]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_l717l")
+metadata/_edit_horizontal_guides_ = [-478.0]
 
 [node name="shop cam" type="Camera2D" parent="." unique_id=1036136736]
+position = Vector2(-2, -2)
+
+[node name="Shark" type="Sprite2D" parent="." unique_id=438138354]
+position = Vector2(-213, -121)
+texture = ExtResource("5_x73ow")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
+layout_mode = 0
+offset_left = 138.0
+offset_top = -156.0
+offset_right = 178.0
+offset_bottom = -116.0
+texture_normal = ExtResource("1_ttdft")
+texture_pressed = ExtResource("1_ttdft")
+texture_hover = ExtResource("1_ttdft")
+texture_disabled = ExtResource("4_x73ow")
+script = ExtResource("5_jwn4a")
