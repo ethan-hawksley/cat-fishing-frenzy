@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cawqn1h31nbxj"
-path="res://.godot/imported/redfish.png-be9eb46291955f32b361e3d6dd7d31fc.ctex"
+uid="uid://dmyc2as8m6pti"
+path="res://.godot/imported/boat.png-ee58a95610b67d7993b39f0358510a88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/redfish.png"
-dest_files=["res://.godot/imported/redfish.png-be9eb46291955f32b361e3d6dd7d31fc.ctex"]
+source_file="res://assets/boat.png"
+dest_files=["res://.godot/imported/boat.png-ee58a95610b67d7993b39f0358510a88.ctex"]
 
 [params]
 
