@@ -10,6 +10,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(83.5, 78)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
+size = Vector2(463.25, 266.75)
+
 [node name="Node" type="Node" unique_id=1277121764]
 
 [node name="Sky" type="Polygon2D" parent="." unique_id=1336226160]
@@ -23,9 +26,8 @@ position = Vector2(-14, -22)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(-64, 0)
+position = Vector2(-52, 29)
 texture = ExtResource("2_0xm2m")
-offset = Vector2(12, 30)
 script = ExtResource("3_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
@@ -37,12 +39,20 @@ position = Vector2(1, -1)
 position = Vector2(0, 23)
 shape = SubResource("RectangleShape2D_7mycd")
 
+[node name="sharkattack" type="Area2D" parent="Hook" unique_id=1834796503]
+position = Vector2(1, 0)
+
+[node name="sharkattackarea" type="CollisionShape2D" parent="Hook/sharkattack" unique_id=995401381]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_272bh")
+
 [node name="Line2D" type="Line2D" parent="." unique_id=1767988051 node_paths=PackedStringArray("node")]
-points = PackedVector2Array(-61, -38, -63, 18)
+position = Vector2(27, 16)
+points = PackedVector2Array(-88, -55, -91, -18)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 script = ExtResource("3_1bvp3")
-node = NodePath("../Hook")
+node = NodePath("../Hook/Camera2D")
 
 [node name="Catttttt" type="Sprite2D" parent="." unique_id=1707320730]
 position = Vector2(-54, -31)
