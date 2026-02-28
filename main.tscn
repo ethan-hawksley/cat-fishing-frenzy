@@ -13,7 +13,7 @@
 size = Vector2(83.5, 64)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_272bh"]
-size = Vector2(463.25, 349)
+size = Vector2(342.625, 203.25)
 
 [node name="Node" type="Node" unique_id=1277121764]
 
@@ -62,7 +62,7 @@ shape = SubResource("RectangleShape2D_7mycd")
 position = Vector2(-12, -32)
 
 [node name="sharkattackarea" type="CollisionShape2D" parent="Hook/sharkattack" unique_id=995401381]
-position = Vector2(0, 1)
+position = Vector2(0, 19)
 shape = SubResource("RectangleShape2D_272bh")
 
 [node name="Node2D" type="Node2D" parent="Hook" unique_id=765972310]
