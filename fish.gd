@@ -11,12 +11,30 @@ var caught_by = null
 
 var images = [
 	"res://assets/fish_1.png",
+	"res://assets/fish_2.png",
 	"res://assets/fish_3.png",
 	"res://assets/fish_4.png",
+	"res://assets/fish_5.png",
+	"res://assets/fish_6.png",
+	"res://assets/fish_7.png",
 ]
 
 func _ready() -> void:
-	var path = images.pick_random()
+	var path = images[0]
+	if 50 < global.depth and global.depth <= 100:
+		path = images[1]
+	elif 100 < global.depth and global.depth <= 150:
+		path = images[2]
+	elif 150 < global.depth and global.depth <= 200:
+		path = images[3]
+	elif 200 < global.depth and global.depth <= 250:
+		path = images[4]
+	elif 250 < global.depth and global.depth <= 300:
+		path = images[5]
+	elif 300 < global.depth and global.depth <= 350:
+		path = images[6]
+	elif 350 < global.depth:
+		path = images[7]
 	
 	var loaded_texture = load(path)
 	
