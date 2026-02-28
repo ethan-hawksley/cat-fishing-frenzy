@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bjkoh2b2jk3oe"]
 
+[ext_resource type="Texture2D" uid="uid://c8qcqxxqvmcb2" path="res://assets/deep_background.png" id="1_272bh"]
 [ext_resource type="Texture2D" uid="uid://dmyc2as8m6pti" path="res://assets/boat.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_0xm2m"]
 [ext_resource type="Script" uid="uid://dsnyrjrsvfcay" path="res://line.gd" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://dp5rul741yy8s" path="res://cast.gd" id="3_7mycd"]
 [ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://cm5cvn2jvbp61" path="res://entity_spawner.gd" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(83.5, 78)
@@ -15,11 +17,25 @@ size = Vector2(463.25, 266.75)
 
 [node name="Node" type="Node" unique_id=1277121764]
 
-[node name="Sky" type="Polygon2D" parent="." unique_id=1336226160]
-position = Vector2(-23, -118)
-scale = Vector2(7.6812997, 7.1833434)
-color = Color(0.14901961, 0.72156864, 1, 1)
-polygon = PackedVector2Array(-171, -125, 215, -128, 216, 16, -167, 16)
+[node name="WaterParallax" type="Parallax2D" parent="." unique_id=1621298948]
+texture_repeat = 2
+scale = Vector2(4, 4)
+scroll_offset = Vector2(893, 160)
+repeat_size = Vector2(100, 100)
+repeat_times = 5
+
+[node name="WaterSprite" type="Sprite2D" parent="WaterParallax" unique_id=502840760]
+texture = ExtResource("1_272bh")
+region_enabled = true
+region_rect = Rect2(0, 0, 1000, 5000)
+
+[node name="Sky&shallowBackground" type="Sprite2D" parent="." unique_id=1980699153]
+texture_repeat = 2
+position = Vector2(-307, 405)
+scale = Vector2(4, 4)
+texture = ExtResource("8_5vw27")
+region_enabled = true
+region_rect = Rect2(0, 0, 2000, 600)
 
 [node name="Boat" type="Sprite2D" parent="." unique_id=1442094522]
 position = Vector2(-14, -22)
