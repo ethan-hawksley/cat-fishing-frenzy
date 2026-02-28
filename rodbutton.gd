@@ -7,9 +7,9 @@ func _ready() -> void:
 	pass # Replace with function body.
 	
 func rodup():
-	if global.money >= global.inflation * 100:
-		global.money = global.money - global.inflation * 100
-		global.length = global.length + 100
+	if global.money >= global.inflation * 115:
+		global.money = global.money - global.inflation * 115
+		global.length = global.length + 50
 		global.inflation = global.inflation * 1.1
 		global.money = floor(global.money)
 		global.inflation = ceil(global.inflation)

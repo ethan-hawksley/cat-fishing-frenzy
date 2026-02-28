@@ -48,6 +48,8 @@ script = ExtResource("3_7mycd")
 
 [node name="Camera2D" type="Camera2D" parent="Hook" unique_id=2095265735]
 position = Vector2(-12, -32)
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
 
 [node name="Area2D" type="Area2D" parent="Hook" unique_id=1775785438 groups=["hook"]]
 position = Vector2(-12, -32)

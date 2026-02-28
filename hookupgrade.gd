@@ -6,8 +6,8 @@ func _ready() -> void:
 	pressed.connect(hookup)
 	pass # Replace with function body.
 func hookup():
-	if global.money >= global.inflation * 100:
-		global.money = global.money - global.inflation * 100
+	if global.money >= global.inflation * 50:
+		global.money = global.money - global.inflation * 50
 		global.max_fish = global.max_fish + 1
 		global.inflation = global.inflation * 1.1
 		global.money = floor(global.money)
