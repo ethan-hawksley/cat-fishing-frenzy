@@ -12,7 +12,7 @@ func _ready() -> void:
 	if randf() < 0.5:
 		direction = directions.left
 		$Sprite2D.flip_h = true
-		$target.flip_h = true
+		$target.position.x += 35
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("sharkattack"):
