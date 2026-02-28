@@ -10,4 +10,4 @@ func _process(delta: float) -> void:
 		print("thing")
 
 func spawn_entity() -> void:
-	
+	pass
