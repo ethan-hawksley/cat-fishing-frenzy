@@ -25,7 +25,8 @@ func _process(delta: float) -> void:
 		if position.x < -60 and position.x > -68 and position.y <= 0:
 			global.mode = global.modes.shop
 			
-			global.money += global.caught_fish * 100
+			global.money += global.value_of_reeled_fish
+			global.value_of_reeled_fish = 0
 			global.caught_fish = 0
 			
 	if global.mode == global.modes.shop:
