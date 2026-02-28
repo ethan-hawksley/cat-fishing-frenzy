@@ -26,6 +26,7 @@ func _process(delta: float) -> void:
 			global.mode = global.modes.shop
 			
 			global.money += global.value_of_reeled_fish
+			global.value_of_reeled_fish = 0
 			global.caught_fish = 0
 			
 	if global.mode == global.modes.shop:
