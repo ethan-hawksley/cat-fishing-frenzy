@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://d4kput370i1u7"]
 
 [ext_resource type="Script" uid="uid://dpxcpdgnyssb1" path="res://hi.gd" id="1_l717l"]
-[ext_resource type="Texture2D" uid="uid://bpf1c5hrb53y1" path="res://assets/catttttt.png" id="1_ttdft"]
 [ext_resource type="Texture2D" uid="uid://c5enxlqyc6il7" path="res://assets/hook.png" id="2_l717l"]
 [ext_resource type="Script" uid="uid://dk8ee82rwov3i" path="res://hookupgrade.gd" id="3_tv5os"]
 [ext_resource type="Script" uid="uid://d0vg3t8sbt4es" path="res://rodbutton.gd" id="5_jwn4a"]
 [ext_resource type="Texture2D" uid="uid://bglxr64uief7s" path="res://assets/rodup.png" id="5_ydbs0"]
 [ext_resource type="Texture2D" uid="uid://c8mnelopp11xf" path="res://assets/speedup.png" id="7_0mtm5"]
+[ext_resource type="Texture2D" uid="uid://c4ngj2vmxlhia" path="res://assets/harpoon.png" id="8_xpgmr"]
+[ext_resource type="Script" uid="uid://b3fyru0gjrw2w" path="res://texture_button_4.gd" id="9_uydfd"]
 [ext_resource type="Script" uid="uid://b4ixtxqa1whgc" path="res://spppppppppeeeeeeeeeeeeeddddddddddd.gd" id="9_ydbs0"]
-[ext_resource type="Script" uid="uid://bdjp4qx1tkviq" path="res://display.gd" id="10_0mtm5"]
+[ext_resource type="Texture2D" uid="uid://cdrllcc3jrasg" path="res://assets/fish_7.png" id="10_kr5e3"]
+[ext_resource type="Texture2D" uid="uid://drckiwxjgp03d" path="res://assets/fish_6.png" id="11_0onx4"]
+[ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="12_w0dc5"]
+[ext_resource type="Script" uid="uid://buj55kmlf40xu" path="res://texture_button_5.gd" id="13_rlv73"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
@@ -35,7 +39,7 @@ offset_left = 72.0
 offset_top = -14.0
 offset_right = 172.0
 offset_bottom = 86.0
-texture_normal = ExtResource("1_ttdft")
+texture_normal = ExtResource("5_ydbs0")
 texture_pressed = ExtResource("5_ydbs0")
 texture_hover = ExtResource("5_ydbs0")
 texture_disabled = ExtResource("5_ydbs0")
@@ -52,10 +56,24 @@ texture_pressed = ExtResource("7_0mtm5")
 texture_hover = ExtResource("7_0mtm5")
 script = ExtResource("9_ydbs0")
 
-[node name="CodeEdit" type="CodeEdit" parent="." unique_id=2134984578]
+[node name="TextureButton4" type="TextureButton" parent="." unique_id=1883794768]
 layout_mode = 0
-offset_left = -162.0
-offset_top = -90.0
-offset_right = 158.0
+offset_left = 55.0
+offset_top = -95.0
+offset_right = 155.0
+offset_bottom = 5.0
+texture_normal = ExtResource("8_xpgmr")
+texture_pressed = ExtResource("8_xpgmr")
+texture_hover = ExtResource("8_xpgmr")
+script = ExtResource("9_uydfd")
+
+[node name="TextureButton5" type="TextureButton" parent="." unique_id=1485131872]
+layout_mode = 0
+offset_left = -156.0
+offset_top = -85.0
+offset_right = -68.0
 offset_bottom = -3.0
-script = ExtResource("10_0mtm5")
+texture_normal = ExtResource("10_kr5e3")
+texture_pressed = ExtResource("11_0onx4")
+texture_hover = ExtResource("12_w0dc5")
+script = ExtResource("13_rlv73")
