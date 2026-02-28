@@ -1,4 +1,5 @@
 extends Node2D
+@export var hook: Node2D
 
 var fish_scene = preload("res://fish.tscn")
 
@@ -14,5 +15,8 @@ func _process(delta: float) -> void:
 func spawn_entity() -> void:
 	var fish = fish_scene.instantiate()
 	
-	fish.position = Vector2(1,100)
+	fish.position = hook.position
+	fish.position.x += randf_range(-300, 300)
+	fish.position.y += randf_range(100, 400)
+	
 	add_child(fish)

@@ -12,3 +12,11 @@ func _ready() -> void:
 	var loaded_texture = load(path)
 	
 	$Sprite2D.texture = loaded_texture
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	print("touched")
+	global.caught_fish += 1
+	if global.max_fish <= global.caught_fish:
+		global.mode = global.modes.ascending
+	queue_free()
