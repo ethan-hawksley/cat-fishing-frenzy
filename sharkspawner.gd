@@ -12,14 +12,6 @@ func _process(delta: float) -> void:
 	if global.time_left_until_spawn <= 0:
 		global.time_left_until_spawn += global.time_per_spawn
 		if global.mode == global.modes.descending:
-			spawn_shark()
+			pass
+			#spawn_shark()
 	pass
-func spawn_shark() -> void:
-	
-	
-	.position = hook.position
-	fish.position.x += randf_range(-300, 300)
-	fish.position.y += randf_range(100, 400)
-	
-	add_child(fish)
-	
