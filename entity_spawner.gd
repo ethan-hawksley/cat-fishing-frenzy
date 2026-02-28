@@ -10,7 +10,7 @@ func _process(delta: float) -> void:
 	if global.time_left_until_spawn <= 0:
 		global.time_left_until_spawn += global.time_per_spawn
 		if global.mode == global.modes.descending:
-			if randf() < 0.975:
+			if randf() < 0.90:
 				spawn_entity()
 			else:
 				if randf() < 0.5:
