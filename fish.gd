@@ -42,7 +42,7 @@ func _process(_delta: float) -> void:
 	if global.mode == global.modes.shop:
 		queue_free()
 	
-	if global.mode == global.modes.descending:
+	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
 		if direction == directions.left:
 			global_position.x += 2
 		else:
