@@ -31,10 +31,10 @@ script = ExtResource("3_tv5os")
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=75266258]
 layout_mode = 0
-offset_left = 105.0
-offset_top = -1.0
-offset_right = 205.0
-offset_bottom = 99.0
+offset_left = 79.0
+offset_top = -2.0
+offset_right = 179.0
+offset_bottom = 98.0
 texture_normal = ExtResource("5_ydbs0")
 texture_pressed = ExtResource("5_ydbs0")
 texture_hover = ExtResource("5_ydbs0")
