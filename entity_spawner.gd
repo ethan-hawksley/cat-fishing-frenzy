@@ -3,6 +3,7 @@ extends Node2D
 
 var fish_scene = preload("res://fish.tscn")
 var shark_scene = preload("res://shark.tscn")
+var rock_scene = preload("res://rock.tscn")
 
 func _process(delta: float) -> void:
 	global.time_left_until_spawn -= delta
@@ -12,8 +13,20 @@ func _process(delta: float) -> void:
 			if randf() < 0.975:
 				spawn_entity()
 			else:
-				spawn_shark()
+				if randf() < 0.5:
+					spawn_shark()
+				else:
+					spawn_rock()
+					
 				
+func spawn_rock() -> void:
+	var rock = rock_scene.instantiate()
+	rock.position = hook.position
+	rock.position.x += randf_range(-300, 300)
+	rock.position.y += randf_range(100, 400)
+	
+	add_child(rock)
+
 func spawn_shark() -> void:
 	var shark = shark_scene.instantiate()
 	shark.position = hook.position
