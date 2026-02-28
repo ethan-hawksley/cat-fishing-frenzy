@@ -8,5 +8,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	set_point_position(0,Vector2(-65, -47))
+	set_point_position(0,Vector2(-61, -38))
 	set_point_position(1, node.global_position)

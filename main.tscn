@@ -16,11 +16,11 @@ color = Color(0.14901961, 0.72156864, 1, 1)
 polygon = PackedVector2Array(-171, -125, 215, -128, 216, 16, -167, 16)
 
 [node name="Boat" type="Sprite2D" parent="." unique_id=1442094522]
-position = Vector2(-17, -31)
+position = Vector2(-14, -22)
 texture = ExtResource("1_ig7tw")
 
 [node name="Hook" type="Sprite2D" parent="." unique_id=1651323550]
-position = Vector2(-87, -177)
+position = Vector2(-64, -3)
 texture = ExtResource("2_0xm2m")
 offset = Vector2(12, 30)
 script = ExtResource("3_7mycd")
@@ -29,14 +29,14 @@ script = ExtResource("3_7mycd")
 position = Vector2(1, -1)
 
 [node name="Line2D" type="Line2D" parent="." unique_id=1767988051 node_paths=PackedStringArray("node")]
-points = PackedVector2Array(-65, -47, -63, 18)
+points = PackedVector2Array(-61, -38, -63, 18)
 width = 2.0
 default_color = Color(0, 0, 0, 1)
 script = ExtResource("3_1bvp3")
 node = NodePath("../Hook")
 
 [node name="Catttttt" type="Sprite2D" parent="." unique_id=1707320730]
-position = Vector2(-57, -40)
+position = Vector2(-54, -31)
 texture = ExtResource("3_h2yge")
 flip_h = true
 

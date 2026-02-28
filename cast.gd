@@ -8,8 +8,13 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if global.mode == global.modes.descending:
-		position.y += (global.speed*global.length)
+		position.y += (global.speed*10)
 		if Input.is_action_pressed("ui_left"):
-			position.x -= (global.speed*5)
+			position.x -= (global.speed*20)
 		if Input.is_action_pressed("ui_right"):
-			position.x += (global.speed*5)
+			position.x += (global.speed*20)
+	if global.mode == global.modes.shop:
+		position.x == 64
+		position.y == -3
+	if position.y >= global.length:
+		global.mode = global.modes.ascending
