@@ -1,6 +1,7 @@
 extends Node
 
 var harptime = 3.0
+var harpspeed = 200
 var length = 200
 var money = 1000
 var speed = 0.1

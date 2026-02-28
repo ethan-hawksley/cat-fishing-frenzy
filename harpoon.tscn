@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://tipm0bokwt4d"]
+
+[ext_resource type="Texture2D" uid="uid://c4ngj2vmxlhia" path="res://assets/harpoon.png" id="1_mrewk"]
+[ext_resource type="Script" path="res://harpoon.gd" id="1_yxyyu"]
+
+[node name="harpoon" type="Node2D" unique_id=1733367633]
+script = ExtResource("1_yxyyu")
+
+[node name="Harpoon" type="Sprite2D" parent="." unique_id=655782575]
+position = Vector2(0, -9)
+texture = ExtResource("1_mrewk")

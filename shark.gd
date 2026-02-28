@@ -4,27 +4,31 @@ enum directions {
 	left,
 	right,
 }
-var area = Area2D
+var harpoon_scene = preload("res://harpoon.tscn")
+var harpoon_spawned = false
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("shark!")
 	if randf() < 0.5:
 		direction = directions.left
 		$Sprite2D.flip_h = true
-		$target.flip_h = true
+		$target.position.x += 35
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.is_in_group("sharkattack"):
-		$target.visible = true 
+	if area.is_in_group("sharkattack") and not harpoon_spawned:
+		harpoon_spawned = true
+		$target.visible = true
 		await get_tree().create_timer(global.harptime).timeout
-		
-		return
-	
-	
 
+		if not is_inside_tree():
+			return
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+		var harpoon = harpoon_scene.instantiate()
+		harpoon.global_position = global_position
+		harpoon.global_position.y -= 200
+		harpoon.target = self
+		get_parent().add_child(harpoon)
+
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
 		queue_free()
@@ -33,8 +37,7 @@ func _process(delta: float) -> void:
 			global_position.x += 1
 		else:
 			global_position.x -= 1
-		if global.depth > global_position.y :
-				global_position.y += 1
-		if global.depth < global_position.y :
-				global_position.y += -1
-	pass
+		if global.depth > global_position.y:
+			global_position.y += 1
+		if global.depth < global_position.y:
+			global_position.y -= 1
