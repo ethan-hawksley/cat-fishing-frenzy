@@ -27,12 +27,11 @@ func _process(delta: float) -> void:
 			global.money += global.value_of_reeled_fish
 			global.value_of_reeled_fish = 0
 			global.caught_fish = 0
-		if position.y > 0:
 			position.y = 0
 			
 	if global.mode == global.modes.shop:
 		$Camera2D.enabled = true
 		position.x = -64
 		position.y = 0
-	if position.y >= global.length:
+	if (position.x - 64)**2 + (global.depth)**2 >= (global.length)**2:
 		global.mode = global.modes.ascending
