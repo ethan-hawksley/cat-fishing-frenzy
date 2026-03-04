@@ -3,7 +3,7 @@ extends Node
 var harptime = 3.0
 var harpspeed = 200
 var length = 300
-var money = 150
+var money = 250
 var speed = 0.13
 var mode = modes.shop
 var inflationmorefish = 1
