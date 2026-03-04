@@ -11,7 +11,7 @@ func rodup():
 		global.money = global.money - global.inflationlongerline * 115
 		global.length = global.length + 50
 		global.inflationlongerline = global.inflationlongerline * 1.1
-		global.money = floor(global.money)
+		global.money = snapped(global.money,0.01)
 		global.longerup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -10,7 +10,7 @@ func hookup():
 		global.money = global.money - global.inflationcatchmore * 50
 		global.max_fish = global.max_fish + 1
 		global.inflationcatchmore = global.inflationcatchmore * 1.1
-		global.money = floor(global.money)
+		global.money = snapped(global.money,0.01)
 		global.inflationcatchmore = ceil(global.inflationcatchmore)
 
 		global.catchup += 1

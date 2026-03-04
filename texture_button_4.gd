@@ -11,7 +11,7 @@ func harpoonkill():
 			global.money = global.money - global.inflationharpoon * 75
 			global.harptime = global.harptime - 0.75
 			global.inflationharpoon = global.inflationharpoon * 1.1
-			global.money = floor(global.money)
+			global.money = snapped(global.money,0.01)
 			global.harpoonup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

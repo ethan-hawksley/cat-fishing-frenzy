@@ -10,7 +10,7 @@ func morefish():
 		global.money = global.money - global.inflationmorefish * 50
 		global.time_per_spawn = global.time_per_spawn * 0.85
 		global.inflationmorefish = global.inflationmorefish * 1.1
-		global.money = floor(global.money)
+		global.money = snapped(global.money,0.01)
 		global.fishup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

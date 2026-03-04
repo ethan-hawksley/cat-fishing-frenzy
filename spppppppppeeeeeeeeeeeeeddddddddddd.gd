@@ -10,7 +10,7 @@ func boatsboost():
 		global.money = global.money - global.inflationfasterrod * 100
 		global.speed = global.speed + 0.025
 		global.inflationfasterrod = global.inflationfasterrod * 1.1
-		global.money = floor(global.money)
+		global.money = snapped(global.money,0.01)
 		global.speedup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

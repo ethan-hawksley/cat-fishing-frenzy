@@ -17,6 +17,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("hook"):
 		print("eating")
 		global.value_of_reeled_fish *= 0.75 
+		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 	if area.is_in_group("sharkattack") and not harpoon_spawned:
 		harpoon_spawned = true
 		$target.visible = true
