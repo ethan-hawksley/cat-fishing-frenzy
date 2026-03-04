@@ -28,7 +28,7 @@ repeat_times = 5
 [node name="WaterSprite" type="Sprite2D" parent="WaterParallax" unique_id=502840760]
 texture = ExtResource("1_272bh")
 region_enabled = true
-region_rect = Rect2(0, 0, 1000, 5000)
+region_rect = Rect2(0, 0, 1800, 5000)
 
 [node name="Sky&shallowBackground" type="Sprite2D" parent="." unique_id=1980699153]
 texture_repeat = 2
