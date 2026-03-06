@@ -18,29 +18,13 @@ size = Vector2(342.625, 203.25)
 
 [node name="Node" type="Node" unique_id=1277121764]
 
-[node name="WaterParallax" type="Parallax2D" parent="." unique_id=1621298948]
+[node name="WaterSprite" type="Sprite2D" parent="." unique_id=1109802937]
 texture_repeat = 2
+position = Vector2(-307, 10342)
 scale = Vector2(4, 4)
-scroll_offset = Vector2(893, 160)
-repeat_size = Vector2(100, 100)
-repeat_times = 5
-
-[node name="WaterSprite" type="Sprite2D" parent="WaterParallax" unique_id=502840760]
 texture = ExtResource("1_272bh")
 region_enabled = true
-region_rect = Rect2(0, 0, 1800, 5000)
-
-[node name="WaterParallax2" type="Parallax2D" parent="." unique_id=2120581842]
-texture_repeat = 2
-scale = Vector2(4, 4)
-scroll_offset = Vector2(893, 160)
-repeat_size = Vector2(100, 100)
-repeat_times = 5
-
-[node name="WaterSprite" type="Sprite2D" parent="WaterParallax2" unique_id=1109802937]
-texture = ExtResource("1_272bh")
-region_enabled = true
-region_rect = Rect2(0, 0, 1800, 5000)
+region_rect = Rect2(0, 0, 2000, 5000)
 
 [node name="Sky&shallowBackground" type="Sprite2D" parent="." unique_id=1980699153]
 texture_repeat = 2
