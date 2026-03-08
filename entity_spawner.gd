@@ -13,7 +13,7 @@ func _process(delta: float) -> void:
 			if randf() < 0.85:
 				spawn_entity()
 			else:
-				if randf() < 0.5:
+				if randf() > global.rockchance:
 					spawn_shark()
 				else:
 					spawn_rock()

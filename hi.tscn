@@ -11,6 +11,8 @@
 [ext_resource type="Script" uid="uid://b4ixtxqa1whgc" path="res://spppppppppeeeeeeeeeeeeeddddddddddd.gd" id="9_ydbs0"]
 [ext_resource type="Texture2D" uid="uid://dqwpg3kfpyuub" path="res://assets/catfish.png" id="10_bvbah"]
 [ext_resource type="Script" uid="uid://buj55kmlf40xu" path="res://texture_button_5.gd" id="13_rlv73"]
+[ext_resource type="Texture2D" uid="uid://cs4g3am78rt1y" path="res://assets/rock.png" id="13_uydfd"]
+[ext_resource type="Script" uid="uid://banferpnl23ii" path="res://lessrocks.gd" id="13_xpgmr"]
 [ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="14_uydfd"]
 
 [node name="hi" type="Control" unique_id=37941279]
@@ -91,5 +93,16 @@ offset_bottom = 9.0
 theme_override_font_sizes/font_size = 13
 text = "CAST YOUR LINE!"
 script = ExtResource("14_uydfd")
+
+[node name="TextureButton6" type="TextureButton" parent="." unique_id=1181618397]
+layout_mode = 0
+offset_left = 386.0
+offset_top = -19.0
+offset_right = 450.0
+offset_bottom = 45.0
+texture_normal = ExtResource("13_uydfd")
+texture_pressed = ExtResource("13_uydfd")
+texture_hover = ExtResource("13_uydfd")
+script = ExtResource("13_xpgmr")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

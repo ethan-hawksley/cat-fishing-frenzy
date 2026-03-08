@@ -1,5 +1,6 @@
 extends Node
 
+var rockchance = 0.5
 var harptime = 3.0
 var harpspeed = 200
 var length = 300
@@ -11,6 +12,7 @@ var inflationcatchmore = 1
 var inflationlongerline = 1
 var inflationfasterrod = 1
 var inflationharpoon = 1
+var inflationrock = 1
 var depth = 0
 var value_of_reeled_fish = 0
 var latestfishvalue = 0
@@ -26,6 +28,7 @@ var harpoonup = 0
 var catchup = 0
 var speedup = 0
 var longerup = 0
+var lessroccks = 0
 
 enum modes {
 	descending,
