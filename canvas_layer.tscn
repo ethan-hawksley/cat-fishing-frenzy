@@ -8,6 +8,7 @@
 [ext_resource type="Script" uid="uid://decm25nttnuda" path="res://catchup.gd" id="6_g3huw"]
 [ext_resource type="Script" uid="uid://3hsrmjk8uqv8" path="res://speedup.gd" id="7_280g2"]
 [ext_resource type="Script" uid="uid://de8votjpo2igt" path="res://longerup.gd" id="8_5cw7b"]
+[ext_resource type="Script" uid="uid://bcrjdffornxxo" path="res://lessrockss.gd" id="9_g3huw"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop")]
 script = ExtResource("1_37rai")
@@ -120,3 +121,10 @@ text = "longer up
 £0"
 horizontal_alignment = 1
 script = ExtResource("8_5cw7b")
+
+[node name="lessrockss" type="Label" parent="." unique_id=1142132031]
+offset_left = 442.0
+offset_top = 80.0
+offset_right = 482.0
+offset_bottom = 103.0
+script = ExtResource("9_g3huw")
