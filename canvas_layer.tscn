@@ -116,24 +116,7 @@ offset_bottom = 191.0
 grow_horizontal = 0
 size_flags_horizontal = 8
 size_flags_vertical = 0
-text = "Longer Line
-£0"
-horizontal_alignment = 1
-script = ExtResource("8_5cw7b")
-
-[node name="rocklessess" type="Label" parent="." unique_id=820020974]
-texture_filter = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -182.0
-offset_top = 89.0
-offset_right = -82.0
-offset_bottom = 138.0
-grow_horizontal = 0
-size_flags_horizontal = 8
-size_flags_vertical = 0
-text = "less rocks
+text = "longer up 
 £0"
 horizontal_alignment = 1
 script = ExtResource("8_5cw7b")

@@ -6,6 +6,7 @@ enum directions {
 }
 var harpoon_scene = preload("res://harpoon.tscn")
 var harpoon_spawned = false
+var harpoon = harpoon_scene.instantiate()
 
 func _ready() -> void:
 	if randf() < 0.5:
@@ -20,15 +21,13 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 	if area.is_in_group("sharkattack") and not harpoon_spawned:
 		harpoon_spawned = true
-		$target.visible = true
 		await get_tree().create_timer(global.harptime).timeout
 
 		if not is_inside_tree():
 			return
 
-		var harpoon = harpoon_scene.instantiate()
 		harpoon.global_position = global_position
-		harpoon.global_position.y -= 200
+		harpoon.global_position.y = -500
 		harpoon.target = self
 		get_parent().add_child(harpoon)
 
@@ -44,3 +43,8 @@ func _process(delta: float) -> void:
 			global_position.y += 60 * delta
 		if global.depth < global_position.y:
 			global_position.y -= 60 * delta
+		if harpoon.global_position.x < global_position.x + 100 and harpoon.global_position.x != 0:
+			$target.visible = true
+			print(harpoon.global_position.x)
+			print(global_position.x)
+			
