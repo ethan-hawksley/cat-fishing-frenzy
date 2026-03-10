@@ -40,3 +40,4 @@ enum modes {
 }
 
 var shock = 0
+var sneaky = 0.1

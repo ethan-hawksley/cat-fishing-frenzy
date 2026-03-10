@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://d12tb7k1g03j4" path="res://assets/pixil-frame-0 (2).png" id="7_vivmo"]
 [ext_resource type="Script" uid="uid://xr55sa88uxbw" path="res://shock_effect.gd" id="8_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
-[ext_resource type="Script" uid="uid://bjay5shndfyru" path="res://cat.gd" id="9_dg77c"]
+[ext_resource type="Script" path="res://cat.gd" id="9_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
 [ext_resource type="Script" uid="uid://b4eximts2en7x" path="res://duck_2_returns.gd" id="13_ycdy4"]
@@ -100,7 +100,7 @@ script = ExtResource("7_272bh")
 hook = NodePath("../Hook")
 
 [node name="Duck" type="Sprite2D" parent="." unique_id=660181675]
-position = Vector2(-64, 0)
+position = Vector2(205, -1.9999999)
 scale = Vector2(0.57, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("11_efxa6")
