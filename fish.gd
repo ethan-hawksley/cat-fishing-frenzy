@@ -103,8 +103,6 @@ func _ready() -> void:
 			value = 0
 			jellyfish = true
 
-
-
 	var loaded_texture = load(path)
 	
 	$Sprite2D.texture = loaded_texture
