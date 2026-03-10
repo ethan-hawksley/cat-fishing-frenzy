@@ -18,17 +18,17 @@ func _process(delta: float) -> void:
 	if global.mode == global.modes.ascending:
 		if position.y > 0:
 			position.y -= (global.speed*600 * delta)
-		if position.x < -64:
-			position.x += (global.speed*1200 * delta)
-		if position.x > -64:
-			position.x -= (global.speed*1200 * delta)
-		if position.x < -60 and position.x > -68 and position.y <= 5:
+		else:
 			global.mode = global.modes.shop
 			global.money += global.value_of_reeled_fish
 			global.value_of_reeled_fish = 0
 			global.caught_fish = 0
 			position.y = 0
-			
+		if position.x < -64:
+			position.x += (global.speed*1200 * delta)
+		if position.x > -64:
+			position.x -= (global.speed*1200 * delta)
+
 	if global.mode == global.modes.shop:
 		$Camera2D.enabled = true
 		position.x = -64
