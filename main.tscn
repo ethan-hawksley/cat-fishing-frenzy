@@ -12,6 +12,7 @@
 [ext_resource type="Script" path="res://cat.gd" id="9_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
+[ext_resource type="Script" uid="uid://comqfku537eir" path="res://duck_2.gd" id="13_ycdy4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(83.5, 64)
@@ -92,3 +93,9 @@ position = Vector2(51.999996, -12)
 scale = Vector2(0.57, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("11_efxa6")
+
+[node name="duck 2" type="Sprite2D" parent="." unique_id=1444695948]
+position = Vector2(126.99999, -10)
+scale = Vector2(0.57, 0.7)
+texture = ExtResource("10_4c57u")
+script = ExtResource("13_ycdy4")
