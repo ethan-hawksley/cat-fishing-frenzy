@@ -8,7 +8,7 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	global.depth = position.y
-	if global.mode == global.modes.descending:	
+	if global.mode == global.modes.descending:
 		$Camera2D.enabled = true
 		position.y += (global.speed*600 * delta)
 		if Input.is_action_pressed("ui_left"):
@@ -16,13 +16,12 @@ func _process(delta: float) -> void:
 		if Input.is_action_pressed("ui_right"):
 			position.x += (global.speed*1200 * delta)
 	if global.mode == global.modes.ascending:
-		if position.y > -5:
-			position.y -= (global.speed*600 * delta)
+		position.y -= (global.speed*600 * delta)
 		if position.x < -64:
 			position.x += (global.speed*1200 * delta)
 		if position.x > -64:
 			position.x -= (global.speed*1200 * delta)
-		if position.x < -60 and position.x > -68 and position.y <= 5:
+		if position.x < -60 and position.x > -68 and position.y <= 0:
 			global.mode = global.modes.shop
 			global.money += global.value_of_reeled_fish
 			global.value_of_reeled_fish = 0
