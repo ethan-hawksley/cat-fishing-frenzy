@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0te54np8iqma"]
 
 [ext_resource type="Script" uid="uid://do7mblkf412cw" path="res://fish.gd" id="1_xu20i"]
-[ext_resource type="Texture2D" uid="uid://3ikyh10j6ys" path="res://assets/bubble.png" id="2_hgn23"]
+[ext_resource type="Texture2D" uid="uid://emtdfm5cq76h" path="res://assets/pixil-frame-0 (3).png" id="2_hgn23"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgn23"]
 size = Vector2(3, 5)
@@ -19,8 +19,9 @@ shape = SubResource("RectangleShape2D_hgn23")
 
 [node name="shock" type="Sprite2D" parent="." unique_id=1499049097]
 visible = false
-position = Vector2(32.000008, 32)
-scale = Vector2(7.3036146, 4.8827477)
+position = Vector2(3, 54)
+rotation = 1.5146433
+scale = Vector2(4.8236156, 4.2427483)
 texture = ExtResource("2_hgn23")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

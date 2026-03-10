@@ -77,10 +77,10 @@ func _ready() -> void:
 		if randf() < 0.5:
 			path = images[11]
 		value = 600
-	if 2400 < global.depth and global.depth > 3250:
-		if randf() < 0.5:
+	if 2400 < global.depth:
+		if randf() < 0.75:
 			path = images[12]
-			value = 650
+			value = 0
 			jellyfish = true
 	if 2600 < global.depth:
 		if randf() < 0.5:
@@ -97,6 +97,11 @@ func _ready() -> void:
 			path = images[15]
 			value = 800
 			jellyfish = false
+	if 3200 < global.depth:
+		if randf() < 0.25:
+			path = images[12]
+			value = 0
+			jellyfish = true
 
 
 
@@ -113,7 +118,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
 	if jellyfish == false:
-		print("not jellyfish")
 		global.caught_fish += 1
 		global.value_of_reeled_fish += value
 		global.latestfishvalue = value
@@ -123,7 +127,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		caught_by = area
 		rotation_degrees = randf_range(0, 360)
 	if jellyfish == true:
-		print("jellyfish")
 		value = value / 2 
 		$shock.visible = true
 		global.shock = 1
