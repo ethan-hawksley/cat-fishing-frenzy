@@ -5,7 +5,7 @@ enum directions {
 	right,
 }
 var direction = directions.right
-
+var jellyfish = false
 var caught = false
 var caught_by = null
 
@@ -77,22 +77,26 @@ func _ready() -> void:
 		if randf() < 0.5:
 			path = images[11]
 		value = 600
-	if 3000 < global.depth:
+	if 3000 < global.depth and global.depth > 3250:
 		if randf() < 0.5:
 			path = images[12]
 			value = 650
+			jellyfish = true
 	if 3250 < global.depth:
 		if randf() < 0.5:
 			path = images[13]
 			value = 700
+			jellyfish = false
 	if 3500 < global.depth:
 		if randf() < 0.5:
 			path = images[14]
 			value = 750
+			jellyfish = false
 	if 3750 < global.depth:
 		if randf() < 0.5:
 			path = images[15]
 			value = 800
+			jellyfish = false
 
 
 
@@ -108,14 +112,22 @@ func _ready() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
-	global.caught_fish += 1
-	global.value_of_reeled_fish += value
-	global.latestfishvalue = value
-	if global.max_fish <= global.caught_fish:
-		global.mode = global.modes.ascending
-	caught = true
-	caught_by = area
-	rotation_degrees = randf_range(0, 360)
+	if jellyfish == false:
+		print("not jellyfish")
+		global.caught_fish += 1
+		global.value_of_reeled_fish += value
+		global.latestfishvalue = value
+		if global.max_fish <= global.caught_fish:
+			global.mode = global.modes.ascending
+		caught = true
+		caught_by = area
+		rotation_degrees = randf_range(0, 360)
+	if jellyfish == true:
+		print("jellyfish")
+		value = value / 2 
+		$shock.visible = true
+		
+		
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
@@ -124,8 +136,12 @@ func _process(delta: float) -> void:
 	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
 		if direction == directions.left:
 			global_position.x += 120 * delta
+			if jellyfish == true:
+				global_position.x += 12 * delta
 		else:
 			global_position.x -= 120 * delta
+			if jellyfish == true:
+				global_position.x -= 12 * delta
 
 	else:
 		value = 0
