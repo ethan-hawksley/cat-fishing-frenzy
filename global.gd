@@ -19,7 +19,7 @@ var depth = 0
 var value_of_reeled_fish = 0
 var latestfishvalue = 0
 
-var time_per_spawn = 0.3
+var time_per_spawn = 0.25
 var time_left_until_spawn = 0
 
 var caught_fish = 0

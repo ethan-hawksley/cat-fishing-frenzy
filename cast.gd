@@ -15,8 +15,7 @@ func _process(delta: float) -> void:
 			position.x -= (global.speed*1200 * delta)
 		if Input.is_action_pressed("ui_right"):
 			position.x += (global.speed*1200 * delta)
-	if global.mode == global.modes.ascending:
-		if position.y > 0:
+		if global.mode == global.modes.ascending:
 			position.y -= (global.speed*600 * delta)
 		if position.x < -64:
 			position.x += (global.speed*1200 * delta)
