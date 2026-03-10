@@ -122,7 +122,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		caught = true
 		caught_by = area
 		rotation_degrees = randf_range(0, 360)
-		global.shock = 1
 	if jellyfish == true:
 		print("jellyfish")
 		value = value / 2 
