@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://byt1w8bmn42c7" path="res://circle.gd" id="4_kek77"]
 [ext_resource type="Script" uid="uid://cm5cvn2jvbp61" path="res://entity_spawner.gd" id="7_272bh"]
 [ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
-[ext_resource type="Script" path="res://cat.gd" id="9_dg77c"]
+[ext_resource type="Script" uid="uid://bjay5shndfyru" path="res://cat.gd" id="9_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
 [ext_resource type="Script" uid="uid://b4eximts2en7x" path="res://duck_2_returns.gd" id="13_ycdy4"]
@@ -39,6 +39,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 2000, 600)
 
 [node name="Boat" type="Sprite2D" parent="." unique_id=1442094522]
+z_index = 1
 position = Vector2(-14, -22)
 texture = ExtResource("1_ig7tw")
 script = ExtResource("4_kek77")
@@ -79,6 +80,7 @@ script = ExtResource("3_1bvp3")
 node = NodePath("../Hook/Node2D")
 
 [node name="Catttttt" type="Sprite2D" parent="." unique_id=1707320730]
+z_index = 1
 position = Vector2(-54, -31)
 texture = ExtResource("3_h2yge")
 flip_h = true
@@ -89,13 +91,13 @@ script = ExtResource("7_272bh")
 hook = NodePath("../Hook")
 
 [node name="Duck" type="Sprite2D" parent="." unique_id=660181675]
-position = Vector2(206, -4.0000005)
+position = Vector2(-64, 0)
 scale = Vector2(0.57, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("11_efxa6")
 
 [node name="duck 2returns" type="Sprite2D" parent="." unique_id=1395731777]
-position = Vector2(126.000015, -4)
+position = Vector2(256, 0)
 scale = Vector2(0.673, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("13_ycdy4")
