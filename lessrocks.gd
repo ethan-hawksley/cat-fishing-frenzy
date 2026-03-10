@@ -15,7 +15,7 @@ func lessrock():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if global.money < global.inflationrock * 50 or global.lessroccks == 200:
+	if global.money < global.inflationrock * 50 :
 		disabled = true
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
 	pass
