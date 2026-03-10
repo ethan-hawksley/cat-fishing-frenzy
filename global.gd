@@ -38,3 +38,5 @@ enum modes {
 	ascending,
 	shop,
 }
+
+var shock = 0
