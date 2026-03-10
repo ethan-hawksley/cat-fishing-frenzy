@@ -19,39 +19,79 @@ var images = [
 	"res://assets/fish_5.png",
 	"res://assets/fish_6.png",
 	"res://assets/fish_7.png",
+	"res://assets/fish_8.png",
+	"res://assets/fish_9.png",
+	"res://assets/fish_10.png",
+	"res://assets/fish_11.png",
+	"res://assets/fish_12.png",
+	"res://assets/fish_13.png",
+	"res://assets/fish_14.png",
+	"res://assets/fish_15.png",
 	"res://assets/catfish.png",
 ]
 
 func _ready() -> void:
 	var path = images[0]
-	value = 100
-	if 100 < global.depth:
+	value = 50
+	if 250 < global.depth:
 		if randf() < 0.5:
 			path = images[1]
-			value = 200
-	if 200 < global.depth:
-		if randf() < 0.5:
-			path = images[2]
-			value = 300
-	if 300 < global.depth:
-		if randf() < 0.5:
-			path = images[3]
-			value = 400
-	if 400 < global.depth:
-		if randf() < 0.5:
-			path = images[4]
-			value = 500
+			value = 100
 	if 500 < global.depth:
 		if randf() < 0.5:
+			path = images[2]
+			value = 150
+	if 750 < global.depth:
+		if randf() < 0.5:
+			path = images[3]
+			value = 200
+	if 1000 < global.depth:
+		if randf() < 0.5:
+			path = images[4]
+			value = 250
+	if 1250 < global.depth:
+		if randf() < 0.5:
 			path = images[5]
-			value = 600
-	if 600 < global.depth:
+			value = 300
+	if 1500 < global.depth:
 		if randf() < 0.5:
 			path = images[6]
-			value = 700
-	if 700 < global.depth:
+			value = 350
+	if 1750 < global.depth:
 		if randf() < 0.5:
 			path = images[7]
+			value = 400
+	if 2000 < global.depth:
+		if randf() < 0.5:
+			path = images[8]
+			value = 450
+	if 2250 < global.depth:
+		if randf() < 0.5:
+			path = images[9]
+			value = 500
+	if 2500 < global.depth:
+		if randf() < 0.5:
+			path = images[10]
+			value = 550
+	if 2750 < global.depth:
+		if randf() < 0.5:
+			path = images[11]
+		value = 600
+	if 3000 < global.depth:
+		if randf() < 0.5:
+			path = images[12]
+			value = 650
+	if 3250 < global.depth:
+		if randf() < 0.5:
+			path = images[13]
+			value = 700
+	if 3500 < global.depth:
+		if randf() < 0.5:
+			path = images[14]
+			value = 750
+	if 3750 < global.depth:
+		if randf() < 0.5:
+			path = images[15]
 			value = 800
 
 
