@@ -64,90 +64,9 @@ text = "Dory"
 
 [node name="TextEdit7" type="TextEdit" parent="CollectionBook" unique_id=1055272010]
 anchors_preset = -1
-offset_left = -262.0
-offset_top = 180.0
-offset_right = -190.0
-offset_bottom = 230.0
+offset_left = -256.0
+offset_top = 179.0
+offset_right = -184.0
+offset_bottom = 229.0
 rotation = -0.08726646
 text = "Redfish"
-
-[node name="TextEdit8" type="TextEdit" parent="CollectionBook" unique_id=1053002683]
-anchors_preset = -1
-offset_left = -84.0
-offset_top = 162.0
-offset_right = -12.0
-offset_bottom = 212.0
-rotation = -0.08726646
-text = "Salmon"
-
-[node name="TextEdit9" type="TextEdit" parent="CollectionBook" unique_id=334463971]
-anchors_preset = -1
-offset_left = 56.00002
-offset_top = -189.0
-offset_right = 158.53706
-offset_bottom = -139.0
-rotation = 0.08726646
-text = "Yellow Fish"
-
-[node name="TextEdit10" type="TextEdit" parent="CollectionBook" unique_id=1374893671]
-anchors_preset = -1
-offset_left = 211.00002
-offset_top = -173.0
-offset_right = 313.53705
-offset_bottom = -123.0
-rotation = 0.08726646
-text = "Pink Fish"
-
-[node name="TextEdit11" type="TextEdit" parent="CollectionBook" unique_id=1229965398]
-anchors_preset = -1
-offset_left = 55.000008
-offset_top = -73.00001
-offset_right = 159.57153
-offset_bottom = -23.000008
-rotation = 0.08726646
-text = "Blue Fish"
-
-[node name="TextEdit12" type="TextEdit" parent="CollectionBook" unique_id=1438889111]
-anchors_preset = -1
-offset_left = 199.00002
-offset_top = -60.0
-offset_right = 301.53705
-offset_bottom = -10.0
-rotation = 0.08726646
-text = "Pufferfish"
-
-[node name="TextEdit13" type="TextEdit" parent="CollectionBook" unique_id=1210174011]
-anchors_preset = -1
-offset_left = 52.0
-offset_top = 43.0
-offset_right = 154.53703
-offset_bottom = 93.0
-rotation = 0.08726646
-text = "Jellyfish"
-
-[node name="TextEdit14" type="TextEdit" parent="CollectionBook" unique_id=1730698030]
-anchors_preset = -1
-offset_left = 189.00002
-offset_top = 54.0
-offset_right = 291.53705
-offset_bottom = 104.0
-rotation = 0.08726646
-text = "Angler Fish"
-
-[node name="TextEdit15" type="TextEdit" parent="CollectionBook" unique_id=1974004765]
-anchors_preset = -1
-offset_left = 27.000015
-offset_top = 158.0
-offset_right = 129.53705
-offset_bottom = 208.0
-rotation = 0.08726646
-text = "Squid"
-
-[node name="TextEdit16" type="TextEdit" parent="CollectionBook" unique_id=1130170729]
-anchors_preset = -1
-offset_left = 193.00002
-offset_top = 172.0
-offset_right = 295.53705
-offset_bottom = 222.0
-rotation = 0.08726646
-text = "Catfish"
