@@ -40,3 +40,22 @@ enum modes {
 }
 
 var shock = 0
+
+var collection = {
+	"fish_1": false,
+	"fish_2": false,
+	"fish_3": false,
+	"fish_4": false,
+	"fish_5": false,
+	"fish_6": false,
+	"fish_7": false,
+	"fish_8": false,
+	"fish_9": false,
+	"fish_10": false,
+	"fish_11": false,
+	"fish_12": false,
+	"fish_13": false,
+	"fish_14": false,
+	"fish_15": false,
+	"fish_16": false,
+}
