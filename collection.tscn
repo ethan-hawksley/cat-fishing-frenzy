@@ -1,8 +1,26 @@
 [gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
+[ext_resource type="Script" uid="uid://c2o2107dpx1os" path="res://collection.gd" id="1_7kip4"]
 [ext_resource type="Texture2D" uid="uid://brax74vpljv8s" path="res://assets/collection_book.png" id="1_op31q"]
+[ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="2_ae7c0"]
+[ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="3_7kip4"]
+[ext_resource type="Texture2D" uid="uid://ccsgujvtru1sd" path="res://assets/fish_3.png" id="4_xajaa"]
+[ext_resource type="Texture2D" uid="uid://j5gqv1el1noa" path="res://assets/fish_4.png" id="5_5w4to"]
+[ext_resource type="Texture2D" uid="uid://d1mih6km1anju" path="res://assets/fish_5.png" id="6_fb0dq"]
+[ext_resource type="Texture2D" uid="uid://drckiwxjgp03d" path="res://assets/fish_6.png" id="7_75s46"]
+[ext_resource type="Texture2D" uid="uid://cdrllcc3jrasg" path="res://assets/fish_7.png" id="8_tj0ev"]
+[ext_resource type="Texture2D" uid="uid://wxlgthxxnn8y" path="res://assets/fish_8.png" id="9_0b34o"]
+[ext_resource type="Texture2D" uid="uid://ouu200hm6ioc" path="res://assets/fish_9.png" id="10_m1vpp"]
+[ext_resource type="Texture2D" uid="uid://c76vytumo1pje" path="res://assets/fish_10.png" id="11_h5b63"]
+[ext_resource type="Texture2D" uid="uid://3p8lxwu7buje" path="res://assets/fish_11.png" id="12_y1d8t"]
+[ext_resource type="Texture2D" uid="uid://btksl3ciyqoor" path="res://assets/fish_12.png" id="13_v6t6i"]
+[ext_resource type="Texture2D" uid="uid://c1bu7cnam3o50" path="res://assets/fish_13.png" id="14_56gho"]
+[ext_resource type="Texture2D" uid="uid://dv8r3u135x7xk" path="res://assets/fish_14.png" id="15_nb4c1"]
+[ext_resource type="Texture2D" uid="uid://b0htejcsbcwga" path="res://assets/fish_15.png" id="16_54rbh"]
+[ext_resource type="Texture2D" uid="uid://dqwpg3kfpyuub" path="res://assets/catfish.png" id="17_phnru"]
 
 [node name="Node2D2" type="Node2D" unique_id=2069376763]
+script = ExtResource("1_7kip4")
 
 [node name="CollectionBook" type="Sprite2D" parent="." unique_id=1259443240]
 position = Vector2(559, 402)
@@ -135,3 +153,67 @@ offset_right = 288.3216
 offset_bottom = 224.0
 rotation = 0.08726646
 text = "Catfish"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=426274063]
+position = Vector2(316, 192)
+texture = ExtResource("2_ae7c0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=2064297782]
+position = Vector2(461, 190)
+texture = ExtResource("3_7kip4")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=141240407]
+position = Vector2(322, 324)
+texture = ExtResource("4_xajaa")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=600309680]
+position = Vector2(473, 308)
+texture = ExtResource("5_5w4to")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=1152067614]
+position = Vector2(337, 437)
+texture = ExtResource("6_fb0dq")
+
+[node name="Sprite2D6" type="Sprite2D" parent="." unique_id=1112820350]
+position = Vector2(475, 421)
+texture = ExtResource("7_75s46")
+
+[node name="Sprite2D7" type="Sprite2D" parent="." unique_id=2085968422]
+position = Vector2(334, 541)
+texture = ExtResource("8_tj0ev")
+
+[node name="Sprite2D8" type="Sprite2D" parent="." unique_id=1190414552]
+position = Vector2(483, 543)
+texture = ExtResource("9_0b34o")
+
+[node name="Sprite2D9" type="Sprite2D" parent="." unique_id=221842028]
+position = Vector2(674, 187)
+texture = ExtResource("10_m1vpp")
+
+[node name="Sprite2D10" type="Sprite2D" parent="." unique_id=1156196004]
+position = Vector2(815, 203)
+texture = ExtResource("11_h5b63")
+
+[node name="Sprite2D11" type="Sprite2D" parent="." unique_id=1734608278]
+position = Vector2(658, 314)
+texture = ExtResource("12_y1d8t")
+
+[node name="Sprite2D12" type="Sprite2D" parent="." unique_id=1320679520]
+position = Vector2(802, 319)
+texture = ExtResource("13_v6t6i")
+
+[node name="Sprite2D13" type="Sprite2D" parent="." unique_id=2064892961]
+position = Vector2(650, 416)
+texture = ExtResource("14_56gho")
+
+[node name="Sprite2D14" type="Sprite2D" parent="." unique_id=483148791]
+position = Vector2(803, 445)
+texture = ExtResource("15_nb4c1")
+
+[node name="Sprite2D15" type="Sprite2D" parent="." unique_id=996331127]
+position = Vector2(641, 539)
+texture = ExtResource("16_54rbh")
+
+[node name="Sprite2D16" type="Sprite2D" parent="." unique_id=1557676513]
+position = Vector2(781, 548)
+texture = ExtResource("17_phnru")
