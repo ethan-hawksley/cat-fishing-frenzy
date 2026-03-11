@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cfnfxb1q4jwyn"]
+[gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
 [ext_resource type="Texture2D" uid="uid://brax74vpljv8s" path="res://assets/collection_book.png" id="1_op31q"]
 [ext_resource type="Script" uid="uid://bn7spfhyrpjnq" path="res://collection.gd" id="1_vysnj"]
@@ -10,8 +10,15 @@ script = ExtResource("1_vysnj")
 position = Vector2(559, 402)
 texture = ExtResource("1_op31q")
 
+[node name="TextEdit8" type="TextEdit" parent="CollectionBook" unique_id=814936965]
+offset_left = 33.0
+offset_top = 42.0
+offset_right = 134.0
+offset_bottom = 83.0
+rotation = 0.054738905
+text = "jellyfish"
+
 [node name="TextEdit" type="TextEdit" parent="CollectionBook" unique_id=48603217]
-anchors_preset = -1
 offset_left = -285.0
 offset_top = -166.0
 offset_right = -213.0
@@ -20,7 +27,6 @@ rotation = -0.08726646
 text = "Minnow"
 
 [node name="TextEdit2" type="TextEdit" parent="CollectionBook" unique_id=1740348590]
-anchors_preset = -1
 offset_left = -120.0
 offset_top = -182.0
 offset_right = -48.0
@@ -29,7 +35,6 @@ rotation = -0.08726646
 text = "Cod"
 
 [node name="TextEdit3" type="TextEdit" parent="CollectionBook" unique_id=1663797128]
-anchors_preset = -1
 offset_left = -278.0
 offset_top = -49.0
 offset_right = -202.65906
@@ -38,7 +43,6 @@ rotation = -0.08726646
 text = "Goldfish"
 
 [node name="TextEdit4" type="TextEdit" parent="CollectionBook" unique_id=501613408]
-anchors_preset = -1
 offset_left = -111.0
 offset_top = -66.0
 offset_right = -39.0
@@ -47,7 +51,6 @@ rotation = -0.08726646
 text = "Koi"
 
 [node name="TextEdit5" type="TextEdit" parent="CollectionBook" unique_id=1648698381]
-anchors_preset = -1
 offset_left = -257.0
 offset_top = 66.0
 offset_right = -185.0
@@ -56,7 +59,6 @@ rotation = -0.08726646
 text = "Nemo"
 
 [node name="TextEdit6" type="TextEdit" parent="CollectionBook" unique_id=233412608]
-anchors_preset = -1
 offset_left = -105.0
 offset_top = 51.0
 offset_right = -33.0
@@ -65,7 +67,6 @@ rotation = -0.08726646
 text = "Dory"
 
 [node name="TextEdit7" type="TextEdit" parent="CollectionBook" unique_id=1055272010]
-<<<<<<< HEAD
 <<<<<<< HEAD
 anchors_preset = -1
 offset_left = -262.0
@@ -156,16 +157,12 @@ offset_bottom = 222.0
 rotation = 0.08726646
 text = "Catfish"
 =======
-=======
-anchors_preset = -1
->>>>>>> parent of b3fc152 (named)
 offset_left = -256.0
 offset_top = 179.0
 offset_right = -184.0
 offset_bottom = 229.0
 rotation = -0.08726646
 text = "Redfish"
-<<<<<<< HEAD
 
 [node name="TextEdit9" type="TextEdit" parent="CollectionBook" unique_id=1846870250]
 offset_left = 189.0
@@ -231,5 +228,3 @@ offset_bottom = 90.0
 rotation = 0.105500944
 text = "angler fish"
 >>>>>>> 469807bb13245d72e1adf6f38c16ab6b19b01e17
-=======
->>>>>>> parent of b3fc152 (named)
