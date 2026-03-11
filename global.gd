@@ -37,6 +37,8 @@ enum modes {
 	descending,
 	ascending,
 	shop,
+	collection,
 }
 
 var shock = 0
+var sneaky = 0.1

@@ -100,7 +100,7 @@ script = ExtResource("7_272bh")
 hook = NodePath("../Hook")
 
 [node name="Duck" type="Sprite2D" parent="." unique_id=660181675]
-position = Vector2(-64, 0)
+position = Vector2(205, -1.9999999)
 scale = Vector2(0.57, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("11_efxa6")
