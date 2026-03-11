@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
 [ext_resource type="Texture2D" uid="uid://brax74vpljv8s" path="res://assets/collection_book.png" id="1_op31q"]
+[ext_resource type="Script" uid="uid://bn7spfhyrpjnq" path="res://collection.gd" id="1_vysnj"]
 
-[node name="Node2D" type="Node2D" unique_id=2069376763]
+[node name="collectionbooklayer" type="CanvasLayer" unique_id=192599545]
+script = ExtResource("1_vysnj")
 
 [node name="CollectionBook" type="Sprite2D" parent="." unique_id=1259443240]
 position = Vector2(559, 402)
