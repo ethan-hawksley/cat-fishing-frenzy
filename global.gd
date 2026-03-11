@@ -5,7 +5,7 @@ var sharkchance = 0.85
 var harptime = 3.0
 var harpspeed = 200
 var length = 300
-var money = 25000
+var money = 1000
 var speed = 0.13
 var mode = modes.shop
 var inflationmorefish = 1
@@ -19,7 +19,7 @@ var depth = 0
 var value_of_reeled_fish = 0
 var latestfishvalue = 0
 
-var time_per_spawn = 0.3
+var time_per_spawn = 0.25
 var time_left_until_spawn = 0
 
 var caught_fish = 0
@@ -37,4 +37,8 @@ enum modes {
 	descending,
 	ascending,
 	shop,
+	collection,
 }
+
+var shock = 0
+var sneaky = 0.1

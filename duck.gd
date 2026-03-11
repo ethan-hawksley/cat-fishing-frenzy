@@ -1,12 +1,16 @@
-extends Line2D
-@export var node: Node2D
+extends Sprite2D
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	position.x = 0
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	set_point_position(1, to_local(node.global_position))
-	set_point_position(0, Vector2(0,5*sin(Time.get_ticks_msec()/250-31)))
+	position.y = 5*sin(Time.get_ticks_msec()/250 + 1)
+	position.x += -0.5*cos(Time.get_ticks_msec()/250 + 0.5)
+	position.x += 0.1 
+	if position.x > 330:
+		position.x = -430

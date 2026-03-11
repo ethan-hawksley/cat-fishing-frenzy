@@ -9,6 +9,7 @@ func boatsboost():
 	if global.money >= global.inflationfasterrod * 100:
 		global.money = global.money - global.inflationfasterrod * 100
 		global.speed = global.speed + 0.025
+		global.sneaky +=0.05 # this does nothing look away
 		global.inflationfasterrod = global.inflationfasterrod * 1.1
 		global.money = snapped(global.money,0.01)
 		global.speedup += 1

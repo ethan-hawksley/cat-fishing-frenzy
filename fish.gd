@@ -5,7 +5,7 @@ enum directions {
 	right,
 }
 var direction = directions.right
-
+var jellyfish = false
 var caught = false
 var caught_by = null
 
@@ -33,68 +33,75 @@ var images = [
 func _ready() -> void:
 	var path = images[0]
 	value = 50
-	if 250 < global.depth:
+	if 200 < global.depth:
 		if randf() < 0.5:
 			path = images[1]
 			value = 100
-	if 500 < global.depth:
+	if 400 < global.depth:
 		if randf() < 0.5:
 			path = images[2]
 			value = 150
-	if 750 < global.depth:
+	if 600 < global.depth:
 		if randf() < 0.5:
 			path = images[3]
 			value = 200
-	if 1000 < global.depth:
+	if 800 < global.depth:
 		if randf() < 0.5:
 			path = images[4]
 			value = 250
-	if 1250 < global.depth:
+	if 1000 < global.depth:
 		if randf() < 0.5:
 			path = images[5]
 			value = 300
-	if 1500 < global.depth:
+	if 1200 < global.depth:
 		if randf() < 0.5:
 			path = images[6]
 			value = 350
-	if 1750 < global.depth:
+	if 1400 < global.depth:
 		if randf() < 0.5:
 			path = images[7]
 			value = 400
-	if 2000 < global.depth:
+	if 1600 < global.depth:
 		if randf() < 0.5:
 			path = images[8]
 			value = 450
-	if 2250 < global.depth:
+	if 1800 < global.depth:
 		if randf() < 0.5:
 			path = images[9]
 			value = 500
-	if 2500 < global.depth:
+	if 2000 < global.depth:
 		if randf() < 0.5:
 			path = images[10]
 			value = 550
-	if 2750 < global.depth:
+	if 2200 < global.depth:
 		if randf() < 0.5:
 			path = images[11]
 		value = 600
-	if 3000 < global.depth:
-		if randf() < 0.5:
+	if 2400 < global.depth:
+		if randf() < 0.75:
 			path = images[12]
-			value = 650
-	if 3250 < global.depth:
+			value = 0
+			jellyfish = true
+	if 2600 < global.depth:
 		if randf() < 0.5:
 			path = images[13]
 			value = 700
-	if 3500 < global.depth:
+			jellyfish = false
+	if 2800 < global.depth:
 		if randf() < 0.5:
 			path = images[14]
 			value = 750
-	if 3750 < global.depth:
+			jellyfish = false
+	if 3000 < global.depth:
 		if randf() < 0.5:
 			path = images[15]
 			value = 800
-
-
+			jellyfish = false
+	if 3200 < global.depth:
+		if randf() < 0.25:
+			path = images[12]
+			value = 0
+			jellyfish = true
 
 	var loaded_texture = load(path)
 	
@@ -108,14 +115,20 @@ func _ready() -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
-	global.caught_fish += 1
-	global.value_of_reeled_fish += value
-	global.latestfishvalue = value
-	if global.max_fish <= global.caught_fish:
-		global.mode = global.modes.ascending
-	caught = true
-	caught_by = area
-	rotation_degrees = randf_range(0, 360)
+	if jellyfish == false:
+		global.caught_fish += 1
+		global.value_of_reeled_fish += value
+		global.latestfishvalue = value
+		if global.max_fish <= global.caught_fish:
+			global.mode = global.modes.ascending
+		caught = true
+		caught_by = area
+		rotation_degrees = randf_range(0, 360)
+	if jellyfish == true:
+		value = value / 2 
+		$shock.visible = true
+		global.shock = 1
+		
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
@@ -124,8 +137,12 @@ func _process(delta: float) -> void:
 	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
 		if direction == directions.left:
 			global_position.x += 120 * delta
+			if jellyfish == true:
+				global_position.x += 12 * delta
 		else:
 			global_position.x -= 120 * delta
+			if jellyfish == true:
+				global_position.x -= 12 * delta
 
 	else:
 		value = 0

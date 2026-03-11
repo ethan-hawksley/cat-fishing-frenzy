@@ -7,8 +7,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	position.y = 5*sin(Time.get_ticks_msec()/250) - 22
 	queue_redraw()
 	
 func _draw() -> void:
 	if global.mode != global.modes.ascending:
-		draw_arc(Vector2(-64, 0), global.length, -TAU, -PI, 64, Color.RED, 2)
+		draw_arc(Vector2(-64, -position.y), global.length, -TAU, -PI, 64, Color.RED, 2)

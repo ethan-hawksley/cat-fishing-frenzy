@@ -8,8 +8,8 @@ func _ready() -> void:
 func morefish():
 	if global.money >= global.inflationmorefish * 50:
 		global.money = global.money - global.inflationmorefish * 50
-		global.time_per_spawn = global.time_per_spawn * 0.80
-		global.inflationmorefish = global.inflationmorefish * 1.4
+		global.time_per_spawn = global.time_per_spawn * 0.975
+		global.inflationmorefish = global.inflationmorefish * 1.1
 		global.money = snapped(global.money,0.01)
 		global.fishup += 1
 
