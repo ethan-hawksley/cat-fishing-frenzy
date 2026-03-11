@@ -76,7 +76,7 @@ func _ready() -> void:
 	if 2200 < global.depth:
 		if randf() < 0.5:
 			path = images[11]
-			value = 600
+		value = 600
 	if 2400 < global.depth:
 		if randf() < 0.75:
 			path = images[12]
