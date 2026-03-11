@@ -6,7 +6,7 @@ enum directions {
 }
 var harpoon_scene = preload("res://harpoon.tscn")
 var harpoon_spawned = false
-var harpoon = harpoon_scene.instantiate()
+var harpoon: Node2D = null
 
 func _ready() -> void:
 	if randf() < 0.5:
@@ -25,6 +25,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		if not is_inside_tree():
 			return
 
+		harpoon = harpoon_scene.instantiate()
 		harpoon.global_position = global_position
 		harpoon.global_position.y = -500
 		harpoon.target = self
@@ -42,7 +43,8 @@ func _process(delta: float) -> void:
 			global_position.y += 60 * delta
 		if global.depth < global_position.y:
 			global_position.y -= 60 * delta
-		if harpoon.global_position.x < global_position.x + 100 and harpoon.global_position.x != 0:
-			$target.visible = true
+		if harpoon != null and is_instance_valid(harpoon):
+			if harpoon.global_position.x < global_position.x + 100 and harpoon.global_position.x != 0:
+				$target.visible = true
 
 			

@@ -21,7 +21,6 @@ func _process(delta: float) -> void:
 			position.x += (global.speed*1200 * delta)
 		if position.x > -64:
 			position.x -= (global.speed*1200 * delta)
-		if position.x < -60 and position.x > -68 and position.y <= 0:
 		if position.y > 0:
 			position.y -= (global.speed*600 * delta)
 		else:
