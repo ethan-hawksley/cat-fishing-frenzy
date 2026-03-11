@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://de8votjpo2igt" path="res://longerup.gd" id="8_5cw7b"]
 [ext_resource type="Script" uid="uid://bcrjdffornxxo" path="res://lessrockss.gd" id="9_g3huw"]
 [ext_resource type="Script" uid="uid://bn3dbtfbbjd0y" path="res://lesssharkss.gd" id="10_280g2"]
+[ext_resource type="Script" uid="uid://wm0a68gui5av" path="res://booklabeltoggle.gd" id="11_5cw7b"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop")]
 script = ExtResource("1_37rai")
@@ -136,3 +137,12 @@ offset_top = 155.0
 offset_right = 503.0
 offset_bottom = 178.0
 script = ExtResource("10_280g2")
+
+[node name="Label2" type="Label" parent="." unique_id=1873003283]
+offset_left = 440.0
+offset_right = 517.0
+offset_bottom = 49.0
+text = "Collection
+Book ->"
+horizontal_alignment = 1
+script = ExtResource("11_5cw7b")

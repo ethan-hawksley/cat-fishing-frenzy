@@ -81,22 +81,18 @@ func _ready() -> void:
 		if randf() < 0.75:
 			path = images[12]
 			value = 0
-			jellyfish = true
 	if 2600 < global.depth:
 		if randf() < 0.5:
 			path = images[13]
 			value = 700
-			jellyfish = false
 	if 2800 < global.depth:
 		if randf() < 0.5:
 			path = images[14]
 			value = 750
-			jellyfish = false
 	if 3000 < global.depth:
 		if randf() < 0.5:
 			path = images[15]
 			value = 800
-			jellyfish = false
 	if 3200 < global.depth:
 		if randf() < 0.25:
 			path = images[12]

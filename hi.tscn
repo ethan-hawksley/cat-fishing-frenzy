@@ -15,7 +15,8 @@
 [ext_resource type="Script" uid="uid://banferpnl23ii" path="res://lessrocks.gd" id="13_xpgmr"]
 [ext_resource type="Script" uid="uid://xwcxywkltqf8" path="res://button.gd" id="14_uydfd"]
 [ext_resource type="Texture2D" uid="uid://cosrg22j54qv1" path="res://assets/shark.png" id="15_0onx4"]
-[ext_resource type="Script" path="res://texture_button_7.gd" id="15_kr5e3"]
+[ext_resource type="Script" uid="uid://bxixospklk2yo" path="res://texture_button_7.gd" id="15_kr5e3"]
+[ext_resource type="Texture2D" uid="uid://cfobyqq626jim" path="res://assets/book_icon.png" id="17_w0dc5"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
@@ -117,5 +118,13 @@ texture_normal = ExtResource("15_0onx4")
 texture_pressed = ExtResource("15_0onx4")
 texture_hover = ExtResource("15_0onx4")
 script = ExtResource("15_kr5e3")
+
+[node name="TextureButton8" type="TextureButton" parent="." unique_id=1212706883]
+layout_mode = 0
+offset_left = 309.0
+offset_top = -115.0
+offset_right = 409.0
+offset_bottom = -15.0
+texture_normal = ExtResource("17_w0dc5")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
