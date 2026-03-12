@@ -119,39 +119,11 @@ func _ready() -> void:
 		direction = directions.left
 		$Sprite2D.flip_h = true
 
-func add_collection(fish_type):
-	if fish_type == "fish_1":
-		global.collection[0] = true
-	if fish_type == "fish_2":
-		global.collection[1] = true
-	if fish_type == "fish_3":
-		global.collection[2] = true
-	if fish_type == "fish_4":
-		global.collection[3] = true
-	if fish_type == "fish_5":
-		global.collection[4] = true
-	if fish_type == "fish_6":
-		global.collection[5] = true
-	if fish_type == "fish_7":
-		global.collection[6] = true
-	if fish_type == "fish_8":
-		global.collection[7] = true
-	if fish_type == "fish_9":
-		global.collection[8] = true
-	if fish_type == "fish_10":
-		global.collection[9] = true
-	if fish_type == "fish_11":
-		global.collection[10] = true
-	if fish_type == "fish_12":
-		global.collection[11] = true
-	if fish_type == "fish_13":
-		global.collection[12] = true
-	if fish_type == "fish_14":
-		global.collection[13] = true
-	if fish_type == "fish_15":
-		global.collection[14] = true
-	if fish_type == "fish_16":
-		global.collection[15] = true
+func add_collection(fish_type: String) -> void:
+	# read index from number after the underscore
+	var index = int(fish_type.split("_")[1]) - 1
+	if index >= 0 and index < global.collection.size():
+		global.collection[index] = true
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):

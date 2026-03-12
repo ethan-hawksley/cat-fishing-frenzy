@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c854mbq5w53dc"]
 
-[ext_resource type="Script" path="res://canvas_layer.gd" id="1_37rai"]
+[ext_resource type="Script" uid="uid://sx5uxmg77efw" path="res://canvas_layer.gd" id="1_37rai"]
 [ext_resource type="Script" uid="uid://dvoegrdhvpakd" path="res://money_label.gd" id="1_v2lfg"]
 [ext_resource type="PackedScene" uid="uid://d4kput370i1u7" path="res://hi.tscn" id="2_tg4cr"]
 [ext_resource type="Script" uid="uid://cy3ye7xve3ngm" path="res://fishup.gd" id="4_0qrqu"]
@@ -11,10 +11,12 @@
 [ext_resource type="Script" uid="uid://bcrjdffornxxo" path="res://lessrockss.gd" id="9_g3huw"]
 [ext_resource type="Script" uid="uid://bn3dbtfbbjd0y" path="res://lesssharkss.gd" id="10_280g2"]
 [ext_resource type="Script" uid="uid://wm0a68gui5av" path="res://booklabeltoggle.gd" id="11_5cw7b"]
+[ext_resource type="PackedScene" uid="uid://bh168g26j3p7i" path="res://collection.tscn" id="12_as1ww"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop")]
+[node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop", "collection")]
 script = ExtResource("1_37rai")
 shop = NodePath("hi")
+collection = NodePath("collection")
 
 [node name="Label" type="Label" parent="." unique_id=857891663]
 texture_filter = 1
@@ -145,3 +147,7 @@ text = "Collection
 Book ->"
 horizontal_alignment = 1
 script = ExtResource("11_5cw7b")
+
+[node name="collection" parent="." unique_id=2069376763 instance=ExtResource("12_as1ww")]
+visible = false
+position = Vector2(-211, -48)

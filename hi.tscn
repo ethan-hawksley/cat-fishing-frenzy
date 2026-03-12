@@ -130,3 +130,4 @@ texture_normal = ExtResource("17_w0dc5")
 script = ExtResource("18_rlv73")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
+[connection signal="pressed" from="collection book button" to="collection book button" method="_on_pressed"]
