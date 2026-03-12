@@ -12,6 +12,8 @@
 [ext_resource type="Script" uid="uid://bn3dbtfbbjd0y" path="res://lesssharkss.gd" id="10_280g2"]
 [ext_resource type="Script" uid="uid://wm0a68gui5av" path="res://booklabeltoggle.gd" id="11_5cw7b"]
 [ext_resource type="PackedScene" uid="uid://bh168g26j3p7i" path="res://collection.tscn" id="12_as1ww"]
+[ext_resource type="Texture2D" uid="uid://cfobyqq626jim" path="res://assets/book_icon.png" id="12_robvp"]
+[ext_resource type="Script" uid="uid://dgkjrjlc5w8ap" path="res://collection_button.gd" id="13_86mtp"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop", "collection")]
 script = ExtResource("1_37rai")
@@ -139,15 +141,27 @@ text = "less sharks"
 horizontal_alignment = 1
 script = ExtResource("10_280g2")
 
-[node name="Label2" type="Label" parent="." unique_id=1873003283]
-offset_left = 440.0
-offset_right = 517.0
-offset_bottom = 49.0
+[node name="collection book button" type="TextureButton" parent="." unique_id=1083842204]
+offset_left = 415.0
+offset_top = -16.0
+offset_right = 515.0
+offset_bottom = 84.0
+texture_normal = ExtResource("12_robvp")
+script = ExtResource("13_86mtp")
+
+[node name="Label2" type="Label" parent="collection book button" unique_id=1873003283]
+layout_mode = 0
+offset_left = -37.0
+offset_top = 14.0
+offset_right = 40.0
+offset_bottom = 63.0
 text = "Collection
 Book ->"
 horizontal_alignment = 1
 script = ExtResource("11_5cw7b")
 
 [node name="collection" parent="." unique_id=2069376763 instance=ExtResource("12_as1ww")]
-visible = false
-position = Vector2(-211, -48)
+position = Vector2(-78, -17)
+scale = Vector2(0.5, 0.5)
+
+[connection signal="pressed" from="collection book button" to="collection book button" method="_on_pressed"]
