@@ -7,7 +7,13 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if global.mode == global.modes.shop or global.mode == global.modes.collection:
+		show()
+	else:
+		hide()
 
 func _on_pressed() -> void:
-	global.mode = global.modes.collection
+	if global.mode == global.modes.shop:
+		global.mode = global.modes.collection
+	else:
+		global.mode = global.modes.shop
