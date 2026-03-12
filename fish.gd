@@ -111,7 +111,6 @@ func _ready() -> void:
 			value = 800
 			fish = "fish_16"
 
-
 	var loaded_texture = load(path)
 	
 	$Sprite2D.texture = loaded_texture
