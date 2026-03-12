@@ -17,10 +17,7 @@ func _process(delta: float) -> void:
 			position.x += (global.speed*1200 * delta)
 	if global.mode == global.modes.ascending:
 		position.y -= (global.speed*600 * delta)
-		if position.x < -64:
-			position.x += (global.speed*1200 * delta)
-		if position.x > -64:
-			position.x -= (global.speed*1200 * delta)
+		position.x = move_toward(position.x, -64, global.speed * 1200 * delta)
 		if position.x < -60 and position.x > -68 and position.y <= 0:
 			global.mode = global.modes.shop
 			global.money += global.value_of_reeled_fish

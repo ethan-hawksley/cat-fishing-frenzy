@@ -1,4 +1,5 @@
 extends Label
 
 func _process(_delta) -> void:
-	text = "£" + str(global.money) + "\nDepth: " + str(floor(global.depth/10.0)) + "m"
+	var formatted_money = "%.2f" % global.money
+	text = "£" + formatted_money + "\nDepth: " + str(floor(global.depth/10.0)) + "m"

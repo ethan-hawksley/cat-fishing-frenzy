@@ -35,6 +35,7 @@ func _ready() -> void:
 	var path = images[0]
 	fish = "fish_1"
 	value = 50
+	
 	if 200 < global.depth:
 		if randf() < 0.5:
 			path = images[1]
@@ -111,8 +112,11 @@ func _ready() -> void:
 			value = 800
 			fish = "fish_16"
 
+	if randf() < 0.05:
+		jellyfish = true
+		path = "res://assets/jellyfish.png"
+
 	var loaded_texture = load(path)
-	
 	$Sprite2D.texture = loaded_texture
 	
 	if randf() < 0.5:
@@ -128,35 +132,44 @@ func add_collection(fish_type: String) -> void:
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
+		
 	if jellyfish == false:
 		add_collection(fish)
 		global.caught_fish += 1
 		global.value_of_reeled_fish += value
 		global.latestfishvalue = value
+		
 		if global.max_fish <= global.caught_fish:
 			global.mode = global.modes.ascending
+		
 		caught = true
 		caught_by = area
 		rotation_degrees = randf_range(0, 360)
-	if jellyfish == true:
-		value = value / 2.0 
+		
+	elif jellyfish == true:
+		global.value_of_reeled_fish /= 2.0 
+		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 		$shock.visible = true
 		global.shock = 1
 		
+		$Area2D.set_deferred("monitorable", false)
+		$Area2D.set_deferred("monitoring", false)
+		
+		await get_tree().create_timer(1.0).timeout
+		if is_instance_valid(self):
+			$shock.visible = false
 
 func _process(delta: float) -> void:
 	if global.mode == global.modes.shop:
 		queue_free()
 	
 	if global.mode == global.modes.descending or global.mode == global.modes.ascending:
+		var move_speed = 35.0 if jellyfish else 120.0
+		
 		if direction == directions.left:
-			global_position.x += 120 * delta
-			if jellyfish == true:
-				global_position.x += 12 * delta
+			global_position.x += move_speed * delta
 		else:
-			global_position.x -= 120 * delta
-			if jellyfish == true:
-				global_position.x -= 12 * delta
+			global_position.x -= move_speed * delta
 
 	else:
 		value = 0
@@ -164,4 +177,3 @@ func _process(delta: float) -> void:
 	if caught:
 		global_position = caught_by.global_position
 		global_position.y += 40
-	

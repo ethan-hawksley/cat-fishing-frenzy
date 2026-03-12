@@ -6,14 +6,14 @@ func _ready() -> void:
 	pressed.connect(harpoonkill)
 	pass # Replace with function body.
 func harpoonkill():
-	if global.harptime != 0:
+	if global.harptime > 0.1:
 		if global.money >= global.inflationharpoon * 75:
 			global.money = global.money - global.inflationharpoon * 75
 			global.harptime = global.harptime - 0.75
 			global.inflationharpoon = global.inflationharpoon * 1.1
 			global.money = snapped(global.money,0.01)
 			global.harpoonup += 1
-	elif global.harptime == 0 and global.harpspeed < 600:
+	elif global.harptime <= 0.1 and global.harpspeed < 600:
 		if global.money >= global.inflationharpoon * 75:
 			global.money = global.money - global.inflationharpoon * 75
 			global.harpspeed += 50
