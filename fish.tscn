@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c0te54np8iqma"]
 
 [ext_resource type="Script" uid="uid://do7mblkf412cw" path="res://fish.gd" id="1_xu20i"]
-[ext_resource type="Texture2D" uid="uid://emtdfm5cq76h" path="res://assets/pixil-frame-0 (3).png" id="2_hgn23"]
+[ext_resource type="Texture2D" path="res://assets/pixil-frame-0 (3).png" id="2_hgn23"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hgn23"]
 size = Vector2(3, 5)

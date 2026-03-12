@@ -8,7 +8,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	text="less sharks\n£"+str(snapped((global.inflationshark*500),0.01))+"\nBought:"+str(int(global.lesssharkss))
+	text="Less Sharks\n£"+str(snapped((global.inflationshark*500),0.01))+"\nBought:"+str(int(global.lesssharkss))
 	if global.mode != global.modes.shop:
 		text = ""
 	
