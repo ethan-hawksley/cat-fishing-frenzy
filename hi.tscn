@@ -120,7 +120,7 @@ texture_pressed = ExtResource("15_0onx4")
 texture_hover = ExtResource("15_0onx4")
 script = ExtResource("15_kr5e3")
 
-[node name="TextureButton8" type="TextureButton" parent="." unique_id=1212706883]
+[node name="collection book button" type="TextureButton" parent="." unique_id=1212706883]
 layout_mode = 0
 offset_left = 309.0
 offset_top = -115.0
