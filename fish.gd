@@ -110,11 +110,7 @@ func _ready() -> void:
 			path = images[15]
 			value = 800
 			fish = "fish_16"
-	if 3200 < global.depth:
-		if randf() < 0.25:
-			path = images[12]
-			value = 0
-			jellyfish = true
+
 
 	var loaded_texture = load(path)
 	
