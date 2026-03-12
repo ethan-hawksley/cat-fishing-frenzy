@@ -15,7 +15,7 @@ func lesssharks():
 			global.lesssharkss += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if global.money < global.inflationshark * 500 or global.lesssharkss == 5:
 		disabled = true
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)

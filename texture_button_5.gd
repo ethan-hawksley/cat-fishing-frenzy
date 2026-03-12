@@ -14,7 +14,7 @@ func morefish():
 		global.fishup += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	disabled = global.money < global.inflationmorefish * 50
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
 	pass

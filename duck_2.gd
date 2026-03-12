@@ -8,9 +8,9 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	position.y = 1*sin(Time.get_ticks_msec()/250 + 1)
-	position.x += -0.6*cos(Time.get_ticks_msec()/250 + 0.5)
+func _process(_delta: float) -> void:
+	position.y = 1*sin(Time.get_ticks_msec()/250.0 + 1)
+	position.x += -0.6*cos(Time.get_ticks_msec()/250.0 + 0.5)
 	position.x += 0.2 
 	if position.x > 330:
 		position.x = -430

@@ -120,38 +120,38 @@ func _ready() -> void:
 		direction = directions.left
 		$Sprite2D.flip_h = true
 
-func add_collection(fish):
-	if fish == "fish_1":
+func add_collection(fish_type):
+	if fish_type == "fish_1":
 		global.collection[0] = true
-	if fish == "fish_2":
+	if fish_type == "fish_2":
 		global.collection[1] = true
-	if fish == "fish_3":
+	if fish_type == "fish_3":
 		global.collection[2] = true
-	if fish == "fish_4":
+	if fish_type == "fish_4":
 		global.collection[3] = true
-	if fish == "fish_5":
+	if fish_type == "fish_5":
 		global.collection[4] = true
-	if fish == "fish_6":
+	if fish_type == "fish_6":
 		global.collection[5] = true
-	if fish == "fish_7":
+	if fish_type == "fish_7":
 		global.collection[6] = true
-	if fish == "fish_8":
+	if fish_type == "fish_8":
 		global.collection[7] = true
-	if fish == "fish_9":
+	if fish_type == "fish_9":
 		global.collection[8] = true
-	if fish == "fish_10":
+	if fish_type == "fish_10":
 		global.collection[9] = true
-	if fish == "fish_11":
+	if fish_type == "fish_11":
 		global.collection[10] = true
-	if fish == "fish_12":
+	if fish_type == "fish_12":
 		global.collection[11] = true
-	if fish == "fish_13":
+	if fish_type == "fish_13":
 		global.collection[12] = true
-	if fish == "fish_14":
+	if fish_type == "fish_14":
 		global.collection[13] = true
-	if fish == "fish_15":
+	if fish_type == "fish_15":
 		global.collection[14] = true
-	if fish == "fish_16":
+	if fish_type == "fish_16":
 		global.collection[15] = true
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
@@ -168,7 +168,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		caught_by = area
 		rotation_degrees = randf_range(0, 360)
 	if jellyfish == true:
-		value = value / 2 
+		value = value / 2.0 
 		$shock.visible = true
 		global.shock = 1
 		
