@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://cosrg22j54qv1" path="res://assets/shark.png" id="15_0onx4"]
 [ext_resource type="Script" uid="uid://bxixospklk2yo" path="res://texture_button_7.gd" id="15_kr5e3"]
 [ext_resource type="Texture2D" uid="uid://cfobyqq626jim" path="res://assets/book_icon.png" id="17_w0dc5"]
-[ext_resource type="Script" uid="uid://dgkjrjlc5w8ap" path="res://texture_button_8.gd" id="18_rlv73"]
+[ext_resource type="Script" uid="uid://dgkjrjlc5w8ap" path="res://collection_button.gd" id="18_rlv73"]
 
 [node name="hi" type="Control" unique_id=37941279]
 layout_mode = 3
