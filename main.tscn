@@ -15,6 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
 [ext_resource type="Script" uid="uid://b4eximts2en7x" path="res://duck_2_returns.gd" id="13_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cfiyd2at2vrxm" path="res://assets/seagull.png" id="16_2cqfq"]
+[ext_resource type="Script" uid="uid://ba2wobbwugwvq" path="res://seagull.gd" id="17_074og"]
+[ext_resource type="Script" uid="uid://b0875flrlraka" path="res://seagull_2.gd" id="18_cegan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7mycd"]
 size = Vector2(83.5, 64)
@@ -110,3 +113,13 @@ position = Vector2(256, 0)
 scale = Vector2(0.673, 0.7)
 texture = ExtResource("10_4c57u")
 script = ExtResource("13_ycdy4")
+
+[node name="Seagull" type="Sprite2D" parent="." unique_id=1286419000]
+position = Vector2(-64, -150)
+texture = ExtResource("16_2cqfq")
+script = ExtResource("17_074og")
+
+[node name="Seagull2" type="Sprite2D" parent="." unique_id=2129866103]
+position = Vector2(-64, -150)
+texture = ExtResource("16_2cqfq")
+script = ExtResource("18_cegan")
