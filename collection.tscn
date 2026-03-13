@@ -56,16 +56,6 @@
 position = Vector2(559, 402)
 texture = ExtResource("1_op31q")
 
-[node name="TextEdit" type="TextEdit" parent="CollectionBook" unique_id=48603217]
-offset_left = -285.0
-offset_top = -166.0
-offset_right = -213.0
-offset_bottom = -116.0
-rotation = -0.08726646
-text = "Minnow"
-editable = false
-script = ExtResource("2_0gw22")
-
 [node name="TextEdit2" type="TextEdit" parent="CollectionBook" unique_id=1740348590]
 offset_left = -120.0
 offset_top = -182.0
@@ -200,6 +190,16 @@ offset_bottom = 224.0
 rotation = 0.08726646
 text = "Catfish"
 script = ExtResource("17_l3gds")
+
+[node name="Fish_Label_1" type="Label" parent="CollectionBook" unique_id=1387905383]
+offset_left = -285.0
+offset_top = -166.0
+offset_right = -213.0
+offset_bottom = -116.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Minnow"
+script = ExtResource("2_0gw22")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=426274063]
 position = Vector2(316, 192)
