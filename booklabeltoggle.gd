@@ -8,6 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	text = "Collection\nBook ->"
-	if global.mode != global.modes.shop:
+	if global.mode == global.modes.shop:
+		text = "Collection\nBook ->"
+	elif global.mode == global.modes.collection:
+		text = "Close\nBook ->"
+	else:
 		text = ""

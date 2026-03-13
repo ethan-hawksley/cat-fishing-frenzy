@@ -16,14 +16,13 @@ texture = ExtResource("2_6ik3a")
 [node name="Area2D" type="Area2D" parent="." unique_id=1898908593]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=127901419]
-position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_hgn23")
 
 [node name="shock" type="Sprite2D" parent="." unique_id=1499049097]
 visible = false
-position = Vector2(3, 54)
+position = Vector2(0, -2.3841858e-07)
 rotation = 1.5146433
-scale = Vector2(4.8236156, 4.2427483)
+scale = Vector2(1, 0.88)
 texture = ExtResource("3_oovoc")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

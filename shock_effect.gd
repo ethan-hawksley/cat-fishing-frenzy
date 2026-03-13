@@ -1,12 +1,12 @@
 extends Sprite2D
 
-func shocked():
-	self.visible = true
-	global.shock = 0
-	
+var is_showing := false
+
 func _process(_delta: float) -> void:
-	if global.shock == 1:
-		shocked()
+	if global.shock == 1 and not is_showing:
+		is_showing = true
+		global.shock = 0
+		visible = true
 		await get_tree().create_timer(2.0).timeout
-		self.visible = false
-	pass
+		visible = false
+		is_showing = false
