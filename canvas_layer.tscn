@@ -14,6 +14,22 @@
 [ext_resource type="PackedScene" uid="uid://bh168g26j3p7i" path="res://collection.tscn" id="12_as1ww"]
 [ext_resource type="Texture2D" uid="uid://cfobyqq626jim" path="res://assets/book_icon.png" id="12_robvp"]
 [ext_resource type="Script" uid="uid://dgkjrjlc5w8ap" path="res://collection_button.gd" id="13_86mtp"]
+[ext_resource type="Script" uid="uid://bsn4u6mw0r734" path="res://fish_label_1.gd" id="15_86mtp"]
+[ext_resource type="Script" uid="uid://th33oo8h8ayx" path="res://fish_label_2.gd" id="16_lrj6d"]
+[ext_resource type="Script" uid="uid://bq1b8og4xv6na" path="res://fish_label_3.gd" id="17_54dv3"]
+[ext_resource type="Script" uid="uid://djtg0t1sxrnej" path="res://fish_label_4.gd" id="18_uc0vg"]
+[ext_resource type="Script" uid="uid://d31gc1rhngn2b" path="res://fish_label_5.gd" id="19_lljfd"]
+[ext_resource type="Script" uid="uid://cfrlib277413n" path="res://fish_label_6.gd" id="20_qn1ce"]
+[ext_resource type="Script" uid="uid://c3pqbx35k1sp8" path="res://fish_label_7.gd" id="21_31fxs"]
+[ext_resource type="Script" uid="uid://bbjst12xy7bia" path="res://fish_label_8.gd" id="22_k178u"]
+[ext_resource type="Script" uid="uid://dqgojl2algc5q" path="res://fish_label_9.gd" id="23_af0nv"]
+[ext_resource type="Script" uid="uid://xc1ktjcn0g5a" path="res://fish_label_10.gd" id="24_rpy4e"]
+[ext_resource type="Script" uid="uid://bcmymfvril3c" path="res://fish_label_11.gd" id="25_m85tg"]
+[ext_resource type="Script" uid="uid://b7obh4v4orfos" path="res://fish_label_12.gd" id="26_gdnx8"]
+[ext_resource type="Script" uid="uid://ceae23vkkrle5" path="res://fish_label_13.gd" id="27_6o4a1"]
+[ext_resource type="Script" uid="uid://c0qqulti3hfb2" path="res://fish_label_14.gd" id="28_q0bbu"]
+[ext_resource type="Script" uid="uid://0yurjlwcoed0" path="res://fish_label_15.gd" id="29_x0op4"]
+[ext_resource type="Script" uid="uid://co73dx7hj75kn" path="res://fish_label_16.gd" id="30_86krf"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop", "collection")]
 script = ExtResource("1_37rai")
@@ -163,5 +179,197 @@ script = ExtResource("11_5cw7b")
 [node name="collection" parent="." unique_id=2069376763 instance=ExtResource("12_as1ww")]
 position = Vector2(-78, -17)
 scale = Vector2(0.5, 0.5)
+
+[node name="Fish_Label_1" type="Label" parent="." unique_id=565552428]
+offset_left = 46.000004
+offset_top = 104.0
+offset_right = 109.0
+offset_bottom = 127.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Minnow"
+horizontal_alignment = 1
+script = ExtResource("15_86mtp")
+
+[node name="Fish_Label_2" type="Label" parent="." unique_id=1299833937]
+offset_left = 121.00001
+offset_top = 96.0
+offset_right = 184.0
+offset_bottom = 119.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Cod"
+horizontal_alignment = 1
+script = ExtResource("16_lrj6d")
+
+[node name="Fish_Label_3" type="Label" parent="." unique_id=618782982]
+offset_left = 52.0
+offset_top = 162.00002
+offset_right = 115.0
+offset_bottom = 185.00002
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Goldfish"
+horizontal_alignment = 1
+script = ExtResource("17_54dv3")
+
+[node name="Fish_Label_4" type="Label" parent="." unique_id=1333214653]
+offset_left = 126.0
+offset_top = 155.0
+offset_right = 189.0
+offset_bottom = 178.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Koi"
+horizontal_alignment = 1
+script = ExtResource("18_uc0vg")
+
+[node name="Fish_Label_5" type="Label" parent="." unique_id=700339782]
+offset_left = 55.000004
+offset_top = 219.0
+offset_right = 118.0
+offset_bottom = 242.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Nemo"
+horizontal_alignment = 1
+script = ExtResource("19_lljfd")
+
+[node name="Fish_Label_6" type="Label" parent="." unique_id=1583339587]
+offset_left = 127.0
+offset_top = 212.0
+offset_right = 190.0
+offset_bottom = 235.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Dory"
+horizontal_alignment = 1
+script = ExtResource("20_qn1ce")
+
+[node name="Fish_Label_7" type="Label" parent="." unique_id=1180060771]
+offset_left = 58.000004
+offset_top = 278.0
+offset_right = 121.0
+offset_bottom = 301.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Redfish"
+horizontal_alignment = 1
+script = ExtResource("21_31fxs")
+
+[node name="Fish_Label_8" type="Label" parent="." unique_id=1948253329]
+offset_left = 147.0
+offset_top = 269.0
+offset_right = 210.0
+offset_bottom = 292.0
+rotation = -0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Salmon"
+horizontal_alignment = 1
+script = ExtResource("22_k178u")
+
+[node name="Fish_Label_9" type="Label" parent="." unique_id=1181555266]
+offset_left = 225.00002
+offset_top = 92.00001
+offset_right = 288.0
+offset_bottom = 115.00001
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Yellowfish"
+horizontal_alignment = 1
+script = ExtResource("23_af0nv")
+
+[node name="Fish_Label_10" type="Label" parent="." unique_id=1333642476]
+offset_left = 296.0
+offset_top = 99.00001
+offset_right = 359.0
+offset_bottom = 122.00001
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Pinkfish"
+horizontal_alignment = 1
+script = ExtResource("24_rpy4e")
+
+[node name="Fish_Label_11" type="Label" parent="." unique_id=1388986688]
+offset_left = 218.00002
+offset_top = 150.0
+offset_right = 281.0
+offset_bottom = 173.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Bluefish"
+horizontal_alignment = 1
+script = ExtResource("25_m85tg")
+
+[node name="Fish_Label_12" type="Label" parent="." unique_id=530512070]
+offset_left = 291.0
+offset_top = 157.0
+offset_right = 354.0
+offset_bottom = 180.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Pufferfish"
+horizontal_alignment = 1
+script = ExtResource("26_gdnx8")
+
+[node name="Fish_Label_13" type="Label" parent="." unique_id=518969525]
+offset_left = 213.00002
+offset_top = 207.0
+offset_right = 276.0
+offset_bottom = 230.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Turtle"
+horizontal_alignment = 1
+script = ExtResource("27_6o4a1")
+
+[node name="Fish_Label_14" type="Label" parent="." unique_id=406742167]
+offset_left = 286.0
+offset_top = 215.0
+offset_right = 349.0
+offset_bottom = 238.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Anglerfish"
+horizontal_alignment = 1
+script = ExtResource("28_q0bbu")
+
+[node name="Fish_Label_15" type="Label" parent="." unique_id=1516735655]
+offset_left = 197.00002
+offset_top = 264.0
+offset_right = 260.0
+offset_bottom = 287.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Squid"
+horizontal_alignment = 1
+script = ExtResource("29_x0op4")
+
+[node name="Fish_Label_16" type="Label" parent="." unique_id=941233768]
+offset_left = 287.00003
+offset_top = 273.0
+offset_right = 350.00003
+offset_bottom = 296.0
+rotation = 0.08726646
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "Catfish"
+horizontal_alignment = 1
+script = ExtResource("30_86krf")
 
 [connection signal="pressed" from="collection book button" to="collection book button" method="_on_pressed"]

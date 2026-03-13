@@ -8,7 +8,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if global.collection[11]:
-		text = "Pufferfish"
+	if global.mode != global.modes.collection:
+		text = ""
+	elif global.collection[5]:
+		text = "Dory"
 	else:
 		text = "???"

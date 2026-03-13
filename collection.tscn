@@ -1,45 +1,29 @@
 [gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
 [ext_resource type="Texture2D" uid="uid://brax74vpljv8s" path="res://assets/collection_book.png" id="1_op31q"]
-[ext_resource type="Script" uid="uid://bsn4u6mw0r734" path="res://fish_text_1.gd" id="2_0gw22"]
 [ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="2_ae7c0"]
 [ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="3_7kip4"]
-[ext_resource type="Script" uid="uid://th33oo8h8ayx" path="res://fish_text_2.gd" id="3_a57f5"]
 [ext_resource type="Script" uid="uid://2n2ejve5x5rn" path="res://fish_1.gd" id="3_fc0er"]
-[ext_resource type="Script" uid="uid://bq1b8og4xv6na" path="res://fish_text_3.gd" id="4_03as6"]
 [ext_resource type="Texture2D" uid="uid://ccsgujvtru1sd" path="res://assets/fish_3.png" id="4_xajaa"]
 [ext_resource type="Script" uid="uid://ok1utxuju8mw" path="res://fish_2.gd" id="5_0gw22"]
 [ext_resource type="Texture2D" uid="uid://j5gqv1el1noa" path="res://assets/fish_4.png" id="5_5w4to"]
-[ext_resource type="Script" uid="uid://djtg0t1sxrnej" path="res://fish_text_4.gd" id="5_7loxw"]
 [ext_resource type="Texture2D" uid="uid://d1mih6km1anju" path="res://assets/fish_5.png" id="6_fb0dq"]
-[ext_resource type="Script" uid="uid://d31gc1rhngn2b" path="res://fish_text_5.gd" id="6_j4ryu"]
 [ext_resource type="Texture2D" uid="uid://drckiwxjgp03d" path="res://assets/fish_6.png" id="7_75s46"]
-[ext_resource type="Script" uid="uid://cfrlib277413n" path="res://fish_text_6.gd" id="7_a5o4n"]
 [ext_resource type="Script" uid="uid://ulhqhfleckl1" path="res://fish_3.gd" id="7_x2tiq"]
-[ext_resource type="Script" uid="uid://c3pqbx35k1sp8" path="res://fish_text_7.gd" id="8_23vp2"]
 [ext_resource type="Texture2D" uid="uid://cdrllcc3jrasg" path="res://assets/fish_7.png" id="8_tj0ev"]
 [ext_resource type="Texture2D" uid="uid://wxlgthxxnn8y" path="res://assets/fish_8.png" id="9_0b34o"]
 [ext_resource type="Script" uid="uid://t5570ivlanfd" path="res://fish_4.gd" id="9_ehvor"]
-[ext_resource type="Script" uid="uid://bbjst12xy7bia" path="res://fish_text_8.gd" id="9_ku06r"]
-[ext_resource type="Script" uid="uid://dqgojl2algc5q" path="res://fish_text_9.gd" id="10_inpck"]
 [ext_resource type="Texture2D" uid="uid://ouu200hm6ioc" path="res://assets/fish_9.png" id="10_m1vpp"]
 [ext_resource type="Texture2D" uid="uid://c76vytumo1pje" path="res://assets/fish_10.png" id="11_h5b63"]
 [ext_resource type="Script" uid="uid://bnt5mfrlhthpc" path="res://fish_5.gd" id="11_klfwk"]
-[ext_resource type="Script" uid="uid://xc1ktjcn0g5a" path="res://fish_text_10.gd" id="11_m1ekd"]
-[ext_resource type="Script" uid="uid://bcmymfvril3c" path="res://fish_text_11.gd" id="12_v5bou"]
 [ext_resource type="Texture2D" uid="uid://3p8lxwu7buje" path="res://assets/fish_11.png" id="12_y1d8t"]
-[ext_resource type="Script" uid="uid://b7obh4v4orfos" path="res://fish_text_12.gd" id="13_iclgf"]
 [ext_resource type="Texture2D" uid="uid://btksl3ciyqoor" path="res://assets/fish_12.png" id="13_v6t6i"]
 [ext_resource type="Script" uid="uid://c3x1s30iuoqsp" path="res://fish_6.gd" id="13_why82"]
 [ext_resource type="Texture2D" uid="uid://c1bu7cnam3o50" path="res://assets/fish_13.png" id="14_56gho"]
-[ext_resource type="Script" uid="uid://ceae23vkkrle5" path="res://fish_text_13.gd" id="14_eeogr"]
 [ext_resource type="Script" uid="uid://cqa7jw66khrvx" path="res://fish_7.gd" id="15_05hu4"]
-[ext_resource type="Script" uid="uid://c0qqulti3hfb2" path="res://fish_text_14.gd" id="15_35mvo"]
 [ext_resource type="Texture2D" uid="uid://dv8r3u135x7xk" path="res://assets/fish_14.png" id="15_nb4c1"]
 [ext_resource type="Texture2D" uid="uid://b0htejcsbcwga" path="res://assets/fish_15.png" id="16_54rbh"]
-[ext_resource type="Script" uid="uid://0yurjlwcoed0" path="res://fish_text_15.gd" id="16_tkkus"]
 [ext_resource type="Script" uid="uid://dpsqtjdiew1xh" path="res://fish_8.gd" id="17_akeeu"]
-[ext_resource type="Script" uid="uid://co73dx7hj75kn" path="res://fish_text_16.gd" id="17_l3gds"]
 [ext_resource type="Texture2D" uid="uid://dqwpg3kfpyuub" path="res://assets/catfish.png" id="17_phnru"]
 [ext_resource type="Script" uid="uid://bnxdttvp8br45" path="res://fish_9.gd" id="19_v137j"]
 [ext_resource type="Script" uid="uid://c3wpa3nuqbbja" path="res://fish_10.gd" id="21_0doji"]
@@ -55,151 +39,6 @@
 [node name="CollectionBook" type="Sprite2D" parent="." unique_id=1259443240]
 position = Vector2(559, 402)
 texture = ExtResource("1_op31q")
-
-[node name="TextEdit2" type="TextEdit" parent="CollectionBook" unique_id=1740348590]
-offset_left = -120.0
-offset_top = -182.0
-offset_right = -48.0
-offset_bottom = -132.0
-rotation = -0.08726646
-text = "Cod"
-script = ExtResource("3_a57f5")
-
-[node name="TextEdit3" type="TextEdit" parent="CollectionBook" unique_id=1663797128]
-offset_left = -278.0
-offset_top = -49.0
-offset_right = -202.65906
-offset_bottom = 1.0
-rotation = -0.08726646
-text = "Goldfish"
-script = ExtResource("4_03as6")
-
-[node name="TextEdit4" type="TextEdit" parent="CollectionBook" unique_id=501613408]
-offset_left = -111.0
-offset_top = -66.0
-offset_right = -39.0
-offset_bottom = -16.0
-rotation = -0.08726646
-text = "Koi"
-script = ExtResource("5_7loxw")
-
-[node name="TextEdit5" type="TextEdit" parent="CollectionBook" unique_id=1648698381]
-offset_left = -257.0
-offset_top = 66.0
-offset_right = -185.0
-offset_bottom = 116.0
-rotation = -0.08726646
-text = "Nemo"
-script = ExtResource("6_j4ryu")
-
-[node name="TextEdit6" type="TextEdit" parent="CollectionBook" unique_id=233412608]
-offset_left = -105.0
-offset_top = 51.0
-offset_right = -33.0
-offset_bottom = 101.0
-rotation = -0.08726646
-text = "Dory"
-script = ExtResource("7_a5o4n")
-
-[node name="TextEdit7" type="TextEdit" parent="CollectionBook" unique_id=1055272010]
-offset_left = -256.0
-offset_top = 179.0
-offset_right = -184.0
-offset_bottom = 229.0
-rotation = -0.08726646
-text = "Red fish"
-script = ExtResource("8_23vp2")
-
-[node name="TextEdit8" type="TextEdit" parent="CollectionBook" unique_id=296666789]
-offset_left = -90.0
-offset_top = 164.0
-offset_right = -18.0
-offset_bottom = 214.0
-rotation = -0.08726646
-text = "Salmon"
-script = ExtResource("9_ku06r")
-
-[node name="TextEdit9" type="TextEdit" parent="CollectionBook" unique_id=1891602671]
-offset_left = 61.948414
-offset_top = -188.35446
-offset_right = 153.33708
-offset_bottom = -138.35446
-rotation = 0.08726646
-text = "Yellow fish"
-script = ExtResource("10_inpck")
-
-[node name="TextEdit10" type="TextEdit" parent="CollectionBook" unique_id=171424860]
-offset_left = 214.00002
-offset_top = -176.0
-offset_right = 301.3216
-offset_bottom = -126.0
-rotation = 0.08726646
-text = "Pink fish"
-script = ExtResource("11_m1ekd")
-
-[node name="TextEdit11" type="TextEdit" parent="CollectionBook" unique_id=336426299]
-offset_left = 55.000015
-offset_top = -69.0
-offset_right = 142.32161
-offset_bottom = -19.0
-rotation = 0.08726646
-text = "Blue fish"
-script = ExtResource("12_v5bou")
-
-[node name="TextEdit12" type="TextEdit" parent="CollectionBook" unique_id=1425957022]
-offset_left = 202.00002
-offset_top = -60.0
-offset_right = 289.3216
-offset_bottom = -10.0
-rotation = 0.08726646
-text = "Pufferfish"
-script = ExtResource("13_iclgf")
-
-[node name="TextEdit13" type="TextEdit" parent="CollectionBook" unique_id=208456968]
-offset_left = 64.000015
-offset_top = 43.0
-offset_right = 151.32161
-offset_bottom = 93.0
-rotation = 0.08726646
-text = "Turtle"
-script = ExtResource("14_eeogr")
-
-[node name="TextEdit14" type="TextEdit" parent="CollectionBook" unique_id=1051925740]
-offset_left = 191.51291
-offset_top = 56.694916
-offset_right = 290.70676
-offset_bottom = 106.694916
-rotation = 0.08726646
-text = "Angler fish"
-script = ExtResource("15_35mvo")
-
-[node name="TextEdit15" type="TextEdit" parent="CollectionBook" unique_id=1001808052]
-offset_left = 28.000015
-offset_top = 158.0
-offset_right = 115.32161
-offset_bottom = 208.0
-rotation = 0.08726646
-text = "Squid"
-script = ExtResource("16_tkkus")
-
-[node name="TextEdit16" type="TextEdit" parent="CollectionBook" unique_id=1382270573]
-offset_left = 201.00002
-offset_top = 174.0
-offset_right = 288.3216
-offset_bottom = 224.0
-rotation = 0.08726646
-text = "Catfish"
-script = ExtResource("17_l3gds")
-
-[node name="Fish_Label_1" type="Label" parent="CollectionBook" unique_id=1387905383]
-offset_left = -285.0
-offset_top = -166.0
-offset_right = -213.0
-offset_bottom = -116.0
-rotation = -0.08726646
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "Minnow"
-script = ExtResource("2_0gw22")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=426274063]
 position = Vector2(316, 192)
