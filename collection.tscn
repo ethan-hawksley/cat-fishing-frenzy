@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
-[ext_resource type="Texture2D" uid="uid://brax74vpljv8s" path="res://assets/collection_book.png" id="1_op31q"]
+[ext_resource type="Texture2D" uid="uid://dmmn6xtyu146w" path="res://assets/collection_book.png" id="1_op31q"]
 [ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="2_ae7c0"]
 [ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="3_7kip4"]
 [ext_resource type="Script" uid="uid://2n2ejve5x5rn" path="res://fish_1.gd" id="3_fc0er"]
@@ -35,6 +35,7 @@
 [ext_resource type="Script" uid="uid://bvgc61teeyliq" path="res://fish_16.gd" id="33_7hett"]
 
 [node name="Node2D2" type="Node2D" unique_id=2069376763]
+texture_filter = 2
 
 [node name="CollectionBook" type="Sprite2D" parent="." unique_id=1259443240]
 position = Vector2(559, 402)
