@@ -10,8 +10,8 @@ func rodup():
 	if global.money >= global.inflationlongerline * 115:
 		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationlongerline * 115
-		global.length = global.length + 150
-		global.inflationlongerline = global.inflationlongerline * 1.1
+		global.length = global.length + 100
+		global.inflationlongerline = global.inflationlongerline * 1.2
 		global.money = snapped(global.money,0.01)
 		global.longerup += 1
 

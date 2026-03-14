@@ -19,13 +19,13 @@ func harpoonkill():
 			AudioManager.play_sfx("click")
 			global.money = global.money - global.inflationharpoon * 75
 			global.harpspeed += 50
-			global.inflationharpoon = global.inflationharpoon * 1.1
+			global.inflationharpoon = global.inflationharpoon * 2
 			global.money = snapped(global.money,0.01)
 			global.harpoonup += 1
 		
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	disabled = global.money < global.inflationharpoon * 75
+	disabled = global.money < global.inflationharpoon * 75 or global.harpoonup == 11
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
 	pass

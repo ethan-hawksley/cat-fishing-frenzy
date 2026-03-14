@@ -6,11 +6,11 @@ func _ready() -> void:
 	pressed.connect(hookup)
 	pass # Replace with function body.
 func hookup():
-	if global.money >= global.inflationcatchmore * 50:
+	if global.money >= global.inflationcatchmore * 60:
 		AudioManager.play_sfx("click")
-		global.money = global.money - global.inflationcatchmore * 50
-		global.max_fish = global.max_fish + 5
-		global.inflationcatchmore = global.inflationcatchmore * 1.1
+		global.money = global.money - global.inflationcatchmore * 60
+		global.max_fish = global.max_fish + 2.1
+		global.inflationcatchmore = global.inflationcatchmore * 1.3
 		global.money = snapped(global.money,0.01)
 		global.inflationcatchmore = ceil(global.inflationcatchmore)
 
@@ -18,6 +18,6 @@ func hookup():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	disabled = global.money < global.inflationcatchmore * 50
+	disabled = global.money < global.inflationcatchmore * 60
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
 	pass

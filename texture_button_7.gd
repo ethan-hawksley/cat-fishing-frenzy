@@ -11,7 +11,7 @@ func lesssharks():
 			AudioManager.play_sfx("click")
 			global.money = global.money - global.inflationshark * 500
 			global.sharkchance = global.sharkchance * 1.025
-			global.inflationshark = global.inflationshark * 5
+			global.inflationshark = global.inflationshark * 2.5
 			global.money = snapped(global.money,0.01)
 			global.lesssharkss += 1
 
