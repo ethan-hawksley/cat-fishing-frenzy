@@ -14,6 +14,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		AudioManager.play_sfx("rock")
 	
 	global.mode = global.modes.ascending
+	AudioManager.play_reel()
 	caught = true
 	caught_by = area
 	rotation_degrees = randf_range(0, 360)

@@ -10,15 +10,16 @@ func _process(delta: float) -> void:
 	if global.time_left_until_spawn <= 0:
 		global.time_left_until_spawn += global.time_per_spawn
 		if global.mode == global.modes.descending:
-			if randf() < global.sharkchance:
-				spawn_entity()
+			var shark_prob = (1.0 - global.sharkchance) / 2.0 
+			var rock_prob = 0.15 * global.rockchance 
+			var roll = randf()
+			if roll < shark_prob:
+				spawn_shark()
+			elif roll < shark_prob + rock_prob:
+				spawn_rock()
 			else:
-				if randf() > global.rockchance:
-					spawn_shark()
-				else:
-					spawn_rock()
-					
-				
+				spawn_entity()
+
 func spawn_rock() -> void:
 	var rock = rock_scene.instantiate()
 	rock.position = hook.position

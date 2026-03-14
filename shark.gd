@@ -31,7 +31,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 
 		harpoon = harpoon_scene.instantiate()
 		harpoon.global_position = global_position
-		harpoon.global_position.y = -500
+		harpoon.global_position.y = global.depth - 500
 		harpoon.target = self
 		get_parent().add_child(harpoon)
 

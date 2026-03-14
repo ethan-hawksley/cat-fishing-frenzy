@@ -1,6 +1,8 @@
 extends Node
 
 var background_player: AudioStreamPlayer
+var reel_player: AudioStreamPlayer
+
 
 var sfx_players: Array[AudioStreamPlayer] =[]
 var num_sfx_players = 8
@@ -10,6 +12,7 @@ var sounds = {
 	"click": preload("res://assets/audio/click.ogg"),
 	"money": preload("res://assets/audio/money.ogg"),
 	"page_turn": preload("res://assets/audio/page_turn.ogg"),
+	"reel": preload("res://assets/audio/reel.ogg"),
 	"rock": preload("res://assets/audio/rock.ogg"),
 	"shark": preload("res://assets/audio/shark.ogg"),
 	"splash": preload("res://assets/audio/splash.ogg"),
@@ -18,12 +21,18 @@ var sounds = {
 }
 
 var waves_loop = preload("res://assets/audio/waves.ogg")
+var reel_loop = preload("res://assets/audio/reel.ogg")
 
 func _ready() -> void:
 	background_player = AudioStreamPlayer.new()
 	background_player.bus = "Master"
 	background_player.volume_db = -10.0
 	add_child(background_player)
+	
+	reel_player = AudioStreamPlayer.new()
+	reel_player.bus = "Master"
+	reel_player.volume_db = -17.0
+	add_child(reel_player)
 	
 	for i in num_sfx_players:
 		var player = AudioStreamPlayer.new()
@@ -40,6 +49,14 @@ func play_bgm() -> void:
 
 func stop_bgm() -> void:
 	background_player.stop()
+
+func play_reel() -> void:
+	if not reel_player.playing:
+		reel_player.stream = reel_loop
+		reel_player.play()
+
+func stop_reel() -> void:
+	reel_player.stop()
 
 func play_sfx(sound_name: String, volume_db: float = 0.0) -> void:
 	if not sounds.has(sound_name):
