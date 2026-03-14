@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 global="*uid://cjjjaa78f8nhd"
 GlobalCanvasLayer="*uid://c854mbq5w53dc"
+AudioManager="*uid://dvspteshcjdi8"
 
 [display]
 

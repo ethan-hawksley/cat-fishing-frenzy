@@ -35,7 +35,7 @@
 [ext_resource type="Script" uid="uid://bvgc61teeyliq" path="res://fish_16.gd" id="33_7hett"]
 
 [node name="Node2D2" type="Node2D" unique_id=2069376763]
-texture_filter = 2
+texture_filter = 1
 
 [node name="CollectionBook" type="Sprite2D" parent="." unique_id=1259443240]
 position = Vector2(559, 402)
