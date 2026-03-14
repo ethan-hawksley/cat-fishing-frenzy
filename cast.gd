@@ -16,7 +16,7 @@ func _process(delta: float) -> void:
 		if Input.is_action_pressed("ui_right"):
 			position.x += (global.speed*1200 * delta)
 	if global.mode == global.modes.ascending:
-		position.y -= (global.speed*600 * delta)
+		position.y -= (global.speed*1200 * delta)
 		position.x = move_toward(position.x, -64, global.speed * 1200 * delta)
 		if position.x < -60 and position.x > -68 and position.y <= 0:
 			if global.caught_fish > 0 or global.value_of_reeled_fish > 0:

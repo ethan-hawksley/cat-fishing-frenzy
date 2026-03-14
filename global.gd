@@ -1,11 +1,12 @@
 extends Node
 
+var easymode = 1
 var rockchance = 0.5
 var sharkchance = 0.85
 var harptime = 3.0
 var harpspeed = 200
 var length = 300
-var money = 10000000
+var money = 1000
 var speed = 0.13
 var mode = modes.shop
 var inflationmorefish = 1
