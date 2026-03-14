@@ -19,10 +19,8 @@ func _process(_delta: float) -> void:
 		position.x += 0.2 * global.easymode
 	if position.x > 330:
 		position.x = -430
-
-func _input(event):
-	if event is InputEventKey and event.is_pressed():
-		if event.keycode == 70:
-			global.betterducksmode = true
-			global.easymode += 1
-	pass
+	
+	if Input.is_action_just_pressed("f_key"):
+		print("Easier mode active")
+		global.betterducksmode = true
+		global.easymode += 1
