@@ -9,7 +9,7 @@ func hookup():
 	if global.money >= global.inflationcatchmore * 50:
 		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationcatchmore * 50
-		global.max_fish = global.max_fish + 1
+		global.max_fish = global.max_fish + 5
 		global.inflationcatchmore = global.inflationcatchmore * 1.1
 		global.money = snapped(global.money,0.01)
 		global.inflationcatchmore = ceil(global.inflationcatchmore)

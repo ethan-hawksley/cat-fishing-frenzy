@@ -112,9 +112,19 @@ func _ready() -> void:
 			value = 800
 			fish = "fish_16"
 
-	if randf() < 0.05:
+	if randf() < 0.005:
 		jellyfish = true
 		path = "res://assets/jellyfish.png"
+		
+	if 1500 < global.depth and global.depth < 1750:
+		if randf() < 0.85:
+			path = "res://assets/jellyfish.png"
+			jellyfish = true
+	if 2500 < global.depth and global.depth < 2750:
+		if randf() < 0.85:
+			path = "res://assets/jellyfish.png"
+			jellyfish = true
+		
 
 	var loaded_texture = load(path)
 	$Sprite2D.texture = loaded_texture
