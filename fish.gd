@@ -161,7 +161,8 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		
 	elif jellyfish == true:
 		AudioManager.play_sfx("zap")
-		global.value_of_reeled_fish /= 2.0 
+		global.caught_fish += 2.0 
+		global.value_of_reeled_fish /= 2
 		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 		$shock.visible = true
 		global.shock = 1
