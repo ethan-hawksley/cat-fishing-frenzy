@@ -30,6 +30,7 @@
 [ext_resource type="Script" path="res://fish_label_14.gd" id="28_q0bbu"]
 [ext_resource type="Script" path="res://fish_label_15.gd" id="29_x0op4"]
 [ext_resource type="Script" path="res://fish_label_16.gd" id="30_86krf"]
+[ext_resource type="Script" uid="uid://cf748ewaukjbg" path="res://label_2.gd" id="31_uc0vg"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop", "collection")]
 script = ExtResource("1_37rai")
@@ -371,5 +372,14 @@ theme_override_font_sizes/font_size = 10
 text = "Catfish"
 horizontal_alignment = 1
 script = ExtResource("30_86krf")
+
+[node name="Label2" type="Label" parent="." unique_id=1525236415]
+offset_left = 443.0
+offset_top = 267.0
+offset_right = 595.0
+offset_bottom = 316.0
+text = "Use Left and Right
+Arrow Keys to steer"
+script = ExtResource("31_uc0vg")
 
 [connection signal="pressed" from="collection book button" to="collection book button" method="_on_pressed"]
