@@ -1,8 +1,8 @@
 extends Node
 
 var easymode = 1
-var rockchance = 0.5
-var sharkchance = 0.85
+var rockchance = 0.05
+var sharkchance = 0.95
 var harptime = 3.0
 var harpspeed = 200
 var length = 300

@@ -11,12 +11,9 @@ func rodup():
 		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationlongerline * 115
 		global.length = global.length + 100
-		global.time_per_spawn = global.time_per_spawn * 0.95
-		global.inflationlongerline = global.inflationlongerline * 1.2
+		global.inflationlongerline = global.inflationlongerline * 1.1
 		global.money = snapped(global.money,0.01)
 		global.longerup += 1
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 
 func _process(_delta: float) -> void:
 	disabled = global.money < global.inflationlongerline * 115
