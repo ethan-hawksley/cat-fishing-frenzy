@@ -8,6 +8,7 @@ func _ready() -> void:
 func harpoonkill():
 	if global.harptime > 0.1:
 		if global.money >= global.inflationharpoon * 75:
+			AudioManager.play_sfx("click")
 			global.money = global.money - global.inflationharpoon * 75
 			global.harptime = global.harptime - 0.75
 			global.inflationharpoon = global.inflationharpoon * 1.1
@@ -15,6 +16,7 @@ func harpoonkill():
 			global.harpoonup += 1
 	elif global.harptime <= 0.1 and global.harpspeed < 600:
 		if global.money >= global.inflationharpoon * 75:
+			AudioManager.play_sfx("click")
 			global.money = global.money - global.inflationharpoon * 75
 			global.harpspeed += 50
 			global.inflationharpoon = global.inflationharpoon * 1.1

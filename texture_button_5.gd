@@ -7,6 +7,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 func morefish():
 	if global.money >= global.inflationmorefish * 50:
+		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationmorefish * 50
 		global.time_per_spawn = global.time_per_spawn * 0.975
 		global.inflationmorefish = global.inflationmorefish * 1.1

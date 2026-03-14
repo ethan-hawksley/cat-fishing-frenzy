@@ -19,6 +19,8 @@ func _process(delta: float) -> void:
 		position.y -= (global.speed*600 * delta)
 		position.x = move_toward(position.x, -64, global.speed * 1200 * delta)
 		if position.x < -60 and position.x > -68 and position.y <= 0:
+			if global.caught_fish > 0 or global.value_of_reeled_fish > 0:
+				AudioManager.play_sfx("money")
 			global.mode = global.modes.shop
 			global.money += global.value_of_reeled_fish
 			global.value_of_reeled_fish = 0
@@ -31,5 +33,3 @@ func _process(delta: float) -> void:
 		position.y = 0
 	if (position.x - -64)**2 + (global.depth)**2 >= (global.length)**2:
 		global.mode = global.modes.ascending
-
-		

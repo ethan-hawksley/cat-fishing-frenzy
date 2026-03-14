@@ -12,4 +12,5 @@ func _process(_delta: float) -> void:
 
 func _on_pressed() -> void:
 	if global.mode == global.modes.shop: 
+		AudioManager.play_sfx("splash")
 		global.mode = global.modes.descending

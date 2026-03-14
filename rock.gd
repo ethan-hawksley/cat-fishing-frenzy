@@ -10,6 +10,9 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):
 		return
 	
+	if not caught:
+		AudioManager.play_sfx("rock")
+	
 	global.mode = global.modes.ascending
 	caught = true
 	caught_by = area
@@ -22,4 +25,3 @@ func _process(_delta: float) -> void:
 	if caught:
 		global_position = caught_by.global_position
 		global_position.y += 40
-	

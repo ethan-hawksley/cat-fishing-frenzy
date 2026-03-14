@@ -7,6 +7,7 @@ enum directions {
 var harpoon_scene = preload("res://harpoon.tscn")
 var harpoon_spawned = false
 var harpoon: Node2D = null
+var attacked = false
 
 func _ready() -> void:
 	if randf() < 0.5:
@@ -16,6 +17,9 @@ func _ready() -> void:
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group("hook"):
+		if not attacked:
+			AudioManager.play_sfx("shark")
+			attacked = true
 		global.value_of_reeled_fish *= 0.75 
 		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 	if area.is_in_group("sharkattack") and not harpoon_spawned:
@@ -45,5 +49,3 @@ func _process(delta: float) -> void:
 			global_position.y -= 60 * delta
 		if is_instance_valid(harpoon) and harpoon.global_position.x < global_position.x + 100 and harpoon.global_position.x != 0:
 			$target.visible = true
-
-			

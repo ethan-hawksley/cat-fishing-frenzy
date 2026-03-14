@@ -8,6 +8,7 @@ func _ready() -> void:
 	
 func rodup():
 	if global.money >= global.inflationlongerline * 115:
+		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationlongerline * 115
 		global.length = global.length + 50
 		global.inflationlongerline = global.inflationlongerline * 1.1

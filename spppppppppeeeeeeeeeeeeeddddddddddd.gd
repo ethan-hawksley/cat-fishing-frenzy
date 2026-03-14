@@ -7,6 +7,7 @@ func _ready() -> void:
 	pass # pressed.connect(rodup)Replace with function body.
 func boatsboost():
 	if global.money >= global.inflationfasterrod * 100:
+		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationfasterrod * 100
 		global.speed = global.speed + 0.025
 		global.inflationfasterrod = global.inflationfasterrod * 1.1

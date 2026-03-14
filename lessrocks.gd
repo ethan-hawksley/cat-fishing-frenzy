@@ -7,6 +7,7 @@ func _ready() -> void:
 	pass # Replace with function body.
 func lessrock():
 	if global.money >= global.inflationrock * 50:
+		AudioManager.play_sfx("click")
 		global.money = global.money - global.inflationrock * 50
 		global.rockchance = global.rockchance * 0.80
 		global.inflationrock = global.inflationrock * 1.1

@@ -12,7 +12,7 @@ var caught_by = null
 var value = 0
 var fish = "fish_1"
 
-var images = [
+var images =[
 	"res://assets/fish_1.png",
 	"res://assets/fish_2.png",
 	"res://assets/fish_3.png",
@@ -134,6 +134,9 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		return
 		
 	if jellyfish == false:
+		if not caught:
+			AudioManager.play_sfx("catch")
+			
 		add_collection(fish)
 		global.caught_fish += 1
 		global.value_of_reeled_fish += value
@@ -147,6 +150,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		rotation_degrees = randf_range(0, 360)
 		
 	elif jellyfish == true:
+		AudioManager.play_sfx("zap")
 		global.value_of_reeled_fish /= 2.0 
 		global.value_of_reeled_fish = snapped(global.value_of_reeled_fish, 0.01)
 		$shock.visible = true

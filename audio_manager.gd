@@ -2,7 +2,7 @@ extends Node
 
 var background_player: AudioStreamPlayer
 
-var sfx_players: Array[AudioStreamPlayer] = []
+var sfx_players: Array[AudioStreamPlayer] =[]
 var num_sfx_players = 8
 
 var sounds = {
@@ -30,6 +30,8 @@ func _ready() -> void:
 		player.bus = "Master"
 		add_child(player)
 		sfx_players.append(player)
+		
+	play_bgm()
 
 func play_bgm() -> void:
 	if not background_player.playing:

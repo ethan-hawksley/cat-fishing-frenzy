@@ -8,6 +8,7 @@ func _ready() -> void:
 func lesssharks():
 	if global.sharkchance < 0.95:
 		if global.money >= global.inflationshark * 500:
+			AudioManager.play_sfx("click")
 			global.money = global.money - global.inflationshark * 500
 			global.sharkchance = global.sharkchance * 1.025
 			global.inflationshark = global.inflationshark * 5
