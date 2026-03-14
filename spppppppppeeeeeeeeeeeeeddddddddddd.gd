@@ -1,21 +1,19 @@
 extends TextureButton
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pressed.connect(boatsboost)
-	pass # pressed.connect(rodup)Replace with function body.
+
 func boatsboost():
-	if global.money >= global.inflationfasterrod * 100:
+	var cost = snapped(global.inflationfasterrod * 100, 0.01)
+	if global.money >= cost:
 		AudioManager.play_sfx("click")
-		global.money = global.money - global.inflationfasterrod * 100
+		global.money = global.money - cost
 		global.speed = global.speed + 0.015
 		global.inflationfasterrod = global.inflationfasterrod * 1.5
-		global.money = snapped(global.money,0.01)
+		global.money = snapped(global.money, 0.01)
 		global.speedup += 1
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	disabled = global.money < global.inflationfasterrod * 100
+	var cost = snapped(global.inflationfasterrod * 100, 0.01)
+	disabled = global.money < cost
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
-	pass

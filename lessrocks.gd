@@ -1,21 +1,19 @@
 extends TextureButton
 
-
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pressed.connect(lessrock)
-	pass # Replace with function body.
+
 func lessrock():
-	if global.money >= global.inflationrock * 75:
+	var cost = snapped(global.inflationrock * 75, 0.01)
+	if global.money >= cost:
 		AudioManager.play_sfx("click")
-		global.money = global.money - global.inflationrock * 75
+		global.money = global.money - cost
 		global.rockchance = global.rockchance * 0.95
 		global.inflationrock = global.inflationrock * 1.3
-		global.money = snapped(global.money,0.01)
+		global.money = snapped(global.money, 0.01)
 		global.lessroccks += 1
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	disabled = global.money < global.inflationrock * 75
+	var cost = snapped(global.inflationrock * 75, 0.01)
+	disabled = global.money < cost
 	modulate = Color.WHITE if not disabled else Color(1, 1, 1, 0.4)
-	pass
