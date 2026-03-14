@@ -74,42 +74,42 @@ func _ready() -> void:
 	if 1600 < global.depth:
 		if randf() < 0.5:
 			path = images[8]
-			value = 550*global.easymode
+			value = 1100*global.easymode
 			fish = "fish_9"
 	if 1800 < global.depth:
 		if randf() < 0.5:
 			path = images[9]
-			value = 600*global.easymode
+			value = 1200*global.easymode
 			fish = "fish_10"
 	if 2000 < global.depth:
 		if randf() < 0.5:
 			path = images[10]
-			value = 650*global.easymode
+			value = 1300*global.easymode
 			fish = "fish_11"
 	if 2200 < global.depth:
 		if randf() < 0.5:
 			path = images[11]
-			value = 700*global.easymode
+			value = 1400*global.easymode
 			fish = "fish_12"
 	if 2400 < global.depth:
 		if randf() < 0.5:
 			path = images[12]
-			value = 750*global.easymode
+			value = 1500*global.easymode
 			fish = "fish_13"
 	if 2600 < global.depth:
 		if randf() < 0.5:
 			path = images[13]
-			value = 800*global.easymode
+			value = 3200*global.easymode
 			fish = "fish_14"
 	if 2800 < global.depth:
 		if randf() < 0.5:
 			path = images[14]
-			value = 900*global.easymode
+			value = 5000*global.easymode
 			fish = "fish_15"
 	if 3000 < global.depth:
 		if randf() < 0.5:
 			path = images[15]
-			value = 1000 * global.easymode
+			value = 100000 * global.easymode
 			fish = "fish_16"
 	if 3500 < global.depth:
 		if randf() < 0.5:
