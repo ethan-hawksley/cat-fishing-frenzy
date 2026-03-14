@@ -32,6 +32,7 @@ var speedup = 0
 var longerup = 0
 var lessroccks = 0
 var lesssharkss = 0
+var betterducksmode = false 
 
 enum modes {
 	descending,
