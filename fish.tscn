@@ -19,6 +19,7 @@ texture = ExtResource("2_6ik3a")
 shape = SubResource("RectangleShape2D_hgn23")
 
 [node name="shock" type="Sprite2D" parent="." unique_id=1499049097]
+visible = false
 position = Vector2(0, -2.3841858e-07)
 rotation = 1.5146433
 scale = Vector2(0.341, 0.3)
