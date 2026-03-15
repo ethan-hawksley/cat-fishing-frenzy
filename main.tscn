@@ -11,6 +11,7 @@
 [ext_resource type="Script" uid="uid://cm5cvn2jvbp61" path="res://entity_spawner.gd" id="7_272bh"]
 [ext_resource type="Script" uid="uid://xr55sa88uxbw" path="res://shock_effect.gd" id="8_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://dutd30p2hjljm" path="res://assets/sky&shallow_background.png" id="8_5vw27"]
+[ext_resource type="Texture2D" uid="uid://dd6ouhlj28ny6" path="res://assets/dot.png" id="9_cegan"]
 [ext_resource type="Script" uid="uid://bjay5shndfyru" path="res://cat.gd" id="9_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
@@ -65,6 +66,20 @@ script = ExtResource("8_2cqfq")
 position = Vector2(-12, -32)
 position_smoothing_enabled = true
 position_smoothing_speed = 4.0
+
+[node name="left" type="TouchScreenButton" parent="Hook/Camera2D" unique_id=855005413]
+visible = false
+position = Vector2(-339, -202)
+scale = Vector2(340.00003, 387.00003)
+texture_normal = ExtResource("9_cegan")
+action = "ui_left"
+
+[node name="right" type="TouchScreenButton" parent="Hook/Camera2D" unique_id=225592185]
+visible = false
+position = Vector2(1, -203)
+scale = Vector2(340.00003, 387.00003)
+texture_normal = ExtResource("9_cegan")
+action = "ui_left"
 
 [node name="Area2D" type="Area2D" parent="Hook" unique_id=1775785438 groups=["hook"]]
 position = Vector2(-12, -32)
