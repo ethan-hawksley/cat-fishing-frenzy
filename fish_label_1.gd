@@ -10,7 +10,23 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if global.mode != global.modes.collection:
 		text = ""
-	elif global.collection[0]:
-		text = "Minnow"
-	else:
-		text = "???"
+	elif global.collection_page == 1:
+		if global.collection[0]:
+			text = "Minnow"
+		else:
+			text = "???"
+	elif global.collection_page == 2:
+		if global.collection[8]:
+			text = "Trout"
+		else:
+			text = "???"
+	elif global.collection_page == 3:
+		if global.collection[16]:
+			text = "Swordfish"
+		else:
+			text = "???"
+	elif global.collection_page == 4:
+		if global.collection[24]:
+			text = "Parrotfish"
+		else:
+			text = "???"

@@ -44,9 +44,15 @@ enum modes {
 
 var shock = 0
 
+var collection_page = 0
+
 var collection: Array[bool] = [
 	false, false, false, false,  # fish 1-4
 	false, false, false, false,  # fish 5-8
 	false, false, false, false,  # fish 9-12
 	false, false, false, false,  # fish 13-16
+	false, false, false, false,  # fish 17-20
+	false, false, false, false,  # fish 21-24
+	false, false, false, false,  # fish 25-28
+	false, false, false, false,  # fish 29-32
 ]
