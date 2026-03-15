@@ -310,3 +310,6 @@ visible = false
 position = Vector2(314, 274)
 texture = ExtResource("17_phnru")
 script = ExtResource("76_cegyv")
+
+[connection signal="pressed" from="left" to="left" method="_on_pressed"]
+[connection signal="pressed" from="right" to="right" method="_on_pressed"]
