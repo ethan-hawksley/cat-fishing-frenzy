@@ -14,6 +14,7 @@ func _process(_delta: float) -> void:
 		hide()
 
 func _on_pressed() -> void:
+	AudioManager.play_sfx("page_turn")
 	if global.mode == global.modes.collection:
 		global.collection_page += 1
 		if global.collection_page >= 5:

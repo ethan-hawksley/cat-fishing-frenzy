@@ -11,22 +11,22 @@ func _process(_delta: float) -> void:
 	if global.mode != global.modes.collection:
 		text = ""
 	elif global.collection_page == 1:
-		if global.collection[0]:
+		if global.collection[7]:
 			text = "Dory"
 		else:
 			text = "???"
 	elif global.collection_page == 2:
-		if global.collection[0]:
+		if global.collection[15]:
 			text = "Angelfish"
 		else:
 			text = "???"
 	elif global.collection_page == 3:
-		if global.collection[0]:
+		if global.collection[23]:
 			text = "Piranha"
 		else:
 			text = "???"
 	elif global.collection_page == 4:
-		if global.collection[0]:
+		if global.collection[31]:
 			text = "Catfish"
 		else:
 			text = "???"
