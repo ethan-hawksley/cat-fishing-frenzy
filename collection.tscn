@@ -1,32 +1,99 @@
 [gd_scene format=3 uid="uid://bh168g26j3p7i"]
 
 [ext_resource type="Texture2D" uid="uid://dchh70kq1rg3e" path="res://assets/collection_book_1.png" id="1_vysnj"]
+[ext_resource type="Texture2D" uid="uid://cyfm0rlncj60o" path="res://assets/fish_1.png" id="2_ae7c0"]
 [ext_resource type="Script" uid="uid://b0msku4jjpwr3" path="res://book_1.gd" id="2_pv8s0"]
+[ext_resource type="Texture2D" uid="uid://cwiihs060sghg" path="res://assets/fish_2.png" id="3_7kip4"]
+[ext_resource type="Script" uid="uid://2n2ejve5x5rn" path="res://fish_1.gd" id="3_fc0er"]
 [ext_resource type="Texture2D" uid="uid://c4ig511kpmv3n" path="res://assets/collection_book_2.png" id="3_i8sox"]
 [ext_resource type="Script" uid="uid://tdyg034tft3f" path="res://book_2.gd" id="3_pv8s0"]
 [ext_resource type="Script" uid="uid://dojpo2ktl7b7k" path="res://book_3.gd" id="4_5a4yc"]
+[ext_resource type="Texture2D" uid="uid://ccsgujvtru1sd" path="res://assets/fish_3.png" id="4_xajaa"]
+[ext_resource type="Script" uid="uid://ok1utxuju8mw" path="res://fish_2.gd" id="5_0gw22"]
+[ext_resource type="Texture2D" uid="uid://j5gqv1el1noa" path="res://assets/fish_4.png" id="5_5w4to"]
 [ext_resource type="Script" uid="uid://csphu7epq0d8v" path="res://book_4.gd" id="5_jywwe"]
 [ext_resource type="Texture2D" uid="uid://bfh82u6akm3g4" path="res://assets/collection_book_3.png" id="5_mrnb4"]
+[ext_resource type="Texture2D" uid="uid://d1mih6km1anju" path="res://assets/fish_5.png" id="6_fb0dq"]
+[ext_resource type="Texture2D" uid="uid://drckiwxjgp03d" path="res://assets/fish_6.png" id="7_75s46"]
 [ext_resource type="Texture2D" uid="uid://bbikaseojknrt" path="res://assets/collection_book_4.png" id="7_g0015"]
+[ext_resource type="Script" uid="uid://ulhqhfleckl1" path="res://fish_3.gd" id="7_x2tiq"]
+[ext_resource type="Texture2D" uid="uid://cdrllcc3jrasg" path="res://assets/fish_7.png" id="8_tj0ev"]
+[ext_resource type="Texture2D" uid="uid://wxlgthxxnn8y" path="res://assets/fish_8.png" id="9_0b34o"]
+[ext_resource type="Script" uid="uid://t5570ivlanfd" path="res://fish_4.gd" id="9_ehvor"]
 [ext_resource type="Texture2D" uid="uid://1wbrb1g61d31" path="res://assets/arrow_left.png" id="9_sre7k"]
 [ext_resource type="Script" uid="uid://6q0bulnrsacu" path="res://left.gd" id="10_84ncw"]
+[ext_resource type="Texture2D" uid="uid://ouu200hm6ioc" path="res://assets/fish_9.png" id="10_m1vpp"]
 [ext_resource type="Texture2D" uid="uid://ch5ulnd4uqmsw" path="res://assets/arrow_right.png" id="11_ae7c0"]
+[ext_resource type="Texture2D" uid="uid://c76vytumo1pje" path="res://assets/fish_10.png" id="11_h5b63"]
+[ext_resource type="Script" uid="uid://bnt5mfrlhthpc" path="res://fish_5.gd" id="11_klfwk"]
 [ext_resource type="Script" uid="uid://b5e3aotcs3cbe" path="res://right.gd" id="12_7kip4"]
+[ext_resource type="Texture2D" uid="uid://3p8lxwu7buje" path="res://assets/fish_11.png" id="12_y1d8t"]
+[ext_resource type="Texture2D" uid="uid://btksl3ciyqoor" path="res://assets/fish_12.png" id="13_v6t6i"]
+[ext_resource type="Script" uid="uid://c3x1s30iuoqsp" path="res://fish_6.gd" id="13_why82"]
+[ext_resource type="Texture2D" uid="uid://c1bu7cnam3o50" path="res://assets/fish_13.png" id="14_56gho"]
+[ext_resource type="Script" uid="uid://cqa7jw66khrvx" path="res://fish_7.gd" id="15_05hu4"]
+[ext_resource type="Texture2D" uid="uid://dv8r3u135x7xk" path="res://assets/fish_14.png" id="15_nb4c1"]
+[ext_resource type="Texture2D" uid="uid://b0htejcsbcwga" path="res://assets/fish_15.png" id="16_54rbh"]
+[ext_resource type="Script" uid="uid://dpsqtjdiew1xh" path="res://fish_8.gd" id="17_akeeu"]
+[ext_resource type="Texture2D" uid="uid://dqwpg3kfpyuub" path="res://assets/catfish.png" id="17_phnru"]
+[ext_resource type="Script" uid="uid://bnxdttvp8br45" path="res://fish_9.gd" id="19_v137j"]
+[ext_resource type="Script" uid="uid://c3wpa3nuqbbja" path="res://fish_10.gd" id="21_0doji"]
+[ext_resource type="Script" uid="uid://blllejopob70r" path="res://fish_11.gd" id="23_n7v58"]
+[ext_resource type="Script" uid="uid://enflrubar3s2" path="res://fish_12.gd" id="25_wqae3"]
+[ext_resource type="Script" uid="uid://jfyw2xx2l2ee" path="res://fish_13.gd" id="27_lgnwt"]
+[ext_resource type="Script" uid="uid://csj4r7qmmr67h" path="res://fish_14.gd" id="29_ka16j"]
+[ext_resource type="Script" uid="uid://0n6phd2t3lnh" path="res://fish_15.gd" id="31_le66y"]
+[ext_resource type="Script" uid="uid://bvgc61teeyliq" path="res://fish_16.gd" id="33_7hett"]
+[ext_resource type="Texture2D" uid="uid://c2mdyjmwgnrwq" path="res://assets/fish_16.png" id="43_gi5t2"]
+[ext_resource type="Texture2D" uid="uid://pd033jvpfo46" path="res://assets/fish_17.png" id="45_y2nth"]
+[ext_resource type="Script" uid="uid://bl38yqrmgpfv4" path="res://fish_17.gd" id="46_8fpdh"]
+[ext_resource type="Texture2D" uid="uid://1rbr4ousqylc" path="res://assets/fish_18.png" id="47_iotk0"]
+[ext_resource type="Script" uid="uid://cp3c8hryu265l" path="res://fish_18.gd" id="48_kaurc"]
+[ext_resource type="Texture2D" uid="uid://dbirp4jcp6l26" path="res://assets/fish_19.png" id="49_ysf1e"]
+[ext_resource type="Script" uid="uid://mhdr0xqfggli" path="res://fish_19.gd" id="50_s4aal"]
+[ext_resource type="Texture2D" uid="uid://8nr3eoorlgpp" path="res://assets/fish_20.png" id="51_6k0yk"]
+[ext_resource type="Script" uid="uid://cfeou8ys78ol1" path="res://fish_20.gd" id="52_ec2id"]
+[ext_resource type="Texture2D" uid="uid://dbdluhadukc5u" path="res://assets/fish_21.png" id="53_tn4kv"]
+[ext_resource type="Script" uid="uid://qcf66565py7u" path="res://fish_21.gd" id="54_gxgbc"]
+[ext_resource type="Texture2D" uid="uid://db0v3w8yquwvq" path="res://assets/fish_22.png" id="55_fyere"]
+[ext_resource type="Script" uid="uid://bdb84dos6bwwi" path="res://fish_22.gd" id="56_b0nbt"]
+[ext_resource type="Texture2D" uid="uid://yb44coa6mqyn" path="res://assets/fish_23.png" id="57_xb0dy"]
+[ext_resource type="Script" uid="uid://bctv6mdsaf3xu" path="res://fish_23.gd" id="58_hmxa0"]
+[ext_resource type="Texture2D" uid="uid://bi0oqmnkgv6t2" path="res://assets/fish_24.png" id="59_4j3yd"]
+[ext_resource type="Script" uid="uid://tx32dh7fg4th" path="res://fish_24.gd" id="60_a6eo6"]
+[ext_resource type="Texture2D" uid="uid://5ff6b7cditx0" path="res://assets/fish_25.png" id="61_17bqi"]
+[ext_resource type="Script" uid="uid://4fwxobowrvwh" path="res://fish_25.gd" id="62_fi0u0"]
+[ext_resource type="Texture2D" uid="uid://dl5l2xrqmukmq" path="res://assets/fish_26.png" id="63_ffd36"]
+[ext_resource type="Script" uid="uid://tmbfpkbct1t8" path="res://fish_26.gd" id="64_w31pg"]
+[ext_resource type="Texture2D" uid="uid://c6koiupw0s64f" path="res://assets/fish_27.png" id="65_yyiph"]
+[ext_resource type="Script" uid="uid://cspdynyj2fpqq" path="res://fish_27.gd" id="66_1wqjs"]
+[ext_resource type="Texture2D" uid="uid://bwq1ywe253ujx" path="res://assets/fish_28.png" id="67_vfwb7"]
+[ext_resource type="Script" uid="uid://bslqk3j40tubs" path="res://fish_28.gd" id="68_x1070"]
+[ext_resource type="Texture2D" uid="uid://dlyo5ommou24j" path="res://assets/fish_29.png" id="69_my75q"]
+[ext_resource type="Script" uid="uid://dxy6h4df7rbrq" path="res://fish_29.gd" id="70_0ik2n"]
+[ext_resource type="Texture2D" uid="uid://dtr5peus7xxyp" path="res://assets/fish_30.png" id="71_u4tnl"]
+[ext_resource type="Script" uid="uid://cvot6qjhglnnn" path="res://fish_30.gd" id="72_kuyda"]
+[ext_resource type="Texture2D" uid="uid://d3loap3ubx2ps" path="res://assets/fish_31.png" id="73_7n4xs"]
+[ext_resource type="Script" uid="uid://dgfx55ioiril0" path="res://fish_31.gd" id="74_adtyw"]
+[ext_resource type="Script" uid="uid://52p1476aokd2" path="res://fish_32.gd" id="76_cegyv"]
 
 [node name="Node2D2" type="Node2D" unique_id=2069376763]
 texture_filter = 1
 
 [node name="Book1" type="Sprite2D" parent="." unique_id=1259443240]
+visible = false
 position = Vector2(200, 200)
 texture = ExtResource("1_vysnj")
 script = ExtResource("2_pv8s0")
 
 [node name="Book2" type="Sprite2D" parent="." unique_id=1706566117]
+visible = false
 position = Vector2(200, 200)
 texture = ExtResource("3_i8sox")
 script = ExtResource("3_pv8s0")
 
 [node name="Book3" type="Sprite2D" parent="." unique_id=24029635]
+visible = false
 position = Vector2(200, 200)
 texture = ExtResource("5_mrnb4")
 script = ExtResource("4_5a4yc")
@@ -51,3 +118,195 @@ offset_right = 381.0
 offset_bottom = 107.0
 texture_normal = ExtResource("11_ae7c0")
 script = ExtResource("12_7kip4")
+
+[node name="fish_1" type="Sprite2D" parent="." unique_id=779236149]
+visible = false
+position = Vector2(159, 92)
+texture = ExtResource("2_ae7c0")
+script = ExtResource("3_fc0er")
+
+[node name="fish_2" type="Sprite2D" parent="." unique_id=1976623553]
+visible = false
+position = Vector2(79, 158)
+texture = ExtResource("3_7kip4")
+script = ExtResource("5_0gw22")
+
+[node name="fish_3" type="Sprite2D" parent="." unique_id=1962562099]
+visible = false
+position = Vector2(156, 218)
+texture = ExtResource("4_xajaa")
+script = ExtResource("7_x2tiq")
+
+[node name="fish_4" type="Sprite2D" parent="." unique_id=1845909887]
+visible = false
+position = Vector2(86, 282)
+texture = ExtResource("5_5w4to")
+script = ExtResource("9_ehvor")
+
+[node name="fish_5" type="Sprite2D" parent="." unique_id=442715655]
+visible = false
+position = Vector2(245, 90)
+texture = ExtResource("6_fb0dq")
+script = ExtResource("11_klfwk")
+
+[node name="fish_6" type="Sprite2D" parent="." unique_id=1688888352]
+visible = false
+position = Vector2(326, 165)
+texture = ExtResource("7_75s46")
+script = ExtResource("13_why82")
+
+[node name="fish_7" type="Sprite2D" parent="." unique_id=396175907]
+visible = false
+position = Vector2(260, 216)
+texture = ExtResource("8_tj0ev")
+script = ExtResource("15_05hu4")
+
+[node name="fish_8" type="Sprite2D" parent="." unique_id=1120104565]
+visible = false
+position = Vector2(321, 279)
+texture = ExtResource("9_0b34o")
+script = ExtResource("17_akeeu")
+
+[node name="fish_9" type="Sprite2D" parent="." unique_id=842099337]
+visible = false
+position = Vector2(154, 79)
+texture = ExtResource("10_m1vpp")
+script = ExtResource("19_v137j")
+
+[node name="fish_10" type="Sprite2D" parent="." unique_id=580843284]
+visible = false
+position = Vector2(80, 148)
+texture = ExtResource("11_h5b63")
+script = ExtResource("21_0doji")
+
+[node name="fish_11" type="Sprite2D" parent="." unique_id=1179974401]
+visible = false
+position = Vector2(148, 206)
+texture = ExtResource("12_y1d8t")
+script = ExtResource("23_n7v58")
+
+[node name="fish_12" type="Sprite2D" parent="." unique_id=1946742990]
+visible = false
+position = Vector2(83, 283)
+texture = ExtResource("13_v6t6i")
+script = ExtResource("25_wqae3")
+
+[node name="fish_13" type="Sprite2D" parent="." unique_id=352164417]
+visible = false
+position = Vector2(244, 92)
+texture = ExtResource("14_56gho")
+script = ExtResource("27_lgnwt")
+
+[node name="fish_14" type="Sprite2D" parent="." unique_id=1778087351]
+visible = false
+position = Vector2(319, 165)
+texture = ExtResource("15_nb4c1")
+script = ExtResource("29_ka16j")
+
+[node name="fish_15" type="Sprite2D" parent="." unique_id=1842366729]
+visible = false
+position = Vector2(260, 212)
+texture = ExtResource("16_54rbh")
+script = ExtResource("31_le66y")
+
+[node name="fish_16" type="Sprite2D" parent="." unique_id=553897421]
+visible = false
+position = Vector2(318, 276)
+texture = ExtResource("43_gi5t2")
+script = ExtResource("33_7hett")
+
+[node name="fish_17" type="Sprite2D" parent="." unique_id=2028030264]
+visible = false
+position = Vector2(151, 88)
+texture = ExtResource("45_y2nth")
+script = ExtResource("46_8fpdh")
+
+[node name="fish_18" type="Sprite2D" parent="." unique_id=1353506815]
+visible = false
+position = Vector2(86, 169)
+texture = ExtResource("47_iotk0")
+script = ExtResource("48_kaurc")
+
+[node name="fish_19" type="Sprite2D" parent="." unique_id=2050280701]
+visible = false
+position = Vector2(157, 202)
+texture = ExtResource("49_ysf1e")
+script = ExtResource("50_s4aal")
+
+[node name="fish_20" type="Sprite2D" parent="." unique_id=1853992798]
+visible = false
+position = Vector2(88, 260)
+texture = ExtResource("51_6k0yk")
+script = ExtResource("52_ec2id")
+
+[node name="fish_21" type="Sprite2D" parent="." unique_id=725021376]
+visible = false
+position = Vector2(254, 90)
+texture = ExtResource("53_tn4kv")
+script = ExtResource("54_gxgbc")
+
+[node name="fish_22" type="Sprite2D" parent="." unique_id=909090796]
+visible = false
+position = Vector2(316, 159)
+texture = ExtResource("55_fyere")
+script = ExtResource("56_b0nbt")
+
+[node name="fish_23" type="Sprite2D" parent="." unique_id=1451392004]
+visible = false
+position = Vector2(247, 207)
+texture = ExtResource("57_xb0dy")
+script = ExtResource("58_hmxa0")
+
+[node name="fish_24" type="Sprite2D" parent="." unique_id=957528353]
+visible = false
+position = Vector2(317, 266)
+texture = ExtResource("59_4j3yd")
+script = ExtResource("60_a6eo6")
+
+[node name="fish_25" type="Sprite2D" parent="." unique_id=2128046723]
+visible = false
+position = Vector2(153, 92)
+texture = ExtResource("61_17bqi")
+script = ExtResource("62_fi0u0")
+
+[node name="fish_26" type="Sprite2D" parent="." unique_id=1739106051]
+visible = false
+position = Vector2(89, 158)
+texture = ExtResource("63_ffd36")
+script = ExtResource("64_w31pg")
+
+[node name="fish_27" type="Sprite2D" parent="." unique_id=644709783]
+visible = false
+position = Vector2(156, 229)
+texture = ExtResource("65_yyiph")
+script = ExtResource("66_1wqjs")
+
+[node name="fish_28" type="Sprite2D" parent="." unique_id=981031965]
+visible = false
+position = Vector2(84, 272)
+texture = ExtResource("67_vfwb7")
+script = ExtResource("68_x1070")
+
+[node name="fish_29" type="Sprite2D" parent="." unique_id=636348060]
+visible = false
+position = Vector2(243, 104)
+texture = ExtResource("69_my75q")
+script = ExtResource("70_0ik2n")
+
+[node name="fish_30" type="Sprite2D" parent="." unique_id=2080852146]
+visible = false
+position = Vector2(315, 156)
+texture = ExtResource("71_u4tnl")
+script = ExtResource("72_kuyda")
+
+[node name="fish_31" type="Sprite2D" parent="." unique_id=965488400]
+visible = false
+position = Vector2(250, 207)
+texture = ExtResource("73_7n4xs")
+script = ExtResource("74_adtyw")
+
+[node name="fish_32" type="Sprite2D" parent="." unique_id=397203259]
+visible = false
+position = Vector2(314, 274)
+texture = ExtResource("17_phnru")
+script = ExtResource("76_cegyv")

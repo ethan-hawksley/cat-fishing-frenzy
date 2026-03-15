@@ -8,8 +8,8 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	if global.collection[14]:
-		if global.collection_page == 2:
+	if global.collection[16]:
+		if global.collection_page == 3:
 			show()
 		else:
 			hide()
