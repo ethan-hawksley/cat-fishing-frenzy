@@ -216,6 +216,7 @@ func _ready() -> void:
 		path = "res://assets/jellyfish.png"
 	var scale_factor = randfn(1.0,0.5)
 	apply_scale(Vector2(scale_factor,scale_factor))
+	value *= scale_factor
 		
 
 	var loaded_texture = load(path)
