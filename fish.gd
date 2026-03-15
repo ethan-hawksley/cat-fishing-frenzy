@@ -50,27 +50,27 @@ var images =[
 func _ready() -> void:
 	var path = images[0]
 	fish = "fish_1"
-	value = 75 * global.easymode
+	value = 100 * global.easymode
 	
 	if 100 < global.depth:
 		if randf() < 0.5:
 			path = images[1]
-			value = 100*global.easymode
+			value = 150*global.easymode
 			fish = "fish_2"
 	if 200 < global.depth:
 		if randf() < 0.5:
 			path = images[2]
-			value = 125*global.easymode
+			value = 200*global.easymode
 			fish = "fish_3"
 	if 300 < global.depth:
 		if randf() < 0.5:
 			path = images[3]
-			value = 200*global.easymode
+			value = 250*global.easymode
 			fish = "fish_4"
 	if 400 < global.depth:
 		if randf() < 0.5:
 			path = images[4]
-			value = 275*global.easymode
+			value = 300*global.easymode
 			fish = "fish_5"
 	if 500 < global.depth:
 		if randf() < 0.5:
@@ -80,144 +80,138 @@ func _ready() -> void:
 	if 600 < global.depth:
 		if randf() < 0.5:
 			path = images[6]
-			value = 425*global.easymode
+			value = 400*global.easymode
 			fish = "fish_7"
 	if 700 < global.depth:
 		if randf() < 0.5:
 			path = images[7]
-			value = 500*global.easymode
+			value = 450*global.easymode
 			fish = "fish_8"
 	if 800 < global.depth:
 		if randf() < 0.5:
 			path = images[8]
-			value = 600*global.easymode
+			value = 500*global.easymode
 			fish = "fish_9"
 	if 900 < global.depth:
 		if randf() < 0.5:
 			path = images[9]
-			value = 700*global.easymode
+			value = 550*global.easymode
 			fish = "fish_10"
 	if 1000 < global.depth:
 		if randf() < 0.5:
 			path = images[10]
-			value = 800*global.easymode
+			value = 600*global.easymode
 			fish = "fish_11"
 	if 1100 < global.depth:
 		if randf() < 0.5:
 			path = images[11]
-			value = 900*global.easymode
+			value = 650*global.easymode
 			fish = "fish_12"
 	if 1200 < global.depth:
 		if randf() < 0.5:
 			path = images[12]
-			value = 1000*global.easymode
+			value = 700*global.easymode
 			fish = "fish_13"
 	if 1300 < global.depth:
 		if randf() < 0.5:
 			path = images[13]
-			value = 1250*global.easymode
+			value = 750*global.easymode
 			fish = "fish_14"
 	if 1400 < global.depth:
 		if randf() < 0.5:
 			path = images[14]
-			value = 5000*global.easymode
+			value = 800*global.easymode
 			fish = "fish_15"
 	if 1500 < global.depth:
 		if randf() < 0.5:
 			path = images[15]
-			value = 10000 * global.easymode
+			value = 850 * global.easymode
 			fish = "fish_16"
 	if 1600 < global.depth:
 		if randf() < 0.5:
 			path = images[16]
-			value = 10000 * global.easymode
+			value = 900 * global.easymode
 			fish = "fish_17"
 	if 1700 < global.depth:
 		if randf() < 0.5:
 			path = images[17]
-			value = 10000 * global.easymode
+			value = 950 * global.easymode
 			fish = "fish_18"
 	if 1800 < global.depth:
 		if randf() < 0.5:
 			path = images[18]
-			value = 10000 * global.easymode
+			value = 1000 * global.easymode
 			fish = "fish_19"
 	if 1900 < global.depth:
 		if randf() < 0.5:
 			path = images[19]
-			value = 10000 * global.easymode
+			value = 1050 * global.easymode
 			fish = "fish_20"
 	if 2000 < global.depth:
 		if randf() < 0.5:
 			path = images[20]
-			value = 10000 * global.easymode
+			value = 1100 * global.easymode
 			fish = "fish_21"
 	if 2100 < global.depth:
 		if randf() < 0.5:
 			path = images[21]
-			value = 10000 * global.easymode
+			value = 1150 * global.easymode
 			fish = "fish_22"
 	if 2200 < global.depth:
 		if randf() < 0.5:
 			path = images[22]
-			value = 10000 * global.easymode
+			value = 1200 * global.easymode
 			fish = "fish_23"
 	if 2300 < global.depth:
 		if randf() < 0.5:
 			path = images[23]
-			value = 10000 * global.easymode
+			value = 1250 * global.easymode
 			fish = "fish_24"
 	if 2400 < global.depth:
 		if randf() < 0.5:
 			path = images[24]
-			value = 10000 * global.easymode
+			value = 1300 * global.easymode
 			fish = "fish_25"
 	if 2500 < global.depth:
 		if randf() < 0.5:
 			path = images[25]
-			value = 10000 * global.easymode
+			value = 1350 * global.easymode
 			fish = "fish_26"
 	if 2600 < global.depth:
 		if randf() < 0.5:
 			path = images[26]
-			value = 10000 * global.easymode
+			value = 1400 * global.easymode
 			fish = "fish_27"
 	if 2700 < global.depth:
 		if randf() < 0.5:
 			path = images[27]
-			value = 10000 * global.easymode
+			value = 1450 * global.easymode
 			fish = "fish_28"
 	if 2800 < global.depth:
 		if randf() < 0.5:
 			path = images[28]
-			value = 10000 * global.easymode
+			value = 1500 * global.easymode
 			fish = "fish_29"
 	if 2900 < global.depth:
 		if randf() < 0.5:
 			path = images[29]
-			value = 10000 * global.easymode
+			value = 1550 * global.easymode
 			fish = "fish_30"
 	if 3000 < global.depth:
 		if randf() < 0.5:
 			path = images[30]
-			value = 10000 * global.easymode
+			value = 1600 * global.easymode
 			fish = "fish_31"
 	if 3100 < global.depth:
 		if randf() < 0.5:
 			path = images[31]
-			value = 10000 * global.easymode
+			value = 1650 * global.easymode
 			fish = "fish_32"
 	if 3500 < global.depth:
 		if randf() < 0.5:
 			jellyfish = true
 	if randf() < 0.005:
 		jellyfish = true
-	if 1500 < global.depth and global.depth < 1750:
-		if randf() < 0.85:
-			jellyfish = true
-	if 2500 < global.depth and global.depth < 2750:
-		if randf() < 0.85:
-			jellyfish = true
 	if jellyfish == true:
 		path = "res://assets/jellyfish.png"
 		
