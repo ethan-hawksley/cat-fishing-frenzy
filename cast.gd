@@ -17,6 +17,8 @@ func _process(delta: float) -> void:
 			position.x += (global.speed*1200 * delta)
 	if global.mode == global.modes.ascending:
 		position.y -= (global.speed*1200 * delta)
+		if position.y < 0:
+			position.y = 0
 		position.x = move_toward(position.x, -64, global.speed * 1200 * delta)
 		if position.x < -60 and position.x > -68 and position.y <= 0:
 			AudioManager.stop_reel()
