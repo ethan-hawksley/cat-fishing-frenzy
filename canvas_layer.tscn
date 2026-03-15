@@ -22,7 +22,7 @@
 [ext_resource type="Script" uid="uid://cfrlib277413n" path="res://fish_label_6.gd" id="20_qn1ce"]
 [ext_resource type="Script" uid="uid://c3pqbx35k1sp8" path="res://fish_label_7.gd" id="21_31fxs"]
 [ext_resource type="Script" uid="uid://bbjst12xy7bia" path="res://fish_label_8.gd" id="22_k178u"]
-[ext_resource type="Script" path="res://label_2.gd" id="31_uc0vg"]
+[ext_resource type="Script" uid="uid://cf748ewaukjbg" path="res://label_2.gd" id="31_uc0vg"]
 
 [node name="CanvasLayer" type="CanvasLayer" unique_id=1394224731 node_paths=PackedStringArray("shop", "collection")]
 script = ExtResource("1_37rai")

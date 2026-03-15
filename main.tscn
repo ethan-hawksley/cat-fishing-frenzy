@@ -14,7 +14,9 @@
 [ext_resource type="Texture2D" uid="uid://dd6ouhlj28ny6" path="res://assets/dot.png" id="9_cegan"]
 [ext_resource type="Script" uid="uid://bjay5shndfyru" path="res://cat.gd" id="9_dg77c"]
 [ext_resource type="Texture2D" uid="uid://cedy1x8wl5l0s" path="res://assets/duck.png" id="10_4c57u"]
+[ext_resource type="Script" uid="uid://0a8jjy3awtol" path="res://left_touch.gd" id="10_getpj"]
 [ext_resource type="Script" uid="uid://djcmel1v1a80n" path="res://duck.gd" id="11_efxa6"]
+[ext_resource type="Script" uid="uid://mjm7jrexhxvg" path="res://right_touch.gd" id="11_ryguw"]
 [ext_resource type="Script" uid="uid://b4eximts2en7x" path="res://duck_2_returns.gd" id="13_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://cfiyd2at2vrxm" path="res://assets/seagull.png" id="16_2cqfq"]
 [ext_resource type="Script" uid="uid://ba2wobbwugwvq" path="res://seagull.gd" id="17_074og"]
@@ -68,18 +70,20 @@ position_smoothing_enabled = true
 position_smoothing_speed = 4.0
 
 [node name="left" type="TouchScreenButton" parent="Hook/Camera2D" unique_id=855005413]
-visible = false
+modulate = Color(1, 1, 1, 0)
 position = Vector2(-339, -202)
 scale = Vector2(340.00003, 387.00003)
 texture_normal = ExtResource("9_cegan")
 action = "ui_left"
+script = ExtResource("10_getpj")
 
 [node name="right" type="TouchScreenButton" parent="Hook/Camera2D" unique_id=225592185]
-visible = false
+modulate = Color(1, 1, 1, 0)
 position = Vector2(1, -203)
 scale = Vector2(340.00003, 387.00003)
 texture_normal = ExtResource("9_cegan")
-action = "ui_left"
+action = "ui_right"
+script = ExtResource("11_ryguw")
 
 [node name="Area2D" type="Area2D" parent="Hook" unique_id=1775785438 groups=["hook"]]
 position = Vector2(-12, -32)
