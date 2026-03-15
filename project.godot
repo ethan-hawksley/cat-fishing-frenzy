@@ -13,6 +13,7 @@ config_version=5
 config/name="Cat-Fishing Frenzy"
 run/main_scene="uid://bjkoh2b2jk3oe"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/image="uid://c5acvk8kwxve1"
 config/icon="res://icon.svg"
 
 [autoload]
