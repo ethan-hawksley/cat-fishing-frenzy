@@ -12,21 +12,21 @@ func _process(_delta: float) -> void:
 		text = ""
 	elif global.collection_page == 1:
 		if global.collection[2]:
-			text = "Cod"
+			text = "Cod\nNo:"+str(global.collection[2])
 		else:
 			text = "???"
 	elif global.collection_page == 2:
 		if global.collection[10]:
-			text = "Red"
+			text = "Snapper\nNo:"+str(global.collection[10])
 		else:
 			text = "???"
 	elif global.collection_page == 3:
 		if global.collection[18]:
-			text = "Sunfish"
+			text = "Sunfish\nNo:"+str(global.collection[18])
 		else:
 			text = "???"
 	elif global.collection_page == 4:
 		if global.collection[26]:
-			text = "Anglerfish"
+			text = "Anglerfish\nNo:"+str(global.collection[26])
 		else:
 			text = "???"

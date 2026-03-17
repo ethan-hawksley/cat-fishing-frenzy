@@ -214,7 +214,7 @@ func _ready() -> void:
 		jellyfish = true
 	if jellyfish == true:
 		path = "res://assets/jellyfish.png"
-	var scale_factor = randfn(1.0,0.5)
+	var scale_factor = randf_range(0.75,1.25)
 	apply_scale(Vector2(scale_factor,scale_factor))
 	value *= scale_factor
 		
@@ -230,7 +230,7 @@ func add_collection(fish_type: String) -> void:
 	# read index from number after the underscore
 	var index = int(fish_type.split("_")[1]) - 1
 	if index >= 0 and index < global.collection.size():
-		global.collection[index] = true
+		global.collection[index] += 1
 
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if not area.is_in_group("hook"):

@@ -173,97 +173,97 @@ script = ExtResource("11_5cw7b")
 position = Vector2(3, 9)
 
 [node name="Fish_Label_1" type="Label" parent="." unique_id=565552428]
-offset_left = 44.000004
-offset_top = 102.0
+offset_left = 44.0
+offset_top = 94.99999
 offset_right = 107.0
-offset_bottom = 125.0
+offset_bottom = 117.99999
 rotation = -0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("15_86mtp")
 
 [node name="Fish_Label_2" type="Label" parent="." unique_id=1299833937]
 offset_left = 131.0
-offset_top = 148.0
+offset_top = 141.0
 offset_right = 194.0
-offset_bottom = 171.0
+offset_bottom = 164.0
 rotation = -0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("16_lrj6d")
 
 [node name="Fish_Label_3" type="Label" parent="." unique_id=618782982]
-offset_left = 46.0
-offset_top = 215.0
+offset_left = 45.999996
+offset_top = 208.0
 offset_right = 109.0
-offset_bottom = 238.0
+offset_bottom = 231.0
 rotation = -0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("17_54dv3")
 
 [node name="Fish_Label_4" type="Label" parent="." unique_id=1333214653]
 offset_left = 131.00002
-offset_top = 268.0
+offset_top = 261.0
 offset_right = 194.00002
-offset_bottom = 291.0
+offset_bottom = 284.0
 rotation = -0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("18_uc0vg")
 
 [node name="Fish_Label_5" type="Label" parent="." unique_id=700339782]
 offset_left = 299.00003
-offset_top = 94.00001
+offset_top = 87.0
 offset_right = 362.00003
-offset_bottom = 117.00001
+offset_bottom = 110.0
 rotation = 0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("19_lljfd")
 
 [node name="Fish_Label_6" type="Label" parent="." unique_id=1583339587]
 offset_left = 212.00002
-offset_top = 144.00002
+offset_top = 137.0
 offset_right = 275.0
-offset_bottom = 167.00002
+offset_bottom = 160.0
 rotation = 0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("20_qn1ce")
 
 [node name="Fish_Label_7" type="Label" parent="." unique_id=1180060771]
 offset_left = 298.99997
-offset_top = 210.0
+offset_top = 203.0
 offset_right = 361.99997
-offset_bottom = 233.0
+offset_bottom = 226.0
 rotation = 0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("21_31fxs")
 
 [node name="Fish_Label_8" type="Label" parent="." unique_id=1948253329]
 offset_left = 213.00002
-offset_top = 259.0
+offset_top = 252.0
 offset_right = 276.0
-offset_bottom = 282.0
+offset_bottom = 275.0
 rotation = 0.08726646
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "???"
 horizontal_alignment = 1
 script = ExtResource("22_k178u")

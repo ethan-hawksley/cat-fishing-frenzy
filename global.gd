@@ -46,13 +46,13 @@ var shock = 0
 
 var collection_page = 0
 
-var collection: Array[bool] = [
-	false, false, false, false,  # fish 1-4
-	false, false, false, false,  # fish 5-8
-	false, false, false, false,  # fish 9-12
-	false, false, false, false,  # fish 13-16
-	false, false, false, false,  # fish 17-20
-	false, false, false, false,  # fish 21-24
-	false, false, false, false,  # fish 25-28
-	false, false, false, false,  # fish 29-32
+var collection: Array[int] = [
+	0, 0, 0, 0,  # fish 1-4
+	0, 0, 0, 0,  # fish 5-8
+	0, 0, 0, 0,  # fish 9-12
+	0, 0, 0, 0,  # fish 13-16
+	0, 0, 0, 0,  # fish 17-20
+	0, 0, 0, 0,  # fish 21-24
+	0, 0, 0, 0,  # fish 25-28
+	0, 0, 0, 0,  # fish 29-32
 ]
