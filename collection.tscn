@@ -81,7 +81,6 @@
 texture_filter = 1
 
 [node name="Book1" type="Sprite2D" parent="." unique_id=1259443240]
-visible = false
 position = Vector2(200, 200)
 texture = ExtResource("1_vysnj")
 script = ExtResource("2_pv8s0")
@@ -99,6 +98,7 @@ texture = ExtResource("5_mrnb4")
 script = ExtResource("4_5a4yc")
 
 [node name="Book4" type="Sprite2D" parent="." unique_id=1545268990]
+visible = false
 position = Vector2(200, 200)
 texture = ExtResource("7_g0015")
 script = ExtResource("5_jywwe")
@@ -120,74 +120,66 @@ texture_normal = ExtResource("11_ae7c0")
 script = ExtResource("12_7kip4")
 
 [node name="fish_1" type="Sprite2D" parent="." unique_id=779236149]
-visible = false
-position = Vector2(159, 92)
+position = Vector2(151, 93)
 texture = ExtResource("2_ae7c0")
 script = ExtResource("3_fc0er")
 
 [node name="fish_2" type="Sprite2D" parent="." unique_id=1976623553]
-visible = false
 position = Vector2(79, 158)
 texture = ExtResource("3_7kip4")
 script = ExtResource("5_0gw22")
 
 [node name="fish_3" type="Sprite2D" parent="." unique_id=1962562099]
-visible = false
-position = Vector2(156, 218)
+position = Vector2(152, 207)
 texture = ExtResource("4_xajaa")
 script = ExtResource("7_x2tiq")
 
 [node name="fish_4" type="Sprite2D" parent="." unique_id=1845909887]
-visible = false
-position = Vector2(86, 282)
+position = Vector2(82, 269)
 texture = ExtResource("5_5w4to")
 script = ExtResource("9_ehvor")
 
 [node name="fish_5" type="Sprite2D" parent="." unique_id=442715655]
-visible = false
 position = Vector2(245, 90)
 texture = ExtResource("6_fb0dq")
 script = ExtResource("11_klfwk")
 
 [node name="fish_6" type="Sprite2D" parent="." unique_id=1688888352]
-visible = false
-position = Vector2(326, 165)
+position = Vector2(317, 155)
 texture = ExtResource("7_75s46")
 script = ExtResource("13_why82")
 
 [node name="fish_7" type="Sprite2D" parent="." unique_id=396175907]
-visible = false
-position = Vector2(260, 216)
+position = Vector2(251, 207)
 texture = ExtResource("8_tj0ev")
 script = ExtResource("15_05hu4")
 
 [node name="fish_8" type="Sprite2D" parent="." unique_id=1120104565]
-visible = false
-position = Vector2(321, 279)
+position = Vector2(319, 268)
 texture = ExtResource("9_0b34o")
 script = ExtResource("17_akeeu")
 
 [node name="fish_9" type="Sprite2D" parent="." unique_id=842099337]
 visible = false
-position = Vector2(154, 79)
+position = Vector2(153, 90)
 texture = ExtResource("10_m1vpp")
 script = ExtResource("19_v137j")
 
 [node name="fish_10" type="Sprite2D" parent="." unique_id=580843284]
 visible = false
-position = Vector2(80, 148)
+position = Vector2(82, 157)
 texture = ExtResource("11_h5b63")
 script = ExtResource("21_0doji")
 
 [node name="fish_11" type="Sprite2D" parent="." unique_id=1179974401]
 visible = false
-position = Vector2(148, 206)
+position = Vector2(149, 206)
 texture = ExtResource("12_y1d8t")
 script = ExtResource("23_n7v58")
 
 [node name="fish_12" type="Sprite2D" parent="." unique_id=1946742990]
 visible = false
-position = Vector2(83, 283)
+position = Vector2(84, 268)
 texture = ExtResource("13_v6t6i")
 script = ExtResource("25_wqae3")
 
@@ -199,19 +191,19 @@ script = ExtResource("27_lgnwt")
 
 [node name="fish_14" type="Sprite2D" parent="." unique_id=1778087351]
 visible = false
-position = Vector2(319, 165)
+position = Vector2(317, 156)
 texture = ExtResource("15_nb4c1")
 script = ExtResource("29_ka16j")
 
 [node name="fish_15" type="Sprite2D" parent="." unique_id=1842366729]
 visible = false
-position = Vector2(260, 212)
+position = Vector2(250, 206)
 texture = ExtResource("16_54rbh")
 script = ExtResource("31_le66y")
 
 [node name="fish_16" type="Sprite2D" parent="." unique_id=553897421]
 visible = false
-position = Vector2(318, 276)
+position = Vector2(318, 271)
 texture = ExtResource("43_gi5t2")
 script = ExtResource("33_7hett")
 
@@ -223,31 +215,31 @@ script = ExtResource("46_8fpdh")
 
 [node name="fish_18" type="Sprite2D" parent="." unique_id=1353506815]
 visible = false
-position = Vector2(86, 169)
+position = Vector2(80, 157)
 texture = ExtResource("47_iotk0")
 script = ExtResource("48_kaurc")
 
 [node name="fish_19" type="Sprite2D" parent="." unique_id=2050280701]
 visible = false
-position = Vector2(157, 202)
+position = Vector2(148, 206)
 texture = ExtResource("49_ysf1e")
 script = ExtResource("50_s4aal")
 
 [node name="fish_20" type="Sprite2D" parent="." unique_id=1853992798]
 visible = false
-position = Vector2(88, 260)
+position = Vector2(82, 270)
 texture = ExtResource("51_6k0yk")
 script = ExtResource("52_ec2id")
 
 [node name="fish_21" type="Sprite2D" parent="." unique_id=725021376]
 visible = false
-position = Vector2(254, 90)
+position = Vector2(251, 92)
 texture = ExtResource("53_tn4kv")
 script = ExtResource("54_gxgbc")
 
 [node name="fish_22" type="Sprite2D" parent="." unique_id=909090796]
 visible = false
-position = Vector2(316, 159)
+position = Vector2(316, 154)
 texture = ExtResource("55_fyere")
 script = ExtResource("56_b0nbt")
 
@@ -259,7 +251,7 @@ script = ExtResource("58_hmxa0")
 
 [node name="fish_24" type="Sprite2D" parent="." unique_id=957528353]
 visible = false
-position = Vector2(317, 266)
+position = Vector2(319, 270)
 texture = ExtResource("59_4j3yd")
 script = ExtResource("60_a6eo6")
 
@@ -271,13 +263,13 @@ script = ExtResource("62_fi0u0")
 
 [node name="fish_26" type="Sprite2D" parent="." unique_id=1739106051]
 visible = false
-position = Vector2(89, 158)
+position = Vector2(82, 155)
 texture = ExtResource("63_ffd36")
 script = ExtResource("64_w31pg")
 
 [node name="fish_27" type="Sprite2D" parent="." unique_id=644709783]
 visible = false
-position = Vector2(156, 229)
+position = Vector2(147, 209)
 texture = ExtResource("65_yyiph")
 script = ExtResource("66_1wqjs")
 
@@ -289,25 +281,25 @@ script = ExtResource("68_x1070")
 
 [node name="fish_29" type="Sprite2D" parent="." unique_id=636348060]
 visible = false
-position = Vector2(243, 104)
+position = Vector2(246, 92)
 texture = ExtResource("69_my75q")
 script = ExtResource("70_0ik2n")
 
 [node name="fish_30" type="Sprite2D" parent="." unique_id=2080852146]
 visible = false
-position = Vector2(315, 156)
+position = Vector2(316, 156)
 texture = ExtResource("71_u4tnl")
 script = ExtResource("72_kuyda")
 
 [node name="fish_31" type="Sprite2D" parent="." unique_id=965488400]
 visible = false
-position = Vector2(250, 207)
+position = Vector2(249, 207)
 texture = ExtResource("73_7n4xs")
 script = ExtResource("74_adtyw")
 
 [node name="fish_32" type="Sprite2D" parent="." unique_id=397203259]
 visible = false
-position = Vector2(314, 274)
+position = Vector2(317, 268)
 texture = ExtResource("17_phnru")
 script = ExtResource("76_cegyv")
 
