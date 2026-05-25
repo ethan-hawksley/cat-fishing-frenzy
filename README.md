@@ -1,6 +1,6 @@
 # Cat Fishing Frenzy
 
-Cat Fishing Frenzy is an incremental fishing simulator built with Godot. It features a wide variety of fish to catch, and upgrades to purchase.
+Cat Fishing Frenzy is an incremental fishing simulator built with Godot and GDScript. It features a wide variety of fish to catch, and upgrades to purchase.
 
 The game can be played on [Cat Fishing Frenzy's itch.io page](https://ethanhawksley.itch.io/cat-fishing-frenzy).
 
