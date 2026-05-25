@@ -10,4 +10,4 @@ Read about its creation in the [Hack Club Campfire Hackathon writeup](https://ha
 
 ## Authors
 
-[Ethan Hawksley](https://hawksley.dev), Samuel Meritt, and Ryley Jackson.
+[Ethan Hawksley](https://hawksley.dev), Samuel Merritt, and Ryley Jackson.
